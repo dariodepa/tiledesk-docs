@@ -1,3 +1,7 @@
+---
+description: This is a Beta version of the documentation.
+---
+
 # WebHoook
 
 ## Introduction
