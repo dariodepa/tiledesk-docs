@@ -18,6 +18,6 @@
 ## Components
 
 * [Components](components/components/README.md)
-  * [Integrate Widget for iOS with WKWebView](components/components/untitled.md)
+  * [Integrate Widget for iOS with WKWebView](components/components/integrate-widget-for-ios-with-wkwebview.md)
   * [Integrate Widget for Android with WebView](components/components/integrate-widget-for-android-with-webview.md)
 
