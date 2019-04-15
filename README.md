@@ -17,5 +17,6 @@
 
 ## Components
 
+* [Integrate Widget for Android with WebView](components/integrate-widget-for-android-with-webview.md)
 * [Components](components/components.md)
 
