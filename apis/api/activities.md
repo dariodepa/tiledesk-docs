@@ -30,18 +30,13 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-
-
-
-{% api-method-parameter name="agent_id" type="string" required=false %}
+{% api-method-parameter name="agent\_id" type="string" required=false %}
 The agent identifier.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="activities" type="string" required=false %}
-A comma separeted list of events to filter the results. Ex: "PROJECT_USER_DELETE,PROJECT_USER_INVITE"
+A comma separeted list of events to filter the results. Ex: "PROJECT\_USER\_DELETE,PROJECT\_USER\_INVITE"
 {% endapi-method-parameter %}
-
-
 
 {% api-method-parameter name="sortField" type="string" required=false %}
 what field to sort the results by.
