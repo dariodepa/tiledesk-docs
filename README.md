@@ -10,6 +10,7 @@
 ## APIs
 
 * [REST API](apis/api/README.md)
+  * [Activities](apis/api/activities.md)
   * [Requests](apis/api/requests.md)
   * [Leads](apis/api/leads.md)
 * [WebHoook](apis/webhook/README.md)
