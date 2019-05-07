@@ -111,8 +111,7 @@ authorization token. Basic Auth or JWT
    "event":"request.create",
    "id_project":"5b55e806c93dde00143163dd",
    "createdBy":"5ab11c6b83dc240014d46095",
-   "_id":"5c879fb4f1ae6600173b8c75",
-   "secret":"56c189c8-33ae-4930-bd98-410a12aa45ce"
+   "_id":"5c879fb4f1ae6600173b8c75"
 },
 ...
 ]
@@ -167,8 +166,7 @@ authorization token. Basic Auth or JWT
    "event":"request.create",
    "id_project":"5b55e806c93dde00143163dd",
    "createdBy":"5ab11c6b83dc240014d46095",
-   "_id":"5c879fb4f1ae6600173b8c75",
-   "secret":"56c189c8-33ae-4930-bd98-410a12aa45ce"
+   "_id":"5c879fb4f1ae6600173b8c75"
 }
 ```
 {% endapi-method-response-example %}
