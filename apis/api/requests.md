@@ -24,9 +24,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-use "application/json" value
-{% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -104,7 +101,7 @@ what page of results to fetch. defaults to first page.
 Example
 
 ```text
-curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests
 ```
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id" %}
@@ -133,9 +130,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-use "application/json" value
-{% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
@@ -206,6 +200,6 @@ what page of results to fetch. defaults to first page.
 Example:
 
 ```text
-curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK
 ```
 
