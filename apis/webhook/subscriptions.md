@@ -90,7 +90,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
 {% endapi-method-request %}
 
@@ -146,7 +145,6 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
 {% endapi-method-request %}
 
@@ -199,7 +197,6 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
 {% endapi-method-request %}
 
