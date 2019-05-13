@@ -13,7 +13,7 @@
   * [Requests](apis/api/requests.md)
   * [Leads](apis/api/leads.md)
   * [Activities](apis/api/activities.md)
-* [WebHoook](apis/webhook/README.md)
+* [WebHook](apis/webhook/README.md)
   * [Subscriptions](apis/webhook/subscriptions.md)
 
 ## Components
