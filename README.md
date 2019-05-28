@@ -16,9 +16,17 @@
 * [WebHook](apis/webhook/README.md)
   * [Subscriptions](apis/webhook/subscriptions.md)
 
+## Mobile SDK
+
+* [Integrate Widget for Android with WebView](mobile-sdk/integrate-widget-for-android-with-webview.md)
+* [Integrate Widget for iOS with WKWebView](mobile-sdk/integrate-widget-for-ios-with-wkwebview.md)
+
+## Architecture
+
+* [Schema](architecture/schema.md)
+* [Bot Schema](architecture/bot-schema.md)
+
 ## Components
 
-* [Components](components/components/README.md)
-  * [Integrate Widget for iOS with WKWebView](components/components/integrate-widget-for-ios-with-wkwebview.md)
-  * [Integrate Widget for Android with WebView](components/components/integrate-widget-for-android-with-webview.md)
+* [Components](components/components.md)
 
