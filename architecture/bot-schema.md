@@ -1,4 +1,4 @@
-# Bot Schema
+# Bot Design diagram
 
 
 

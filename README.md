@@ -23,8 +23,8 @@
 
 ## Architecture
 
-* [Schema](architecture/schema.md)
-* [Bot Schema](architecture/bot-schema.md)
+* [Architecture overview](architecture/schema.md)
+* [Bot Design diagram](architecture/bot-schema.md)
 
 ## Components
 
