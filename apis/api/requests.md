@@ -109,7 +109,7 @@ Get a request by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Fetches a lead by his or her request\_id
+Fetches a request by his or her request\_id
 {% endapi-method-description %}
 
 {% api-method-spec %}

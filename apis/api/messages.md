@@ -28,12 +28,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-
-{% api-method-parameter name="page" type="string" required=false %}
-what page of results to fetch. defaults to first page.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
