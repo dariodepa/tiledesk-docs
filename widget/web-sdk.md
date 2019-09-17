@@ -1,6 +1,6 @@
 # Web SDK
 
-#### Web SDK ver 2.0
+#### Web SDK ver 3.0
 
 This guide will show you how to get started as quickly as possible with the Web SDK from TileDesk. The Web SDK will give businesses and developers the flexibility to build and customize a chat experience that meet their specific design/brand requirements.
 
@@ -29,6 +29,8 @@ To get your TILEDESK\_PROJECT\_ID go to the TileDesk Dashboard and click on the 
 ![](https://raw.githubusercontent.com/chat21/chat21-web-widget/master/docs/tiledesk-dashboard-widget-screenshots.png)
 
 ### Configuration
+
+Widget version 3.0 supports remote configuration of most parameters directly from the Widget menu of the Dashboard.
 
 You can customize the widget passing these parameters to window.tiledeskSettings object:
 
@@ -116,6 +118,14 @@ This will minimize the widget:
 
 ```text
 window.tiledesk.close();
+```
+
+### Reinitialize the widget
+
+If your app is characterized by very few page refreshes \(ie., content is swapped out on the client side but no page refresh happens, Angular, React, jQuery, etc..\) and lots of asynchronous JS, you'll need to update Tiledesk when your user's data changes. A reInit call simulates a page refresh, causing Tiledesk to reload the widget and all the configurations.
+
+```text
+window.tiledesk.reInit();
 ```
 
 ## Events

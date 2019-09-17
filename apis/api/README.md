@@ -95,6 +95,7 @@ Below the apis:
 
 * [Requests](requests.md)
 * [Leads](leads.md)
+* [Activities](activities.md)
 
 
 
