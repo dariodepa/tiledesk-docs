@@ -78,9 +78,7 @@ Example:
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK/messages
 ```
 
-
-
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/messages/:message_id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/messages/:message\_id" %}
 {% api-method-summary %}
 Get the message by request id and message id
 {% endapi-method-summary %}
@@ -96,7 +94,7 @@ Fetche the message by his or her id
 the request identifier
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="message_id" type="string" required=true %}
+{% api-method-parameter name="message\_id" type="string" required=true %}
 the message identifier
 {% endapi-method-parameter %}
 
