@@ -97,8 +97,8 @@ use "application/json" value
 The department name
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="routing" type="string" required=true %}
-The department routing type. Permitted values: 'assigned', 'pooled'
+{% api-method-parameter name="routing" type="string" required=false %}
+The department routing type. Permitted values: 'assigned', 'pooled' (default)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id_group" type="string" required=false %}
