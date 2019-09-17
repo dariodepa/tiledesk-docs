@@ -96,6 +96,11 @@ Fetche the message by his or her id
 the request identifier
 {% endapi-method-parameter %}
 
+{% api-method-path-parameters %}
+{% api-method-parameter name="message_id" type="string" required=true %}
+the message identifier
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="project\_id" type="string" required=true %}
 the Project Id is a unique code assigned to your project when you create it in Tiledesk.
 {% endapi-method-parameter %}
