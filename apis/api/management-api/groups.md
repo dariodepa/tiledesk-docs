@@ -1,7 +1,5 @@
 # Groups
 
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/groups" %}
 {% api-method-summary %}
 Get all groups
@@ -24,7 +22,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -74,13 +71,9 @@ Example
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups
 ```
 
-
-
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/groups/:id" %}
 {% api-method-summary %}
-Get the group by id 
+Get the group by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -137,5 +130,4 @@ Example:
 ```text
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups/5c34b52a9f22a7001681e888
 ```
-
 

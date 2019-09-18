@@ -1,6 +1,5 @@
 # Departments
 
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
 Get all departments
@@ -23,7 +22,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -63,7 +61,6 @@ Example
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
 ```
 
-
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
 Create a new department
@@ -92,20 +89,17 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="name" type="string" required=true %}
 The department name
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="routing" type="string" required=false %}
-The department routing type. Permitted values: 'assigned', 'pooled' (default)
+The department routing type. Permitted values: 'assigned', 'pooled' \(default\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="id_group" type="string" required=false %}
-The group of user assigned to the department. 
+{% api-method-parameter name="id\_group" type="string" required=false %}
+The group of user assigned to the department.
 {% endapi-method-parameter %}
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -143,3 +137,4 @@ Example:
 ```text
 curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new department1", "routing":"pooled"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
 ```
+
