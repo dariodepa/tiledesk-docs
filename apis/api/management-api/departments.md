@@ -89,6 +89,7 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+
 {% api-method-parameter name="name" type="string" required=true %}
 The department name
 {% endapi-method-parameter %}
@@ -98,8 +99,17 @@ The department routing type. Permitted values: 'assigned', 'pooled' \(default\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id\_group" type="string" required=false %}
-The group of user assigned to the department.
+The group of users assigned to the department.
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="id\_bot" type="string" required=false %}
+The bot assigned to the department.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="bot\_only " type="boolean" required=false %}
+Specify if the visitor can talk only with a bot or even with an agent. Default value: false
+{% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
