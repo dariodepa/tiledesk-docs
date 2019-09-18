@@ -64,11 +64,11 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
-Get all departments
+Get a department by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows an account to list all the departments of the project.
+Allows an account to get a department of the project.
 {% endapi-method-description %}
 
 {% api-method-spec %}
