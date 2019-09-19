@@ -61,7 +61,6 @@ Example
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
 ```
 
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
 Get a department by id
@@ -81,7 +80,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% api-method-parameter name="id" type="string" required=true %}
 The department identifier
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -126,7 +124,6 @@ Example
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
 ```
 
-
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
 Create a new department
@@ -155,7 +152,6 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="name" type="string" required=true %}
 The department name
 {% endapi-method-parameter %}
@@ -175,7 +171,6 @@ The bot assigned to the department.
 {% api-method-parameter name="bot\_only " type="boolean" required=false %}
 Specify if the visitor can talk only with a bot or even with an agent. Default value: false
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -214,9 +209,6 @@ Example:
 curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new department1", "routing":"pooled"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
 ```
 
-
-
-
 {% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/departments/:id" %}
 {% api-method-summary %}
 Update a department
@@ -236,7 +228,6 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% api-method-parameter name="id" type="string" required=true %}
 The department identifier
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -250,7 +241,6 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="name" type="string" required=true %}
 The department name
 {% endapi-method-parameter %}
@@ -270,7 +260,6 @@ The bot assigned to the department.
 {% api-method-parameter name="bot\_only " type="boolean" required=false %}
 Specify if the visitor can talk only with a bot or even with an agent. Default value: false
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -309,12 +298,6 @@ Example:
 curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new department1", "routing":"pooled"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
 ```
 
-
-
-
-
-
-
 {% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/departments/:id" %}
 {% api-method-summary %}
 Delete a department
@@ -334,7 +317,6 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% api-method-parameter name="id" type="string" required=true %}
 The department identifier
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -346,7 +328,6 @@ authorization token. Basic Auth or JWT
 use "application/json" value
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -383,3 +364,4 @@ Example:
 ```text
 curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
 ```
+
