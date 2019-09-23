@@ -14,7 +14,7 @@
   * [Leads](apis/api/leads.md)
   * [Activities](apis/api/activities.md)
   * [Messages](apis/api/messages.md)
-  * [Bots](apis/api/bots/bots.md)
+  * [Bots](apis/api/bots/README.md)
   * [Management Api](apis/api/management-api/README.md)
     * [Departments](apis/api/management-api/departments.md)
     * [Groups](apis/api/management-api/groups.md)
