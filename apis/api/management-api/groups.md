@@ -284,7 +284,7 @@ The group members ids.
 Example:
 
 ```text
-curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new group1", "members":["5ab0f3fa57066e0014bfd71e"]}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/groups/5c34b52a9f22a7001681e888
+curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new group1", "members":["5ab0f3fa57066e0014bfd71e"]}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups/groups/5c34b52a9f22a7001681e888
 ```
 
 {% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/groups/:id" %}
