@@ -176,11 +176,11 @@ curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 
 
 {% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/faq_kb/:id" %}
 {% api-method-summary %}
-Update a bot
+Update a faq
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows to update a bot.
+Allows to update a faq.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -191,7 +191,7 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="string" required=true %}
-The bot identifier
+The faq identifier
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
