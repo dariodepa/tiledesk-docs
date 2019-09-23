@@ -27,7 +27,7 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="id_faq_kb" type="string" required=true %}
 the bot id
 {% endapi-method-parameter %}
-
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
