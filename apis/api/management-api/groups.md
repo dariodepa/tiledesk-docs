@@ -131,15 +131,6 @@ Example:
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups/5c34b52a9f22a7001681e888
 ```
 
-
-
-
-
-
-
-
-
-
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/groups" %}
 {% api-method-summary %}
 Create a new group
@@ -175,7 +166,6 @@ The group name
 {% api-method-parameter name="members" type="array" required=true %}
 The group members ids.
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -250,9 +240,7 @@ The group name
 {% api-method-parameter name="members" type="array" required=true %}
 The group members ids.
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -350,3 +338,4 @@ Example:
 ```text
 curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups/5c34b52a9f22a7001681e888
 ```
+

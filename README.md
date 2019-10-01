@@ -37,3 +37,7 @@
 
 * [Components](components/components.md)
 
+## ChatBot
+
+* [Integrate your ChatBot](chatbot/integrate-your-chatbot.md)
+

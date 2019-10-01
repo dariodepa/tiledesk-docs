@@ -1,6 +1,6 @@
 # Bots
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/faq_kb" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/faq\_kb" %}
 {% api-method-summary %}
 Get all bots
 {% endapi-method-summary %}
@@ -67,7 +67,7 @@ Example
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq_kb
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/faq_kb" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/faq\_kb" %}
 {% api-method-summary %}
 Get a bot by id
 {% endapi-method-summary %}
@@ -125,7 +125,7 @@ Example
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq_kb/5be9b2ecc72a050015e14951
 ```
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/faq_kb" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/faq\_kb" %}
 {% api-method-summary %}
 Create a new bot
 {% endapi-method-summary %}
@@ -164,7 +164,6 @@ The bot external endpoint
 {% api-method-parameter name="external" type="boolean" required=false %}
 True if external otherwise false for internal bot
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -198,7 +197,7 @@ Example:
 curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"bot1"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq_kb
 ```
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/faq_kb/:id" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/faq\_kb/:id" %}
 {% api-method-summary %}
 Update a bot
 {% endapi-method-summary %}
@@ -241,9 +240,7 @@ The bot external endpoint
 {% api-method-parameter name="external" type="boolean" required=false %}
 True if external otherwise false for internal bot
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -276,7 +273,7 @@ Example:
 curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"bot1"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq_kb/5be9b2ecc72a050015e14951
 ```
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/faq_kb/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/faq\_kb/:id" %}
 {% api-method-summary %}
 Delete a bot
 {% endapi-method-summary %}
@@ -337,3 +334,4 @@ Example:
 ```text
 curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq_kb/5be9b2ecc72a050015e14951
 ```
+
