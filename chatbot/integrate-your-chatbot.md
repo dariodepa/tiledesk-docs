@@ -6,7 +6,7 @@ Follow these points:
 2. Select "**External Bot**"
 3. Insert your custom chatbot **Endpoint**
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 
 

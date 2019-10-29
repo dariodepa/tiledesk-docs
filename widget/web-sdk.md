@@ -52,6 +52,8 @@ You can customize the widget passing these parameters to window.tiledeskSettings
 * **fullscreenMode**: if it is true, the chat window is open in fullscreen mode. Permitted values: true, false. Default value : false
 * **themeColor**: allows you to change the main widget's color \(color of the header, color of the launcher button, other minor elements\). Permitted values: Hex color codes, e.g. \#87BC65 and RGB color codes, e.g. rgb\(135,188,101\)
 * **themeForegroundColor**: allows you to change text and icons' color. Permitted values: Hex color codes, e.g. \#425635 and RGB color codes, e.g. rgb\(66,86,53\)
+* **departmentID:** to skip departments selection, you can set the department ID upon which the widget must start the new conversation.
+* **isShown:** If true \(default\) the widget is shown otherwise \(false\) the widget is hidden.
 * **showWidgetNameInConversation**. If you want to display the widget title in the conversations, set the showWidgetNameInConversation field to true. It is advisable if you need to manage multiple projects. Value type : boolean. The default value is false.
 * **allowTranscriptDownload**: allows the user to download the chat transcript. The download button appears when the chat is closed by the operator. Permittet values: true, false. Default value: false
 * **marginX**: Set the side margin, left or right depending on the align property. Default value : 20px
@@ -118,6 +120,22 @@ This will minimize the widget:
 
 ```text
 window.tiledesk.close();
+```
+
+### Hide the widget
+
+This will hide the widget:
+
+```text
+window.tiledesk.hide();
+```
+
+### Show the widget
+
+This will show the widget:
+
+```text
+window.tiledesk.show();
 ```
 
 ### Reinitialize the widget
