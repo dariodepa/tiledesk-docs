@@ -152,6 +152,20 @@ window.tiledesk.reInit();
 
 Register an event handler to an event type.
 
+Available events:
+
+| event\_name | description |
+| :--- | :--- |
+| loadParams | Fired when the parameters are loaded. |
+| beforeMessageSend | Fired before the message sending. |
+| afterMessageSend | This event is generated after the message has been sent. |
+| onInit | Fired when the widget is initialized |
+| onOpen | Fired when the widget is open |
+| onClose | Fired when the widget is closed |
+| onOpenEyeCatcher | Fired when the callout box is open |
+| onClosedEyeCatcher | Fired when the callout box is closed |
+| isLoggedIn | The event is generated when the user is logged in |
+
 The handler will have the signature function\(event\_data\).
 
 event\_data is a Javascript CustomEvent. More info about CustomEvent [here](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent)
