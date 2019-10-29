@@ -48,5 +48,4 @@
   * [Create a Firebase project](installation/running-tiledesk-with-docker-compose/create-a-firebase-project.md)
   * [Detailed Chat21 Cloud Function installation](installation/running-tiledesk-with-docker-compose/detailed-chat21-cloud-function-installation.md)
   * [Open the ports](installation/running-tiledesk-with-docker-compose/open-the-ports.md)
-* [Untitled](installation/untitled.md)
 
