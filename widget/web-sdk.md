@@ -138,12 +138,32 @@ This will show the widget:
 window.tiledesk.show();
 ```
 
+### 
+
+### 
+
 ### Reinitialize the widget
 
 If your app is characterized by very few page refreshes \(ie., content is swapped out on the client side but no page refresh happens, Angular, React, jQuery, etc..\) and lots of asynchronous JS, you'll need to update Tiledesk when your user's data changes. A reInit call simulates a page refresh, causing Tiledesk to reload the widget and all the configurations.
 
 ```text
 window.tiledesk.reInit();
+```
+
+### Make a logout
+
+This will logout the widget:
+
+```text
+window.tiledesk.logout();
+```
+
+### Show or hide the PreChatForm 
+
+This parameter configurare the PreChatForm visibility:
+
+```text
+window.tiledesk.setPreChatForm(true|false);
 ```
 
 ## Events
