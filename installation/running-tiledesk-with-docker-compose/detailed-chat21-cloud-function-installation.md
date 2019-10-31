@@ -38,6 +38,12 @@ Specify an alias for the firebase project \(Example test\)
 
 ![](../../.gitbook/assets/image%20%2810%29.png)
 
+Enable Chat21 support mode with:
+
+```text
+$ firebase functions:config:set support.enabled=true
+```
+
 Deploy the Chat21 Cloud Functions:
 
 ```text
