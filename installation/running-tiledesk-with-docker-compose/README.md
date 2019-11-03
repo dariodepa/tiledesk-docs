@@ -168,7 +168,12 @@ To configure the parameters open the the following URL:
 
 ![](../../.gitbook/assets/image%20%281%29.png)
 
-## 5. Open the Dashboard
+Optionally if you want to configure the env from command line run:  
+
+
+```text
+docker-compose run server nano ./confenv/.env
+```
 
 Open the the following URL:
 
