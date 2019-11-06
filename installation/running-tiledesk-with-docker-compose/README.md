@@ -1,5 +1,7 @@
 ---
-description: This guide is still in beta.
+description: >-
+  This guide is still in beta. The docker images is nightly build so can
+  contains bugs and instability.
 ---
 
 # Running Tiledesk with Docker Compose
