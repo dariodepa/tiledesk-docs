@@ -164,14 +164,7 @@ You must set the following properties:
 * CHAT21\_APPID. Enter the value **tilechat**
 * CHAT21\_ADMIN\_TOKEN. The super admin password.
 
-To configure the parameters open the the following URL:
-
-[localhost:3000/admin](http://localhost:3000/admin) 
-
-![](../../.gitbook/assets/image%20%281%29.png)
-
-Optionally if you want to configure the env from command line run:  
-
+To configure the parameters run the following command:
 
 ```text
 docker-compose run server nano ./confenv/.env
