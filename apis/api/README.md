@@ -96,6 +96,9 @@ Below the apis:
 * [Requests](requests.md)
 * [Leads](leads.md)
 * [Activities](activities.md)
+* [Messages](messages.md)
+* [ChatBot](bot.md)
+* [Management](management-api.md)
 
 
 
