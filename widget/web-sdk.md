@@ -78,7 +78,7 @@ You can customize the widget passing these parameters to window.tiledeskSettings
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id; //js.async=!0;
-        js.src = "./launch.js";
+        js.src = "https://widget.tiledesk.com/v3/launch.js";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'tiledesk-jssdk'));
     </script>
