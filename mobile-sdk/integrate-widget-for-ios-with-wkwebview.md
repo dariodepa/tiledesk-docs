@@ -19,28 +19,28 @@ import UIKit
 import WebKit
 
 class WebViewViewController: UIViewController, WKUIDelegate {
- 
+
     @IBOutlet weak var webView: WKWebView!
     @IBAction func actionClosing(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
-    
+
     override func loadView() {
-        
+
         let image = UIImage(named: "ic_navigation_bar")!
         let nav = self.navigationController?.navigationBar
         let tintColor = UIColor(red: 51, green: 71, blue: 94, alpha: 1)
         nav?.setupNavigationBar(barStyleBlack: true, tintColor: tintColor, image: image)
-        
-        
+
+
         let webConfiguration = WKWebViewConfiguration()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
         view = webView
     }
-    
-    
-    
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = "https://widget.tiledesk.com/v3/index.html?tiledesk_projectid=<CHANGE_IT>&tiledesk_isopen=true&tiledesk_fullscreenMode=true&tiledesk_hideHeaderCloseButton=true"
@@ -48,7 +48,7 @@ class WebViewViewController: UIViewController, WKUIDelegate {
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -61,7 +61,6 @@ class WebViewViewController: UIViewController, WKUIDelegate {
     */
 
 }
-
 ```
 
 ## Web View Controller

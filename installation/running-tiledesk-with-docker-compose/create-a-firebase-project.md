@@ -42,7 +42,7 @@
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//15650377fe.png)
 
-**Step 14 :** Here is your **apiKey, authDomain and** databaseURL. Copy appropriate keys and paste them in [Tiledesk Environment Config page](http://localhost:3000/admin).
+**Step 14 :** Here is your **apiKey, authDomain and** databaseURL.
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//179943a7c0.png)
 
@@ -81,35 +81,48 @@ Click End
 ## **Create a Storage**
 
   
-**Step 18:** Click on **Storage** from left menu
+**Step 19:** Click on **Storage** from left menu
 
-**Step 19:** click on **Get Started**
+**Step 20:** click on **Get Started**
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//50259aa1c.png)
 
-**Step 20:** Click on **Next**
+**Step 21:** Click on **Next.** 
+
+**Set as public access like this:**
+
+```text
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write
+    }
+  }
+}
+
+```
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//1998685d59.png)
 
-**Step 24 :** Click on **Done**
+**Step 22 :** Click on **Done**
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//1999ecc634.png)
 
 ## **Create an SDK Firebase admin account**
 
-**Step 25 :** Go to **project setting**
+**Step 23 :** Go to **project setting**
 
 ![](../../.gitbook/assets/image%20%2827%29.png)
 
-**Step 26 :** Under  on **Service Account** tab, click on **Generate new private key** button
+**Step 24 :** Under  on **Service Account** tab, click on **Generate new private key** button
 
 ![](../../.gitbook/assets/image%20%2825%29.png)
 
-**Step 27**. Open the private key with a text editor and **view the parameters**
+**Step 25**. Open the private key with a text editor and **view the parameters**
 
 ## **Get the Cloud Function URL**
 
-**Step 28**. Under **Functions** tab get the **Chat21 Cloud Function URL**
+**Step 26**. Under **Functions** tab get the **Chat21 Cloud Function URL**
 
 ![](../../.gitbook/assets/image%20%283%29.png)
 

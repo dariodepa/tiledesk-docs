@@ -97,10 +97,8 @@ Below the apis:
 * [Leads](leads.md)
 * [Activities](activities.md)
 * [Messages](messages.md)
-* [ChatBot](bots\README.md)
-* [Management](management-api\README.md)
-
-
+* [ChatBot](bots/)
+* [Management](management-api/)
 
 ### Legal notices
 

@@ -46,7 +46,7 @@ public class TiledeskActivity extends AppCompatActivity {
                 return super.onConsoleMessage(consoleMessage);
             }
         });
-        
+
 //        allow to snap photos
         webSettings.setAllowFileAccess(true);
 
@@ -56,7 +56,6 @@ public class TiledeskActivity extends AppCompatActivity {
 
     }
 }
-
 ```
 
 ## Layout
@@ -75,6 +74,5 @@ public class TiledeskActivity extends AppCompatActivity {
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </android.support.constraint.ConstraintLayout>
-
 ```
 
