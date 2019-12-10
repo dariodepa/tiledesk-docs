@@ -113,7 +113,7 @@ Open the the following URL:
 
 [localhost:4040](http://localhost:4040)
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 
 At this point, you have a tunnel to your local Tiledesk server. It means your development server is exposed to the outside world. Try making requests to your tunnel URLs – you will see that they hit your local server.
 
