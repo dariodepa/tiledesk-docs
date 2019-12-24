@@ -236,7 +236,7 @@ curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 
 
 
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
 {% api-method-summary %}
 Update a lead by id
 {% endapi-method-summary %}
