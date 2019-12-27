@@ -236,7 +236,7 @@ curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 
 
 
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:lead_id" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
 {% api-method-summary %}
 Update a lead by id
 {% endapi-method-summary %}
@@ -253,7 +253,7 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lead\_id" type="string" required=true %}
-The lead\_id is the lead indentifier.
+The id is the lead indentifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -319,7 +319,7 @@ curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  
 
 
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:lead_id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
 {% api-method-summary %}
 Delete a lead by id
 {% endapi-method-summary %}
@@ -336,7 +336,7 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lead\_id" type="string" required=true %}
-The lead\_id is the lead indentifier.
+The id is the lead indentifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
