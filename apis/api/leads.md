@@ -252,7 +252,7 @@ Allows to update a lead.
 The project\_id is a unique code assigned to your project when you create it in Tiledesk
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lead\_id" type="string" required=true %}
+{% api-method-parameter name="id" type="string" required=true %}
 The id is the lead indentifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
@@ -335,7 +335,7 @@ Allows to delete a lead.
 The project\_id is a unique code assigned to your project when you create it in Tiledesk
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lead\_id" type="string" required=true %}
+{% api-method-parameter name="id" type="string" required=true %}
 The id is the lead indentifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
