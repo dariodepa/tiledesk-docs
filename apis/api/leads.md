@@ -272,7 +272,7 @@ use "application/json" value
 the lead email address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="lead\_id" type="string" required=true %}
+{% api-method-parameter name="lead\_id" type="string" required=false %}
 the external id of the lead
 {% endapi-method-parameter %}
 
