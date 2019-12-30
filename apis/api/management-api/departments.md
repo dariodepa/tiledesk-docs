@@ -2,7 +2,70 @@
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
-Get all departments
+Get all active departments. No authentication needed.
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Allows an account to list all the active departments of the project.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="project\_id" type="string" required=true %}
+the Project Id is a unique code assigned to your project when you create it in Tiledesk.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+authorization token. Basic Auth or JWT
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+[
+   {
+      "_id":"5b55e806c93dde00143163df",
+      "updatedAt":"2019-08-02T08:08:22.292Z",
+      "createdAt":"2018-07-23T14:36:54.410Z",
+      "name":"Default Department",
+      "id_project":"5b55e806c93dde00143163dd",
+      "createdBy":"5aaa99024c3b110014b478f0",
+      "online_msg":"Describe shortly your problem, you will be contacted by an agent..",
+      "offline_msg":"",
+      "__v":0,
+      "bot_only":false,
+      "id_bot":"5be9b2ecc72a050015e14951",
+      "status":1,
+      "default":true,
+      "routing":"assigned"
+   }
+]
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Example
+
+```text
+curl -v -X GET https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
+```
+
+
+
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments/allstatus" %}
+{% api-method-summary %}
+Get all departments (active or hidden).
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -58,8 +121,10 @@ authorization token. Basic Auth or JWT
 Example
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/allstatus
 ```
+
+
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
