@@ -184,26 +184,32 @@ the message text
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="departmentid" type="string" required=false %}
-The selected department identifier
+The selected department identifier. Valid only for the first message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sourcePage" type="string" required=false %}
-The source page of the request
+The source page of the request. Valid only for the first message
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="language" type="string" required=false %}
-The language of the request
+The language of the request. Valid only for the first message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="userAgent" type="string" required=false %}
-The userAgent string of the request
+The userAgent string of the request. Valid only for the first message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="attributes" type="object" required=false %}
-The request custom attributes object
+it's the message custom attributes. Example: attributes = {"custom_attribute1": "value1"}.
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="type" type="string" required=false %}
+it's the message type. "text" value for textual message and "image" for sending image message(you must set metadata field). Available values: text (default) and image.
+{% endapi-method-parameter %}
 
+{% api-method-parameter name="metadata" type="object" required=false %}
+it's the image properties: src is the absolute source path of the image, width is the image width, height is the image height. Example: metadata = { "src": "https://www.tiledesk.com/wp-content/uploads/2018/03/tiledesk-logo.png", "width": 200, "height": 200 }
+{% endapi-method-parameter %}
 
 
 {% endapi-method-body-parameters %}
