@@ -1,7 +1,7 @@
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/isopen" %}
 {% api-method-summary %}
-Return if the project is open regard operating hours
+Return if the project is open regarding operating hours
 {% endapi-method-summary %}
 
 {% api-method-description %}
