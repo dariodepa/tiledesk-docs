@@ -98,6 +98,7 @@ Below the apis:
 * [Messages](messages.md)
 * [Activities](activities.md)
 * [Projects](projects.md)
+* [Team](team.md)
 * [ChatBot](bots/)
 * [Management](management-api/)
 
