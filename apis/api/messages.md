@@ -148,7 +148,7 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c
 
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/messages" %}
 {% api-method-summary %}
-Send a message
+Send a message. It only works for Tiledesk beta version v2.
 {% endapi-method-summary %}
 
 {% api-method-description %}
