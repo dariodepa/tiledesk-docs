@@ -1,6 +1,6 @@
 
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id" %}
 {% api-method-summary %}
 Get the project detail
 {% endapi-method-summary %}
@@ -65,7 +65,7 @@ authorization token. Basic Auth or JWT
 
 
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/isopen" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id/isopen" %}
 {% api-method-summary %}
 Return if the project is open regarding operating hours
 {% endapi-method-summary %}
