@@ -15,7 +15,6 @@
   * [Messages](apis/api/messages.md)
   * [Activities](apis/api/activities.md)
   * [Projects](apis/api/projects.md)
-  * [Users](apis/api/users.md)
   * [Chat Bots](apis/api/bots/README.md)
     * [Bots](apis/api/bots/bots.md)
     * [Faq](apis/api/bots/faq.md)
