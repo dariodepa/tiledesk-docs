@@ -37,6 +37,24 @@ sort direction: 1 or -1. Return the results in ascending or descending order. _d
 {% api-method-parameter name="page" type="string" required=false %}
 what page of results to fetch. defaults to first page.
 {% endapi-method-parameter %}
+
+
+{% api-method-parameter name="full\_text" type="string" required=false %}
+make a fulltext search query
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="status" type="string" required=false %}
+filter by request status. Values: 100 for assigned requests, 200 for pooled requests, 1000 for closed requests
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="dept\_id" type="string" required=false %}
+filter by department id
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="lead" type="string" required=false %}
+filter by lead id
+{% endapi-method-parameter %}
+
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
