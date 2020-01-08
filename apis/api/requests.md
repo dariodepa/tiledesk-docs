@@ -253,6 +253,18 @@ authorization token. Basic Auth or JWT
 
 {% api-method-query-parameters %}
 {% endapi-method-query-parameters %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="email" type="string" required=false %}
+the lead email address
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="fullname" type="string" required=false %}
+The lead fullname
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+
+
 {% endapi-method-request %}
 
 {% api-method-response %}
