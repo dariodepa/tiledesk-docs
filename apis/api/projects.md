@@ -97,9 +97,16 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response-example-description %}
 
 ```text
-{
-   ...
-}
+[
+   {
+      "id":"5aaa99024c3b110014b478f0",
+      "firstname":"Andrea"
+   },
+   {
+      "id":"5de9200d6722370017731969",
+      "firstname":"Nuovopre"
+   }
+]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
