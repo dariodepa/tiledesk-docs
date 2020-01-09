@@ -77,12 +77,6 @@ Select the firebase project where you want to install Chat21 Cloud Functions
 $ firebase use --add
 ```
 
-Enable Chat21 support mode with:
-
-```text
-$ firebase functions:config:set support.enabled=true
-```
-
 Deploy the Chat21 Cloud Functions:
 
 ```text
