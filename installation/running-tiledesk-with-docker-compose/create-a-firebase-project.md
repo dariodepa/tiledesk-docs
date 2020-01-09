@@ -60,23 +60,6 @@
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//514afeff3.png)
 
-## **Enable Firestore**
-
-**Step 18.** Click on **Create Database** under **Database** menu
-
-![](../../.gitbook/assets/image%20%2817%29.png)
-
-
-
-**Step 19**. Select **test mode** and click **Next**
-
-\*\*\*\*
-
-![](../../.gitbook/assets/image%20%2829%29.png)
-
-Click End
-
-![](../../.gitbook/assets/image%20%2824%29.png)
 
 ## **Create a Storage**
 
