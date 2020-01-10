@@ -227,7 +227,8 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c
 
 {% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/close" %}
 {% api-method-summary %}
-Close a request by id
+Close a request by id.
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -314,7 +315,8 @@ authorization token. Basic Auth or JWT
 
 {% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/reopen" %}
 {% api-method-summary %}
-Reopen a request by id
+Reopen a request by id.
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-summary %}
 
 {% api-method-description %}
