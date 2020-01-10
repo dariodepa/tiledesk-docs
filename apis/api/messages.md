@@ -185,19 +185,19 @@ the message text
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="departmentid" type="string" required=false %}
-The selected department identifier. Valid only for the first message.
+The selected department identifier. Accepted only on the first message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="sourcePage" type="string" required=false %}
-The source page of the request. Valid only for the first message
+The source page of the request. Accepted only on the first message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="language" type="string" required=false %}
-The language of the request. Valid only for the first message.
+The language of the request. Accepted only on the first message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="userAgent" type="string" required=false %}
-The userAgent string of the request. Valid only for the first message.
+The userAgent string of the request. Accepted only on the first message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="attributes" type="object" required=false %}
