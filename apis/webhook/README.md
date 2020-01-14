@@ -91,6 +91,9 @@ The following Events are available and you can be notified when an action relati
 | request.close | Subscribe to request being closed |
 | message.create | Subscribe to messages creations |
 | lead.create | Subscribes to leads creations |
+| faq.create | Subscribes to faq creations |
+| faq.update | Subscribes to faq being updated |
+| faq.delete | Subscribes to faq being closed |
 
 ### Webhook Notification object
 
