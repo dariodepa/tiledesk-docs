@@ -131,6 +131,7 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+
 {% api-method-parameter name="email" type="string" required=true %}
 the agent email address
 {% endapi-method-parameter %}
@@ -147,6 +148,7 @@ the firstname of the agent
 {% api-method-parameter name="lastname" type="string" required=false %}
 the lastname of the agent 
 {% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
