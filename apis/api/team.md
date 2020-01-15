@@ -105,7 +105,7 @@ authorization token. Basic Auth or JWT
 
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/project_users" %}
 {% api-method-summary %}
-Invite an agent to a project
+Invite an agent
 {% endapi-method-summary %}
 
 {% api-method-description %}
