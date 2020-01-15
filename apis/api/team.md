@@ -1,6 +1,6 @@
 
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project_users" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
 {% api-method-summary %}
 Get the team
 {% endapi-method-summary %}
@@ -103,7 +103,7 @@ authorization token. Basic Auth or JWT
 
 
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/project_users" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
 {% api-method-summary %}
 Invite an agent
 {% endapi-method-summary %}
@@ -175,7 +175,7 @@ the lastname of the agent
 
 
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/project_users/:project\_user\_id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}
 Leave a project
 {% endapi-method-summary %}
