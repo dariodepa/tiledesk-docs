@@ -6,6 +6,7 @@ Get the team
 {% endapi-method-summary %}
 
 {% api-method-description %}
+Return the team members and availability
 {% endapi-method-description %}
 
 {% api-method-spec %}
