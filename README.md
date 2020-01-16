@@ -10,6 +10,7 @@
 ## APIs
 
 * [REST API](apis/api/README.md)
+  * [Authentication](apis/api/authentication.md)
   * [Requests](apis/api/requests.md)
   * [Leads](apis/api/leads.md)
   * [Messages](apis/api/messages.md)
