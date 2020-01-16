@@ -102,6 +102,7 @@ When building an API client, we recommend treating any 500 status codes as a war
 
 Below the apis:
 
+* [Authentication](authentication.md)
 * [Requests](requests.md)
 * [Leads](leads.md)
 * [Messages](messages.md)
