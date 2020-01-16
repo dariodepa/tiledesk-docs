@@ -34,6 +34,15 @@ The examples in the docs are cURL statements. You can run the statements on a co
 
 This API is an SSL-only API. You must be a Tiledesk user to make API requests.
 
+Tiledesk supports the following user roles:
+
+* Guest: Any unknown visitor to your site who’s not logged in.
+* User:  A user is a signed-in visitor using JWT token o converted from guest type.
+* Agent: Agents are your organization’s team members who will log into the dashboard and respond to your customer’s chats
+* Admin: It's an agent with special permissions 
+* Owner: It's the project creator.
+
+
 Tiledesk supports two authentication methods:
 
 * Basic Authentication
