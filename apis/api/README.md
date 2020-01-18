@@ -65,13 +65,13 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5ab0f3275
 Use the sign-in method to get a valid JWT token:
 
 ```text
-curl -v -X POST -d 'email=<YOUR_EMAIL>&password=<YOUR_PASSWORD>' https://api.tiledesk.com/v1/auth/signin
+curl -v -X POST -H 'Content-Type:application/json' -d '{"email":"<YOUR_EMAIL>","password":"<YOUR_PASSWORD>"}' https://api.tiledesk.com/v1/auth/signin
 ```
 
 Example
 
 ```text
-curl -v -X POST -d 'email=andrea.leo@f21.it&password=123456' https://api.tiledesk.com/v1/auth/signin
+curl -v -X POST -H 'Content-Type:application/json' -d '{"email":"andrea.leo@f21.it","password":"123456"}' https://api.tiledesk.com/v1/auth/signin
 ```
 
 Example: How to use JWT token
