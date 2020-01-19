@@ -121,6 +121,7 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -136,7 +137,6 @@ use "application/json" value
 the agent email address
 {% endapi-method-parameter %}
 
-{% api-method-body-parameters %}
 {% api-method-parameter name="role" type="string" required=true %}
 the agent role. Accepted values: agent, admin
 {% endapi-method-parameter %}
