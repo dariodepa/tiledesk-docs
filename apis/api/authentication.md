@@ -59,9 +59,6 @@ the user password
 
 
 
-
-
-
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/auth/signinAnonymously" %}
 {% api-method-summary %}
 Anonymous authentication for a visitor. 
@@ -87,7 +84,7 @@ use "application/json" value
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="id_project" type="string" required=true %}
+{% api-method-parameter name="id\_project" type="string" required=true %}
 the project to which the user belongs
 {% endapi-method-parameter %}
 
@@ -178,6 +175,8 @@ the user password
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 
 
 
