@@ -228,10 +228,11 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c
 {% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/close" %}
 {% api-method-summary %}
 Close a request by id.
-It only works for Tiledesk beta version v2 environment.
+
 {% endapi-method-summary %}
 
 {% api-method-description %}
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -322,10 +323,10 @@ use "application/json" value
 {% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/reopen" %}
 {% api-method-summary %}
 Reopen a request by id.
-It only works for Tiledesk beta version v2 environment.
 {% endapi-method-summary %}
 
 {% api-method-description %}
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
