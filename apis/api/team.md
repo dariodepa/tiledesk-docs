@@ -198,9 +198,11 @@ The teammate identifier.
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
+
 
 {% endapi-method-headers %}
 
