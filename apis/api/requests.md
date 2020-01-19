@@ -965,7 +965,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="attributes" type="object" required=true %}
+{% api-method-parameter name="body" type="object" required=true %}
 the request attributes
 {% endapi-method-parameter %}
 
