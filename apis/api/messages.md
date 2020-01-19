@@ -159,9 +159,15 @@ Allows to send a message. It only works for Tiledesk beta version v2 environment
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+
 {% api-method-parameter name="project\_id" type="string" required=true %}
 The project\_id is a unique code assigned to your project when you create it in Tiledesk
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="request\_id" type="string" required=true %}
+The request identifier
+{% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -171,10 +177,6 @@ authorization token. Basic Auth or JWT
 
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="request\_id" type="string" required=true %}
-The request identifier
 {% endapi-method-parameter %}
 
 {% endapi-method-headers %}
