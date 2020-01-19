@@ -432,6 +432,17 @@ authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
+{% api-method-body-parameters %}
+{% api-method-parameter name="departmentid" type="string" required=true %}
+the department identifier
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="nobot" type="boolean" required=false %}
+esclude a bot for the assignment
+{% endapi-method-parameter %}
+
+{% endapi-method-body-parameters %}
+
 {% api-method-query-parameters %}
 {% endapi-method-query-parameters %}
 
