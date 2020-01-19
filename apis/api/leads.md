@@ -341,9 +341,7 @@ The id is the lead indentifier.
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-use "application/json" value
-{% endapi-method-parameter %}
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
