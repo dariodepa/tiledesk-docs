@@ -59,7 +59,7 @@ Anonymous authentication for a user.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows a user to authenticate anonymously on the system
+Allows a user to authenticate anonymously on the system. It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -130,7 +130,7 @@ Custom authentication for a user.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows to authenticate with a custom JWT token
+Allows to authenticate with a custom JWT token. It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
