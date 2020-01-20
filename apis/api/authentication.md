@@ -278,7 +278,7 @@ You must set the following required fields of the user object :
 
 * **_id** is the custom unique user identifier of the external authentication system.
 * **subject**. JWTs describe their subject in the sub claim. sub must be equal to value `userexternal`
-* **audience**. JWTs describe their audience in the aud claim. must be `https://tiledesk.com/projects/<YOUR_PROJECT_ID>`.
+* **audience**. JWTs describe their audience in the aud claim. Must be `https://tiledesk.com/projects/<YOUR_PROJECT_ID>`.
 
 
  Optional fields: 
