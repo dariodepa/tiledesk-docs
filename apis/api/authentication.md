@@ -279,6 +279,8 @@ Required fields:
 * **lastname** of the user
 * **other** jwt claims.
 
+You must sign the JWT with your project secret code. See here how to obtain a Project JWT secret: https://developer.tiledesk.com/widget/auth#generating-a-chat-shared-secret
+
 Example: 
 
 ```
