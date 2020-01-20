@@ -104,8 +104,13 @@ the user password
 {% endapi-method-response-example-description %}
 
 ```text
-{  
-        ...
+{
+   "success":true,
+   "token":"JWT  XYZ",
+   "user":{
+      "_id":"5ab11c6b83dc240014d46095",
+      "email":"andrea.leo@f21.it"
+   }
 }
 ```
 {% endapi-method-response-example %}
