@@ -185,10 +185,14 @@ the user password
 ```text
 {
    "success":true,
-   "token":"JWT  XYZ",
+   "token":"JWT XYZ",
    "user":{
-      "_id":"5ab11c6b83dc240014d46095",
-      "email":"andrea.leo@f21.it"
+      "_id":"5e25944ecf6bcc00178e75fa",
+      "email":"a0fe493b-a19b-44a0-99ce-414c65fc20b0@tiledesk.com",
+      "emailverified":false,
+      "createdAt":"2020-01-20T11:51:42.115Z",
+      "updatedAt":"2020-01-20T11:51:42.115Z",
+      "__v":0
    }
 }
 ```
