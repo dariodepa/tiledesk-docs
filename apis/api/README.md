@@ -42,6 +42,7 @@ Tiledesk supports the following user roles:
 * Admin: It's an agent with special permissions 
 * Owner: It's the project creator.
 
+See here the [Authentication REST API](authentication.md).
 
 Tiledesk supports two authentication methods:
 
