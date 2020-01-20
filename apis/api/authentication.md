@@ -268,16 +268,16 @@ use "application/json" value
 
 Required fields:
 
-* _id is the custom user identifier 
-* subject must be userexternal
-* audience must be 'https://tiledesk.com/projects/<PROJECT_ID>'.
+* **_id** is the custom user identifier 
+* **subject** must be userexternal
+* **audience** must be 'https://tiledesk.com/projects/<PROJECT_ID>'.
 
 
  Optional fields: 
  
-* firstname of the user
-* lastname of the user
-* other jwt claims.
+* **firstname** of the user
+* **lastname** of the user
+* **other** jwt claims.
 
 Example: 
 
