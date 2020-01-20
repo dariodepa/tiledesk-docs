@@ -109,8 +109,17 @@ the user lastname
 {% endapi-method-response-example-description %}
 
 ```text
-{  
-        ...
+{
+   "success":true,
+   "msg":"Successfully created new user.",
+   "user":{
+      "_id":"5e2593f0cf6bcc00178e75f7",
+      "email":"andrea.leo@f22.it",
+      "emailverified":false,
+      "createdAt":"2020-01-20T11:50:08.778Z",
+      "updatedAt":"2020-01-20T11:50:08.778Z",
+      "__v":0
+   }
 }
 ```
 {% endapi-method-response-example %}
