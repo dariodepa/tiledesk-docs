@@ -156,7 +156,7 @@ You must set the following properties:
 * CHAT21\_ENABLED. Enable Chat21 channel with **true** value. 
 * CHAT21\_URL. Get it [here](create-a-firebase-project.md#get-the-cloud-function-url).
 * CHAT21\_APPID. Enter the value **tilechat**
-* CHAT21\_ADMIN\_TOKEN. The super admin password.
+* CHAT21\_ADMIN\_TOKEN. The Chat21 admin token. The default value is `chat21-secret-orgAa,`. See [here](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#admin-token) to change it.
 
 To configure the parameters run the following command:
 
