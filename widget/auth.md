@@ -28,7 +28,7 @@ To generate the shared secret required for authenticated visitors
 
 Note:The shared secret is intended to remain secure. As a result, it will only appear in full one time. If you don’t have access to the shared secret and need the full secret to create your token, you can reset the secret by clicking the 'Generate' button. Regenerating a new shared secret will revoke the previous token. If you have concerns the shared secret has been compromised, you should regenerate a new one. If you need to rotate the keys, you should schedule it when Chat is offline because regenerating the secret cause visitors to be disconnected from the widget.
 
-Once you have generated the shared secret, use it to create a JWT token \(Learn more about JWT\) that you'll add to your Web Widget snippet.
+Once you have generated the shared secret, use it to create a JWT token that you'll add to your Web Widget snippet.
 
 ### Creating a JWT token
 
