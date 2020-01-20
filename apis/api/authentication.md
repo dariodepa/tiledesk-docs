@@ -267,7 +267,7 @@ use "application/json" value
 
 
 
-## Overview ##
+## Overview
 
 The Custom JWT authentication provider allows users to authenticate with an authentication system that is independent from Tiledesk. The external system must return a signed [JSON Web Token](https://jwt.io/introduction/) that contains a unique ID value for the authenticated user.
 
