@@ -266,19 +266,24 @@ use "application/json" value
 {% endapi-method %}
 
 
-Required fields: 
+Required fields:
+
 * _id is the custom user identifier 
 * subject must be userexternal
 * audience must be 'https://tiledesk.com/projects/<PROJECT_ID>'.
 
+
  Optional fields: 
+ 
 * firstname of the user
 * lastname of the user
 * other jwt claims.
 
 Example: 
-{_id: "123", firstname:"andrea", lastname:"leo", email: "email2@email.com",  customAttr: "c1", sub:  "userexternal",  aud:  "https://tiledesk.com/projects/5c81593adf767b0017d1aa68'}
 
+```
+{_id: "123", firstname:"andrea", lastname:"leo", email: "email2@email.com",  customAttr: "c1", sub:  "userexternal",  aud:  "https://tiledesk.com/projects/5c81593adf767b0017d1aa68'}
+```
 
 
 
