@@ -230,13 +230,7 @@ Allows to authenticate with a custom JWT token. It only works for Tiledesk beta 
 {% api-method-headers %}
 
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Custom JWT Authorization token. 
-Required fiedls: _id is the custom user identifier; subject must be userexternal; audience must be 'https://tiledesk.com/projects/<PROJECT_ID>'.
-
- Optional fields: firstname of the user; lastname of the user; other jwt claims.
-
-Example: 
-{_id: "123", firstname:"andrea", lastname:"leo", email: "email2@email.com",  customAttr: "c1", sub:  "userexternal",  aud:  "https://tiledesk.com/projects/5c81593adf767b0017d1aa68'}
+Custom JWT Authorization token. See below
 
 {% endapi-method-parameter %}
 
@@ -270,6 +264,20 @@ use "application/json" value
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
+Required fields: 
+* _id is the custom user identifier 
+* subject must be userexternal
+* audience must be 'https://tiledesk.com/projects/<PROJECT_ID>'.
+
+ Optional fields: 
+* firstname of the user
+* lastname of the user
+* other jwt claims.
+
+Example: 
+{_id: "123", firstname:"andrea", lastname:"leo", email: "email2@email.com",  customAttr: "c1", sub:  "userexternal",  aud:  "https://tiledesk.com/projects/5c81593adf767b0017d1aa68'}
 
 
 
