@@ -270,7 +270,7 @@ Required fields:
 
 * **_id** is the custom user identifier 
 * **subject** must be userexternal
-* **audience** must be 'https://tiledesk.com/projects/<PROJECT_ID>'.
+* **audience** must be `https://tiledesk.com/projects/<PROJECT_ID>`.
 
 
  Optional fields: 
