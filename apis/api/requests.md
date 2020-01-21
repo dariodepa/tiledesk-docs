@@ -149,17 +149,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="sortField" type="string" required=false %}
-what field to sort the results by.
-{% endapi-method-parameter %}
 
-{% api-method-parameter name="direction" type="string" required=false %}
-sort direction: 1 or -1. Return the results in ascending or descending order. _defaults to desc_
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="page" type="string" required=false %}
-what page of results to fetch. defaults to first page.
-{% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
