@@ -164,7 +164,7 @@ the project to which the user belongs
 
 
 {% api-method-parameter name="firstname" type="string" required=false %}
-the user email
+the user firstname
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lastname" type="string" required=false %}
