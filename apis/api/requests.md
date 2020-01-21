@@ -239,7 +239,7 @@ It only works for Tiledesk beta version v2 environment.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -333,7 +333,7 @@ It only works for Tiledesk beta version v2 environment.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -431,7 +431,7 @@ It only works for Tiledesk beta version v2 environment.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -457,7 +457,7 @@ the department identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="nobot" type="boolean" required=false %}
-esclude a bot for the assignment
+esclude a bot from the assignment
 {% endapi-method-parameter %}
 
 {% endapi-method-body-parameters %}
@@ -541,7 +541,7 @@ It only works for Tiledesk beta version v2 environment.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -673,7 +673,7 @@ It only works for Tiledesk beta version v2 environment.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -778,7 +778,7 @@ It only works for Tiledesk beta version v2 environment.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -800,7 +800,7 @@ use "application/json" value
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="members" type="array" required=true %}
-the participant (agent or bot) identifier array
+the participants (agent or bot) identifiers array
 {% endapi-method-parameter %}
 
 
@@ -885,7 +885,7 @@ It only works for Tiledesk beta version v2 environment.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -990,7 +990,7 @@ It only works for Tiledesk beta version v2 environment.
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
