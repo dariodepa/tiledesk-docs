@@ -287,7 +287,7 @@ You must set the following required fields of the user object :
 * **lastname**. It's the user lastname
 * **other** jwt claims.
 
-The external authentication system must create the JWT signing the object user with the project authentication secret code. See here to obtain a Project JWT Secret: https://developer.tiledesk.com/widget/auth#generating-a-chat-shared-secret
+The external authentication system must create the JWT signing the user object with the project authentication secret code. See here to obtain a Project JWT Secret: https://developer.tiledesk.com/widget/auth#generating-a-chat-shared-secret
 
 User object example: 
 
