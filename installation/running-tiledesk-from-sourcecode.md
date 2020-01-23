@@ -41,7 +41,7 @@ Also you can find useful information regarding chat21-cloud-functions [here](det
 
 ## 3. Run tiledesk-server 
 
-To install tiledesk-server please follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
+To install tiledesk-server version 2 please use the **dev** branch of Github and follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
 
 ## 4. Configure the support module of  chat21-cloud-functions
 
