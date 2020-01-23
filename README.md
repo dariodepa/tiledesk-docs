@@ -48,8 +48,8 @@
 
 * [Installation](installation/installation.md)
 * [Running Tiledesk with Docker Compose](installation/running-tiledesk-with-docker-compose/README.md)
-* [Running Tiledesk from Source Code](installation/running-tiledesk-from-sourcecode.md)
+* [Running Tiledesk from Source Code](installation/running-tiledesk-from-sourcecode/README.md)
 * [Create a Firebase project](installation/running-tiledesk-with-docker-compose/create-a-firebase-project.md)
-* [Detailed Chat21 Cloud Function installation](installation/running-tiledesk-with-docker-compose/detailed-chat21-cloud-function-installation.md)
+* [Detailed Chat21 Cloud Function installation](installation/detailed-chat21-cloud-function-installation.md)
 * [Open the ports](installation/running-tiledesk-with-docker-compose/open-the-ports.md)
 
