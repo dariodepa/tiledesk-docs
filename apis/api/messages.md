@@ -142,18 +142,24 @@ Example:
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK/messages/5c81593adf767b0017d1aa68
 ```
 
+
+
+
+
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/messages" %}
 {% api-method-summary %}
-Send a message.
+Send a message. 
 {% endapi-method-summary %}
 
 {% api-method-description %}
 Allows to send a message. It only works for Tiledesk beta version v2 environment.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+
 {% api-method-parameter name="project\_id" type="string" required=true %}
 The project\_id is a unique code assigned to your project when you create it in Tiledesk
 {% endapi-method-parameter %}
@@ -161,6 +167,7 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% api-method-parameter name="request\_id" type="string" required=true %}
 The request identifier
 {% endapi-method-parameter %}
+
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -171,6 +178,7 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
@@ -195,16 +203,18 @@ The userAgent string of the request. Accepted only on the first message.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="attributes" type="object" required=false %}
-it's the message custom attributes. Example: attributes = {"custom\_attribute1": "value1"}.
+it's the message custom attributes. Example: attributes = {"custom_attribute1": "value1"}.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="type" type="string" required=false %}
-it's the message type. "text" value for textual message and "image" for sending image message\(you must set metadata field\). Available values: text \(default\) and image.
+it's the message type. "text" value for textual message and "image" for sending image message(you must set metadata field). Available values: text (default) and image.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="metadata" type="object" required=false %}
 it's the image properties: src is the absolute source path of the image, width is the image width, height is the image height. Example: metadata = { "src": "https://www.tiledesk.com/wp-content/uploads/2018/03/tiledesk-logo.png", "width": 200, "height": 200 }
 {% endapi-method-parameter %}
+
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -239,4 +249,5 @@ Example:
 ```text
 curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"text":"hello from api"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/1234/messages
 ```
+
 

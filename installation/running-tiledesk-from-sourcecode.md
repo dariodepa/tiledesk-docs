@@ -27,7 +27,7 @@ Tiledesk is composed by the following components:
 
 ## Create and configure a Firebase project
 
-Sign up on Firebase and create a project. Please refer to our guide or directly to Firebase [https://firebase.google.com](https://firebase.google.com) to accomplish and better understand this task.
+Sign up on Firebase and create a project. Please refer to our [guide](create-a-firebase-project.md) or directly to Firebase [https://firebase.google.com](https://firebase.google.com) to accomplish and better understand this task.
 
 ## Install chat21-cloud-functions
 

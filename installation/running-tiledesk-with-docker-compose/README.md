@@ -8,7 +8,7 @@ description: >-
 
 Note that you need to know a bit of [Docker](https://docs.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) to follow these instructions.
 
-Tiledesk uses [Chat21](http://www.chat21.org) as messaging platform. Refer to [Architecture overview](../architecture/schema.md) to undestand the product's modules.
+Tiledesk uses [Chat21](http://www.chat21.org) as messaging platform. Refer to [Architecture overview](../../architecture/schema.md) to undestand the product's modules.
 
 **Please help us improving this documentation**: if you encounter a problem, something you don’t understand or a typo, use [this link](https://github.com/Tiledesk/tiledesk-server/issues) to ask a question. You could also open a PR to directly fix the documentation on Github, if you want.
 
@@ -107,7 +107,7 @@ Open the the following URL:
 
 [localhost:4040](http://localhost:4040)
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 
 At this point, you have a tunnel to your local Tiledesk server. It means your development server is exposed to the outside world. Try making requests to your tunnel URLs – you will see that they hit your local server.
 

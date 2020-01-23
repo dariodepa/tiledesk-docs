@@ -230,6 +230,12 @@ Example:
 curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"fullanem":"andrea", "lead_id":"123456"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads
 ```
 
+
+
+
+
+
+
 {% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
 {% api-method-summary %}
 Update a lead by id
@@ -302,6 +308,13 @@ Example:
 curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"fullanem":"andrea", "lead_id":"123456"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
 ```
 
+
+
+
+
+
+
+
 {% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
 {% api-method-summary %}
 Delete a lead by id
@@ -327,7 +340,12 @@ The id is the lead indentifier.
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
+
+
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -359,4 +377,3 @@ Example:
 ```text
 curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
 ```
-
