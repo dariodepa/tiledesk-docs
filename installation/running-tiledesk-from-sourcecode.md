@@ -47,6 +47,23 @@ Also you can find the detailed configuration steps of chat21-cloud-functions [he
 
 To install tiledesk-server version 2 please use the **dev** branch of Github project and follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
 
+You must set the following properties under .env file:
+
+* FIREBASE\_PRIVATE\_KEY. Get it [here](create-a-firebase-project.md#create-an-sdk-firebase-admin-account). More info about firebase private key [here](https://firebase.google.com/docs/admin/setup#initialize_the_sdk).
+* FIREBASE\_CLIENT\_EMAIL. Get it [here](create-a-firebase-project.md#create-an-sdk-firebase-admin-account).
+* FIREBASE\_PROJECT\_ID. Get it [here](create-a-firebase-project.md#create-an-app).
+* FIREBASE\_APIKEY. Get it [here](create-a-firebase-project.md#create-an-app).
+* FIREBASE\_AUTHDOMAIN. Get it [here](create-a-firebase-project.md#create-an-app).
+* FIREBASE\_DATABASEURL. Get it [here](create-a-firebase-project.md#create-an-app).
+* FIREBASE\_STORAGEBUCKET
+* FIREBASE\_MESSAGINGSENDERID. Get it [here](create-a-firebase-project.md#create-an-app). A unique numerical value created when you create your Firebase project, available in the [Cloud Messaging](https://console.firebase.google.com/project/_/settings/cloudmessaging/) tab of the Firebase console **Settings** pane. 
+* CHAT21\_ENABLED. Enable Chat21 channel with **true** value. 
+* CHAT21\_URL. Get it [here](create-a-firebase-project.md#get-the-cloud-function-url).
+* CHAT21\_APPID. Enter the value **tilechat**
+* CHAT21\_ADMIN\_TOKEN. The Chat21 admin token. The default value is `chat21-secret-orgAa,`. See [here](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#admin-token) to change it.
+
+To configure the parameters run the following command:
+
 ## 4. Configure the webhook module of chat21-cloud-functions
 
 Chat21 communicates with Tiledesk through webhooks. When a Chat21 event occurs - a new message arrives, a new member join a group, etc - a new Event is created and notified to Tiledesk Server. Chat21 then makes an HTTP POST request to send the Event to the Tiledesk webhook endpoint.
