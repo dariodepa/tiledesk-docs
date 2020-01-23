@@ -25,23 +25,27 @@ Tiledesk is composed by the following components:
     * /chat -&gt; Chat21 ionic component
   * Install the latest stable release versions of the components. Check the last release under Releases tab of every Github components pages.
 
-## Create and configure a Firebase project
+## Overview
+
+Please follow this guide in order to install all the Tiledesk components.
+
+## 1. Create and configure a Firebase project
 
 Sign up on Firebase and create a project. Please refer to our [guide](create-a-firebase-project.md) or directly to Firebase [https://firebase.google.com](https://firebase.google.com) to accomplish and better understand this task.
 
-## Install chat21-cloud-functions
+## 2. Install chat21-cloud-functions
 
-To install chat21-cloud-functions follow this README: [https://github.com/chat21/chat21-cloud-functions](https://github.com/chat21/chat21-cloud-functions)
+To install and configure chat21-cloud-functions follow this README: [https://github.com/chat21/chat21-cloud-functions](https://github.com/chat21/chat21-cloud-functions)
 
-## tiledesk-server
+## 3. Run tiledesk-server 
 
-Download the tiledesk-server source code from github or from a private repo \(for Enterprise version\). Follow this guide: [https://github.com/Tiledesk/tiledesk-server/blob/master/README.md\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/blob/master/README.md#install-from-source-code)
+To install tiledesk-server please follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
 
-## Configure the support module of  chat21-cloud-functions
+## 4. Configure the support module of  chat21-cloud-functions
 
 Follow this guide: [https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup\_options.md\#support-mode](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#support-mode)
 
-## tiledesk-dashboard
+## Install and configure tiledesk-dashboard component
 
 Follow this guide to install and configure Tiledesk-Dasboard: [https://github.com/Tiledesk/tiledesk-dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
 
