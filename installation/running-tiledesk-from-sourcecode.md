@@ -22,7 +22,7 @@ Tiledesk is composed by the following components:
 * Create a DNS entries for:
   * tiledesk-server. Create a DNS entry like this: api.YOURDOMAIN.COM. Then configure a virtualhost for it.
   * chat21-web-widget. Create a DNS entry like widget.YOURDOMAIN.COM. 
-  * tiledesk-dashboard and chat21-ionic are suggested to by under the same domain to share the authentications tokens. Create a DNS entry like support.YOURDOMAIN.COM. You must be able to access :
+  * tiledesk-dashboard and chat21-ionic \(the desktop chat\) are suggested to be under the same domain to share authentications tokens. Create a DNS entry like support.YOURDOMAIN.COM. You must be able to access:
     * /dashboard -&gt; Tiledesk dashboard component
     * /chat -&gt; Chat21 ionic component
   * Install the latest stable release versions of the components. Check the last release under Releases tab of every Github components pages.
