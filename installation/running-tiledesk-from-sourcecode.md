@@ -41,8 +41,6 @@ Sign up on Firebase and create a project. Please refer to our [guide](create-a-f
 
 To install and configure chat21-cloud-functions follow this README: [https://github.com/chat21/chat21-cloud-functions](https://github.com/chat21/chat21-cloud-functions)
 
-Also you can find the detailed configuration steps of chat21-cloud-functions [here](detailed-chat21-cloud-function-installation.md).
-
 ## 3. Install and configure tiledesk-server 
 
 To install tiledesk-server version 2 please use the **dev** branch of Github project and follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
