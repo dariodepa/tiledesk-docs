@@ -67,7 +67,7 @@ Use sudo if you installed docker with root privilege.
 
 More info here: [Detailed Chat21 Cloud Function installation](detailed-chat21-cloud-function-installation.md).
 
-Authenticate to Firebase \_\_running :
+Authenticate to Firebase running :
 
 ```text
 $ firebase login
