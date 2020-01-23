@@ -45,7 +45,7 @@ Also you can find the detailed configuration steps of chat21-cloud-functions [he
 
 ## 3. Run tiledesk-server 
 
-To install tiledesk-server version 2 please use the **dev** branch of Github and follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
+To install tiledesk-server version 2 please use the **dev** branch of Github project and follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
 
 ## 4. Configure the webhook module of chat21-cloud-functions
 
