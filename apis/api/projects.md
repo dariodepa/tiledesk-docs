@@ -1,4 +1,4 @@
-
+# Projects
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id" %}
 {% api-method-summary %}
@@ -6,6 +6,7 @@ Get the project detail
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -21,7 +22,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -63,15 +63,13 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id/users/availables" %}
 {% api-method-summary %}
 Return the available agents
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -87,7 +85,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -113,14 +110,13 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id/isopen" %}
 {% api-method-summary %}
 Return if the project is open regarding operating hours
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -136,7 +132,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -152,3 +147,4 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+

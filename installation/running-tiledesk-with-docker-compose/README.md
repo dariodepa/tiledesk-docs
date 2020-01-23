@@ -47,7 +47,7 @@ $ docker-compose logs -t -f --tail 5
 
 ### **2.1 Create a Firebase project**
 
-Sign up on Firebase and create a project. Please refer to [our guide](create-a-firebase-project.md) or directly to Firebase [https://firebase.google.com](https://firebase.google.com/) to accomplish and better understand this task.
+Sign up on Firebase and create a project. Please refer to [our guide](../create-a-firebase-project.md) or directly to Firebase [https://firebase.google.com](https://firebase.google.com/) to accomplish and better understand this task.
 
 Tiledesk uses [Chat21](http://www.chat21.org) and Chat21 relies on Firebase as the backend, so it's really important for you to acquire familiarity with Firebase and all of his services.
 
@@ -63,7 +63,7 @@ $ docker-compose run --service-ports cloud-functions
 
 Use sudo if you installed docker with root privilege.
 
-More info here: [Detailed Chat21 Cloud Function installation](detailed-chat21-cloud-function-installation.md).
+More info here: [Detailed Chat21 Cloud Function installation](../detailed-chat21-cloud-function-installation.md).
 
 Authenticate to Firebase \_\_running :
 
@@ -145,16 +145,16 @@ Tiledesk is composed by different clients \(web widget, web chat, dashboard, etc
 
 You must set the following properties:
 
-* FIREBASE\_PRIVATE\_KEY. Get it [here](create-a-firebase-project.md#create-an-sdk-firebase-admin-account). More info about firebase private key [here](https://firebase.google.com/docs/admin/setup#initialize_the_sdk).
-* FIREBASE\_CLIENT\_EMAIL. Get it [here](create-a-firebase-project.md#create-an-sdk-firebase-admin-account).
-* FIREBASE\_PROJECT\_ID. Get it [here](create-a-firebase-project.md#create-an-app).
-* FIREBASE\_APIKEY. Get it [here](create-a-firebase-project.md#create-an-app).
-* FIREBASE\_AUTHDOMAIN. Get it [here](create-a-firebase-project.md#create-an-app).
-* FIREBASE\_DATABASEURL. Get it [here](create-a-firebase-project.md#create-an-app).
+* FIREBASE\_PRIVATE\_KEY. Get it [here](../create-a-firebase-project.md#create-an-sdk-firebase-admin-account). More info about firebase private key [here](https://firebase.google.com/docs/admin/setup#initialize_the_sdk).
+* FIREBASE\_CLIENT\_EMAIL. Get it [here](../create-a-firebase-project.md#create-an-sdk-firebase-admin-account).
+* FIREBASE\_PROJECT\_ID. Get it [here](../create-a-firebase-project.md#create-an-app).
+* FIREBASE\_APIKEY. Get it [here](../create-a-firebase-project.md#create-an-app).
+* FIREBASE\_AUTHDOMAIN. Get it [here](../create-a-firebase-project.md#create-an-app).
+* FIREBASE\_DATABASEURL. Get it [here](../create-a-firebase-project.md#create-an-app).
 * FIREBASE\_STORAGEBUCKET
-* FIREBASE\_MESSAGINGSENDERID. Get it [here](create-a-firebase-project.md#create-an-app). A unique numerical value created when you create your Firebase project, available in the [Cloud Messaging](https://console.firebase.google.com/project/_/settings/cloudmessaging/) tab of the Firebase console **Settings** pane. 
+* FIREBASE\_MESSAGINGSENDERID. Get it [here](../create-a-firebase-project.md#create-an-app). A unique numerical value created when you create your Firebase project, available in the [Cloud Messaging](https://console.firebase.google.com/project/_/settings/cloudmessaging/) tab of the Firebase console **Settings** pane. 
 * CHAT21\_ENABLED. Enable Chat21 channel with **true** value. 
-* CHAT21\_URL. Get it [here](create-a-firebase-project.md#get-the-cloud-function-url).
+* CHAT21\_URL. Get it [here](../create-a-firebase-project.md#get-the-cloud-function-url).
 * CHAT21\_APPID. Enter the value **tilechat**
 * CHAT21\_ADMIN\_TOKEN. The Chat21 admin token. The default value is `chat21-secret-orgAa,`. See [here](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#admin-token) to change it.
 

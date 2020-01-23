@@ -298,8 +298,6 @@ The bot identifier
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
-
 {% endapi-method-headers %}
 {% endapi-method-request %}
 

@@ -8,11 +8,7 @@
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//1895b736e5.png)
 
-
-
 **Step 3 :** Click on **Get Started**
-
- ****
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//189642da3a.png)
 
@@ -48,11 +44,11 @@
 
 ## **Create a realtime database**
 
- **Step 15 :** Click on **Database**
+**Step 15 :** Click on **Database**
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//19079e53e9.png)
 
-**Step 16 :** In **Real time Database ,** Click on **Create database** 
+**Step 16 :** In **Real time Database ,** Click on **Create database**
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//5130c6436.png)
 
@@ -60,17 +56,15 @@
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//514afeff3.png)
 
-
 ## **Create a Storage**
 
-  
 **Step 19:** Click on **Storage** from left menu
 
 **Step 20:** click on **Get Started**
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//50259aa1c.png)
 
-**Step 21:** Click on **Next.** 
+**Step 21:** Click on **Next.**
 
 **Set as public access like this:**
 
@@ -82,7 +76,6 @@ service firebase.storage {
     }
   }
 }
-
 ```
 
 ![](https://snappy.appypie.com/ckeditor/plugins/imageuploader/uploads/faqs//1998685d59.png)
@@ -95,11 +88,11 @@ service firebase.storage {
 
 **Step 23 :** Go to **project setting**
 
-![](../../.gitbook/assets/image%20%2828%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
-**Step 24 :** Under  on **Service Account** tab, click on **Generate new private key** button
+**Step 24 :** Under on **Service Account** tab, click on **Generate new private key** button
 
-![](../../.gitbook/assets/image%20%2826%29.png)
+![](../.gitbook/assets/image%20%2826%29.png)
 
 **Step 25**. Open the private key with a text editor and **view the parameters**
 
@@ -107,11 +100,11 @@ service firebase.storage {
 
 **Step 26**. Under **Functions** tab get the **Chat21 Cloud Function URL**
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
 ## Enable Anonymous authentication
 
-**Step 27** Under Authentication menu enable Anonymous authentication. 
+**Step 27** Under Authentication menu enable Anonymous authentication.
 
-![](../../.gitbook/assets/image.png)
+![](../.gitbook/assets/image.png)
 
