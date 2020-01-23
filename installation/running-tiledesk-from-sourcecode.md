@@ -83,9 +83,7 @@ Follow this guide to install and configure the Web Widget: [https://github.com/c
 
 ## Configure push notification
 
-Follow this guide to configure push notification for chat21-cloud-functions: [https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup\_options.md\#push-notification](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#push-notification) Configure Chat21-ionic following this guide: [https://github.com/chat21/chat21-ionic\#push-notification](https://github.com/chat21/chat21-ionic#push-notification)
+Follow this guide to configure push notification for chat21-cloud-functions: [https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup\_options.md\#push-notification](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#push-notification) 
 
-```text
-docker-compose run server nano ./confenv/.env
-```
+Configure Chat21-ionic following this guide: [https://github.com/chat21/chat21-ionic\#push-notification](https://github.com/chat21/chat21-ionic#push-notification)
 
