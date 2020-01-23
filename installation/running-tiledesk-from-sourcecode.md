@@ -43,7 +43,7 @@ To install and configure chat21-cloud-functions follow this README: [https://git
 
 Also you can find the detailed configuration steps of chat21-cloud-functions [here](detailed-chat21-cloud-function-installation.md).
 
-## 3. Run tiledesk-server 
+## 3. Install and configure tiledesk-server 
 
 To install tiledesk-server version 2 please use the **dev** branch of Github project and follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
 
@@ -73,11 +73,11 @@ Example: firebase functions:config:set webhook.url=[https://YOUR\_TILEDESK\_DOMA
 
 You can find other info on this guide: [https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup\_options.md\#webhook](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#webhook)
 
-## Install and configure tiledesk-dashboard component
+## Install and configure tiledesk-dashboard
 
 Follow this guide to install and configure Tiledesk-Dasboard: [https://github.com/Tiledesk/tiledesk-dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
 
-## chat21-web-widget
+## Install and configure chat21-web-widget
 
 Follow this guide to install and configure the Web Widget: [https://github.com/chat21/chat21-web-widget](https://github.com/chat21/chat21-web-widget)
 
