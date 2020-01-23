@@ -62,8 +62,6 @@ You must set the following properties under .env file:
 * CHAT21\_APPID. Enter the value **tilechat**
 * CHAT21\_ADMIN\_TOKEN. The Chat21 admin token. The default value is `chat21-secret-orgAa,`. See [here](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#admin-token) to change it.
 
-To configure the parameters run the following command:
-
 ## 4. Configure the webhook module of chat21-cloud-functions
 
 Chat21 communicates with Tiledesk through webhooks. When a Chat21 event occurs - a new message arrives, a new member join a group, etc - a new Event is created and notified to Tiledesk Server. Chat21 then makes an HTTP POST request to send the Event to the Tiledesk webhook endpoint.
@@ -90,15 +88,15 @@ Example: firebase functions:config:set webhook.url=[https://YOUR\_TILEDESK\_DOMA
 
 You can find other info on this guide: [https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup\_options.md\#webhook](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#webhook)
 
-## Install and configure tiledesk-dashboard
+## 5. Install and configure tiledesk-dashboard
 
 Follow this guide to install and configure Tiledesk-Dasboard: [https://github.com/Tiledesk/tiledesk-dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
 
-## Install and configure chat21-web-widget
+## 6. Install and configure chat21-web-widget
 
 Follow this guide to install and configure the Web Widget: [https://github.com/chat21/chat21-web-widget](https://github.com/chat21/chat21-web-widget)
 
-## Configure push notification
+## 7. Configure push notification
 
 Follow this guide to configure push notification for chat21-cloud-functions: [https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup\_options.md\#push-notification](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#push-notification) 
 
