@@ -1,6 +1,6 @@
 # Open the ports
 
-Tiledesk docker installation requires the following ports to be open:
+Tiledesk  installation requires the following ports to be open:
 
 * 80: Ngix service
 * 3000: tiledesk service
@@ -11,5 +11,5 @@ Tiledesk docker installation requires the following ports to be open:
 * 8080: Web Ionic service
 * 4500: Tiledesk Dashboard
 
-![](../../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
