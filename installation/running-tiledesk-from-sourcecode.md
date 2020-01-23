@@ -51,7 +51,7 @@ To install tiledesk-server version 2 please use the **dev** branch of Github pro
 
 Chat21 communicates with Tiledesk through webhooks. When a Chat21 event occurs - a new message arrives, a new member join a group, etc - a new Event is created and notified to Tiledesk Server. Chat21 then makes an HTTP POST request to send the Event to the Tiledesk webhook endpoint.
 
-Chat21 needs a public Tiledesk endpoint to work properly.
+Chat21 needs a public Tiledesk server endpoint to work properly.
 
 Firebase requires an active billing project to perform external call. It is necessary to do **external HTTP requests** and since Tiledesk Server lives outside Google’s servers we need to switch to the **Blaze** **plan**, which is [surprisingly cheap](https://firebase.google.com/pricing/).
 
