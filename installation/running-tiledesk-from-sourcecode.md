@@ -4,6 +4,8 @@ Applicable to Tiledesk version 2
 
 Tiledesk uses [Chat21](http://www.chat21.org) as messaging platform. Refer to [Architecture overview](../architecture/schema.md) to undestand the product's modules.
 
+Chat21 relies on Firebase as the backend, so it's really important for you to acquire familiarity with Firebase and all of his services.
+
 **Please help us improving this documentation**: if you encounter a problem, something you don’t understand or a typo, use [this link](https://github.com/Tiledesk/tiledesk-server/issues) to ask a question. You could also open a PR to directly fix the documentation on Github, if you want.
 
 Tiledesk is composed by the following components:
@@ -43,7 +45,7 @@ Also you can find useful information regarding chat21-cloud-functions [here](det
 
 To install tiledesk-server version 2 please use the **dev** branch of Github and follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
 
-## 4. Configure the support module of  chat21-cloud-functions
+## 4. Configure the webhook module of  chat21-cloud-functions
 
 Follow this guide: [https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup\_options.md\#support-mode](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#support-mode)
 
