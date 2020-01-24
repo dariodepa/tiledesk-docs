@@ -2,7 +2,7 @@
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
-Get all active departments. No authentication needed.
+Get all active departments.
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -61,11 +61,9 @@ Example
 curl -v -X GET https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
 ```
 
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments/allstatus" %}
 {% api-method-summary %}
-Get all departments (active or hidden).
+Get all departments \(active or hidden\).
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -123,8 +121,6 @@ Example
 ```text
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/allstatus
 ```
-
-
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}
@@ -388,8 +384,6 @@ The department identifier
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
-
 {% endapi-method-headers %}
 {% endapi-method-request %}
 
