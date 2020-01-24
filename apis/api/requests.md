@@ -215,7 +215,7 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c
 
 
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/close" %}
+{% api-method method="put" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/close" %}
 {% api-method-summary %}
 Close a request by id.
 
@@ -310,7 +310,7 @@ use "application/json" value
 
 
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/reopen" %}
+{% api-method method="put" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/reopen" %}
 {% api-method-summary %}
 Reopen a request by id.
 {% endapi-method-summary %}
@@ -407,7 +407,7 @@ use "application/json" value
 
 
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/departments" %}
+{% api-method method="put" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/departments" %}
 {% api-method-summary %}
 Route a request to a department
 {% endapi-method-summary %}
@@ -518,7 +518,7 @@ esclude a bot from the assignment
 
 
 
-{% api-method method="patch" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/" %}
+{% api-method method="patch" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/" %}
 {% api-method-summary %}
 Update a request by id
 {% endapi-method-summary %}
@@ -649,7 +649,7 @@ the request source page
 
 
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/participants" %}
+{% api-method method="post" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/participants" %}
 {% api-method-summary %}
 Add a participant to a request
 {% endapi-method-summary %}
@@ -754,7 +754,7 @@ the participant (agent or bot) identifier
 
 
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/participants" %}
+{% api-method method="put" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/participants" %}
 {% api-method-summary %}
 Set the request participants
 {% endapi-method-summary %}
@@ -861,7 +861,7 @@ the participants (agent or bot) identifiers array
 
 
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/participants" %}
+{% api-method method="delete" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/participants" %}
 {% api-method-summary %}
 Delete a participant from the request
 {% endapi-method-summary %}
@@ -966,7 +966,7 @@ the participant (agent or bot) identifier
 
 
 
-{% api-method method="patch" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/attributes" %}
+{% api-method method="patch" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/attributes" %}
 {% api-method-summary %}
 Update the request attributes
 {% endapi-method-summary %}
