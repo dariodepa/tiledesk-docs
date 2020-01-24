@@ -38,6 +38,7 @@ sort direction: 1 or -1. Return the results in ascending or descending order. _d
 what page of results to fetch. defaults to first page.
 {% endapi-method-parameter %}
 
+
 {% api-method-parameter name="full\_text" type="string" required=false %}
 make a fulltext search query
 {% endapi-method-parameter %}
@@ -53,6 +54,7 @@ filter by department id
 {% api-method-parameter name="lead" type="string" required=false %}
 filter by lead id
 {% endapi-method-parameter %}
+
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
@@ -145,6 +147,10 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -203,20 +209,27 @@ Example:
 curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK
 ```
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/close" %}
+
+
+
+
+
+
+{% api-method method="put" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/close" %}
 {% api-method-summary %}
 Close a request by id.
+
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request\_id field. It's the external request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -225,6 +238,7 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -232,7 +246,12 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -285,20 +304,26 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/reopen" %}
+
+
+
+
+
+
+{% api-method method="put" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/reopen" %}
 {% api-method-summary %}
 Reopen a request by id.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request\_id field. It's the external request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -307,6 +332,7 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -314,7 +340,12 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -367,21 +398,30 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/departments" %}
+
+
+
+
+
+
+
+
+
+{% api-method method="put" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/departments" %}
 {% api-method-summary %}
 Route a request to a department
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Routes a request to a department.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+Route a request to a department 
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request\_id field. It's the external request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -390,6 +430,7 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -397,6 +438,7 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
@@ -407,7 +449,12 @@ the department identifier
 {% api-method-parameter name="nobot" type="boolean" required=false %}
 esclude a bot from the assignment
 {% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -460,20 +507,31 @@ esclude a bot from the assignment
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/" %}
+
+
+
+
+
+
+
+
+
+
+
+{% api-method method="patch" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/" %}
 {% api-method-summary %}
 Update a request by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request\_id field. It's the external request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -482,6 +540,7 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -489,6 +548,7 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
@@ -500,6 +560,7 @@ the lead identifier
 the request status
 {% endapi-method-parameter %}
 
+
 {% api-method-parameter name="tags" type="array" required=false %}
 the request tags
 {% endapi-method-parameter %}
@@ -508,7 +569,7 @@ the request tags
 the request rating
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="rating\_message" type="string" required=false %}
+{% api-method-parameter name="rating_message" type="string" required=false %}
 the request rating message
 {% endapi-method-parameter %}
 
@@ -516,10 +577,18 @@ the request rating message
 the request language
 {% endapi-method-parameter %}
 
+
 {% api-method-parameter name="sourcePage" type="string" required=false %}
 the request source page
 {% endapi-method-parameter %}
+
+
+
 {% endapi-method-body-parameters %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -572,21 +641,29 @@ the request source page
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/participants" %}
+
+
+
+
+
+
+
+
+{% api-method method="post" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/participants" %}
 {% api-method-summary %}
 Add a participant to a request
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Add a participant \(agent or bot\) to a request.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+Add a participant (agent or bot) to a request
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request\_id field. It's the external request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -595,6 +672,7 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -602,13 +680,21 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="member" type="string" required=true %}
-the participant \(agent or bot\) identifier
+the participant (agent or bot) identifier
 {% endapi-method-parameter %}
+
+
+
 {% endapi-method-body-parameters %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -661,21 +747,28 @@ the participant \(agent or bot\) identifier
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/participants" %}
+
+
+
+
+
+
+
+{% api-method method="put" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/participants" %}
 {% api-method-summary %}
 Set the request participants
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Set the request participants \(agent or bot\).  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+Set the request participants (agent or bot)
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request\_id field. It's the external request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -684,6 +777,7 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -691,13 +785,21 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="members" type="array" required=true %}
-the participants \(agent or bot\) identifiers array
+the participants (agent or bot) identifiers array
 {% endapi-method-parameter %}
+
+
+
 {% endapi-method-body-parameters %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -750,21 +852,30 @@ the participants \(agent or bot\) identifiers array
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/participants" %}
+
+
+
+
+
+
+
+
+
+{% api-method method="delete" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/participants" %}
 {% api-method-summary %}
 Delete a participant from the request
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Delete a participant \(agent or bot\) from the request.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+Delete a participant (agent or bot) from the request
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request\_id field. It's the external request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -773,16 +884,26 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
+
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="member" type="string" required=true %}
-the participant \(agent or bot\) identifier
+the participant (agent or bot) identifier
 {% endapi-method-parameter %}
+
+
+
 {% endapi-method-body-parameters %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -835,21 +956,31 @@ the participant \(agent or bot\) identifier
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/attributes" %}
+
+
+
+
+
+
+
+
+
+
+{% api-method method="patch" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/attributes" %}
 {% api-method-summary %}
 Update the request attributes
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Update the request custom attributes.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+Update the request custom attributes
+It only works for Tiledesk beta version v2 environment.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request\_id field. It's the external request identifier
+the request_id field. It's the external request identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -858,6 +989,7 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
+
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -865,13 +997,21 @@ authorization token. Basic Auth or JWT
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=true %}
 the request attributes
 {% endapi-method-parameter %}
+
+
+
 {% endapi-method-body-parameters %}
+
+{% api-method-query-parameters %}
+{% endapi-method-query-parameters %}
+
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -923,4 +1063,6 @@ the request attributes
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 

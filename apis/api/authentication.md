@@ -1,3 +1,4 @@
+# Authentication
 
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/auth/signin" %}
 {% api-method-summary %}
@@ -10,16 +11,10 @@ Allows to authenticate an agent using email and password.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
-
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
@@ -30,8 +25,6 @@ the user email address
 {% api-method-parameter name="password" type="string" required=true %}
 the user password
 {% endapi-method-parameter %}
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -55,9 +48,6 @@ the user password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/auth/signup" %}
 {% api-method-summary %}
 Signup with email and password
@@ -69,16 +59,10 @@ Allows to signup an agent using email and password.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
-
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
@@ -97,8 +81,6 @@ the user firstname
 {% api-method-parameter name="lastname" type="string" required=true %}
 the user lastname
 {% endapi-method-parameter %}
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -127,41 +109,28 @@ the user lastname
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
-
-{% api-method method="post" host="YOUR_TILEDESK_DOMAIN" path="/auth/signinAnonymously" %}
+{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/auth/signinAnonymously" %}
 {% api-method-summary %}
-Anonymous authentication for a user. 
+Anonymous authentication for a user.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows a user to authenticate anonymously on the system. It only works for Tiledesk beta version v2 environment.
+Allows a user to authenticate anonymously on the system.  
+**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
-
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
-
 {% api-method-parameter name="id\_project" type="string" required=true %}
 the project to which the user belongs
 {% endapi-method-parameter %}
-
 
 {% api-method-parameter name="firstname" type="string" required=false %}
 the user firstname
@@ -170,9 +139,6 @@ the user firstname
 {% api-method-parameter name="lastname" type="string" required=false %}
 the user password
 {% endapi-method-parameter %}
-
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -201,52 +167,27 @@ the user password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
-
-
-
-
-
-
-
-{% api-method method="post" host="YOUR_TILEDESK_DOMAIN" path="/auth/signinWithCustomToken" %}
+{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/auth/signinWithCustomToken" %}
 {% api-method-summary %}
-Custom authentication for a user. 
+Custom authentication for a user.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows to authenticate with a custom JWT token. It only works for Tiledesk beta version v2 environment.
+Allows to authenticate with a custom JWT token.   
+**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
-
 {% api-method-parameter name="Authorization" type="string" required=true %}
 Custom JWT Authorization token. See below
-
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-
-
-
-
-
-{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -265,34 +206,29 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 ## Overview
 
 The Custom JWT authentication provider allows users to authenticate with an authentication system that is independent from Tiledesk. The external system must return a signed [JSON Web Token](https://jwt.io/introduction/) that contains a unique ID value for the authenticated user.
 
-Tiledesk uses the JWT to identify your application’s users and authenticate their requests but does not impose any restrictions on the external authentication system’s requirements or authentication methods. 
-
+Tiledesk uses the JWT to identify your application’s users and authenticate their requests but does not impose any restrictions on the external authentication system’s requirements or authentication methods.
 
 You must set the following required fields of the user object :
 
-* **_id** is the custom unique user identifier of the external authentication system.
+* **\_id** is the custom unique user identifier of the external authentication system.
 * **subject**. JWTs describe their subject in the sub claim. sub must be equal to value `userexternal`
 * **audience**. JWTs describe their audience in the aud claim. Must be `https://tiledesk.com/projects/<YOUR_PROJECT_ID>`.
 
+Optional fields:
 
- Optional fields: 
- 
 * **firstname**. It's the user firstname
 * **lastname**. It's the user lastname
 * **other** jwt claims.
 
-The external authentication system must create the JWT signing the user object with the project authentication secret code. See here to obtain a Project JWT Secret: https://developer.tiledesk.com/widget/auth#generating-a-chat-shared-secret
+The external authentication system must create the JWT signing the user object with the project authentication secret code. See here to obtain a Project JWT Secret: [https://developer.tiledesk.com/widget/auth\#generating-a-chat-shared-secret](https://developer.tiledesk.com/widget/auth#generating-a-chat-shared-secret)
 
-User object example: 
+User object example:
 
-```
+```text
 {_id: "123", firstname:"andrea", lastname:"leo", email: "email2@email.com",  customAttr: "c1", sub:  "userexternal",  aud:  "https://tiledesk.com/projects/5c81593adf767b0017d1aa68'}
 ```
-
 
