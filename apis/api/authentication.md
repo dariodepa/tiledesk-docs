@@ -132,7 +132,7 @@ the user lastname
 
 
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/auth/signinAnonymously" %}
+{% api-method method="post" host="YOUR_TILEDESK_DOMAIN" path="/auth/signinAnonymously" %}
 {% api-method-summary %}
 Anonymous authentication for a user. 
 {% endapi-method-summary %}
@@ -212,7 +212,7 @@ the user password
 
 
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/auth/signinWithCustomToken" %}
+{% api-method method="post" host="YOUR_TILEDESK_DOMAIN" path="/auth/signinWithCustomToken" %}
 {% api-method-summary %}
 Custom authentication for a user. 
 {% endapi-method-summary %}
