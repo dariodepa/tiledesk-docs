@@ -21,7 +21,7 @@ Tiledesk is composed by the following components:
 * Enable https to front-end and backend endpoints. Https is required for receiving web push notifications;
 * Create a DNS entries for:
   * tiledesk-server. Create a DNS entry like this: api.YOURDOMAIN.COM. Then configure a virtualhost for it.
-  * chat21-web-widget. Create a DNS entry like widget.YOURDOMAIN.COM. 
+  * chat21-web-widget. Create a DNS entry like widget.YOURDOMAIN.COM. The widget must be on a different domain to avoid authentication conflicts with the dashboard. Dashboard component and widget test page should never share the same user. 
   * tiledesk-dashboard and chat21-ionic \(the desktop chat\) are suggested to be under the same domain to share authentications tokens. Create a DNS entry like support.YOURDOMAIN.COM. You must be able to access:
     * /dashboard -&gt; Tiledesk dashboard component
     * /chat -&gt; Chat21 ionic component
