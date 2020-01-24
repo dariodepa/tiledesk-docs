@@ -146,7 +146,7 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c
 
 
 
-{% api-method method="post" host="YOUR_TILEDESK_DOMAIN" path="/v1/:project\_id/requests/:id/messages" %}
+{% api-method method="post" host="YOUR_TILEDESK_DOMAIN" path="/:project\_id/requests/:id/messages" %}
 {% api-method-summary %}
 Send a message. 
 {% endapi-method-summary %}
