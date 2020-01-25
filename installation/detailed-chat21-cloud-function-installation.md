@@ -6,7 +6,7 @@ Authenticate to Firebase running :
 $ firebase login
 ```
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../.gitbook/assets/image%20%2837%29.png)
 
 ![](../.gitbook/assets/image%20%2824%29.png)
 
