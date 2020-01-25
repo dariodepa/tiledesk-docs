@@ -4,7 +4,7 @@
 
 This tutorial aims to send and receive support messages between end users and agents using Tiledesk REST APIs and Webhooks.
 
-
+### Steps
 
 1. Signup on Tiledesk
 2. Anonymous end user authentication through APIs
@@ -85,6 +85,35 @@ The agent can see the same conversation in the agent chat.
 ![](../../.gitbook/assets/image%20%2837%29.png)
 
 ## Receiving messages notification using Webhooks
+
+You can subscribe to the messages events using [Webhook](../webhook/). To do it you must first [create a subscription](../webhook/subscriptions.md#create-a-new-subscription) to an [event](../webhook/#webhook-events). In this case we will subscribe to message creation: 
+
+```text
+curl -v -X POST -H 'Content-Type:application/json' \
+-u demo@email.com:123456 \
+-d '{"event":"message.create", "target":"https://tiledesk.requestcatcher.com/test"}' \
+https://tiledesk-server-pre.herokuapp.com/5e2c35c8f0dbc10017bb3aac/subscriptions
+```
+
+ The subscription endpoint returns:
+
+```text
+{
+   "secret":"0fd2a8a1-a3e6-443b-9fe5-49b83612cd72",
+   "_id":"5e2c6a24f5b11c00175f1705",
+   "target":"https://tiledesk.requestcatcher.com/test",
+   "event":"message.create",
+   "id_project":"5e2c35c8f0dbc10017bb3aac",
+   "createdBy":"5e2c357af0dbc10017bb3aa7",
+   "createdAt":"2020-01-25T16:17:40.088Z",
+   "updatedAt":"2020-01-25T16:17:40.088Z",
+   "__v":0
+}
+```
+
+
+
+
 
 
 
