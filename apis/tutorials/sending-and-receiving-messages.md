@@ -111,7 +111,7 @@ https://tiledesk-server-pre.herokuapp.com/5e2c35c8f0dbc10017bb3aac/subscriptions
 }
 ```
 
-Now you are notified for each message sent to Tiledesk. If the agent send a message to the end user your webhook endpoint will be notified with the message payload.  
+Now you are notified for each messages send in your Tiledesk project. Now for example if the agent send a message to the end user your webhook endpoint will be notified with the message payload.  
 
 ![](../../.gitbook/assets/image%20%2835%29.png)
 
