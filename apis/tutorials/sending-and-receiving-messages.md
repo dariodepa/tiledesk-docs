@@ -157,21 +157,3 @@ This is the webhook notification with the message payload:
 }
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
