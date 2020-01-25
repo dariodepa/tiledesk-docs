@@ -7,9 +7,9 @@ This tutorial will help you to understand how to send and receive "support messa
 ### Steps
 
 1. Signup a user on Tiledesk
-2. Anonymous end user authentication through APIs
-3. Send message to a conversation 
-4. Receiving messages notification using Webhooks
+2. Anonymous end-user authentication through APIs
+3. Sending messages to a conversation
+4. Receiving new messages notifications using Webhooks
 
 ## Signup on Tiledesk
 
@@ -60,7 +60,7 @@ This will reply with the JWT token that we'll use to send our first message:
 }
 ```
 
-## Send a message to a conversation
+## Sending messages to a conversation
 
 You can send a message using the [Send Message API](../api/messages.md#send-a-message).
 
@@ -96,7 +96,7 @@ The agent \(you\) can now see the same conversation in the agent chat \(first op
 
 ![](../../.gitbook/assets/image%20%2840%29.png)
 
-## Receiving messages notification using Webhooks
+## Receiving new messages notifications using Webhooks
 
 You can subscribe to the messages events sent to a conversation using [Webhook](../webhook/)s.
 
