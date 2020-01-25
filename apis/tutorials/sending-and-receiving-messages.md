@@ -2,7 +2,7 @@
 
 ## Targets
 
-This tutorial aims to send and receive "support messages" between Tiledesk's _End Users_ and _Agents_ using Tiledesk REST APIs and Webhooks.
+This tutorial will help you to understand how to send and receive "support messages" between Tiledesk's _End Users_ and _Agents_ using Tiledesk REST APIs and Webhooks.
 
 ### Steps
 
