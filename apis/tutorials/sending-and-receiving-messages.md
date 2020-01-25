@@ -1,4 +1,4 @@
-# Sending and receiving messages
+# Sending and receiving messages with Tiledesk APIs
 
 ## Targets
 
@@ -30,6 +30,14 @@ Get the **PROJECT\_ID** of the created project under _Project Settings_ menu. We
 ## Anonymous end-user authentication through APIs
 
 In this tutorial we will authenticate _end-users_ through anonymous authentication \(you can find more info on anomymous authentication [here](../api/authentication.md#anonymous-authentication-for-a-user)\).
+
+All APIs in this tutorial will use the following endpoint:
+
+```bash
+https://tiledesk-server-pre.herokuapp.com
+```
+
+The previous APIs end-point will change as soon as the beta version will be released as **Tiledesk v2**. This tutorial will be updated accordingly.
 
 ```bash
 curl -v -X POST -H 'Content-Type:application/json' \
@@ -82,17 +90,19 @@ curl -v -X POST -H 'Content-Type:application/json' \
 
 Looking at the dashboard of your project you will see your first conversation in the Requests panel. The requests are updated in real time, so you don't have to manunally update the Requests' page. If you left unchanged all the default settings, the request will be assigned to you \(make sure you are "available", looking in the lower right corner of your profile image in the left menu panel\).
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 
 The agent \(you\) can now see the same conversation in the agent chat \(first option of the menu panel will open the desktop chat\).
 
-![](../../.gitbook/assets/image%20%2838%29.png)
+![](../../.gitbook/assets/image%20%2840%29.png)
 
 ## Receiving messages notification using Webhooks
 
 You can subscribe to the messages events sent to a conversation using [Webhook](../webhook/)s.
 
-You must first [create a subscription](../webhook/subscriptions.md#create-a-new-subscription) to an [event](../webhook/#webhook-events). In this case we will subscribe to message creation event: 
+You must first [create a subscription](../webhook/subscriptions.md#create-a-new-subscription) to an [event](../webhook/#webhook-events) that points to a url on your server.
+
+In this case we will subscribe to _message creation_ event on a custom url \(/test\) on requestcatcher.com, a free, beautiful service to debug your webhooks: 
 
 ```text
 curl -v -X POST -H 'Content-Type:application/json' \
@@ -119,7 +129,7 @@ https://tiledesk-server-pre.herokuapp.com/5e2c35c8f0dbc10017bb3aac/subscriptions
 
 Now you are notified for each messages sent to your Tiledesk project. Now, for example, if the agent sends a message to the end user, your webhook endpoint will be notified with the message payload.  
 
-![](../../.gitbook/assets/image%20%2835%29.png)
+![](../../.gitbook/assets/image%20%2837%29.png)
 
 This is the webhook notification with the message payload. You can use this notification to create a copy of all messages sent/received in your project, generate new custom events, communicate in real time on other channels etc.
 

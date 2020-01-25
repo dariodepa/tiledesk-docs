@@ -26,7 +26,7 @@
 * [Webhooks](apis/webhook/README.md)
   * [Subscriptions](apis/webhook/subscriptions.md)
 * [Tutorials](apis/tutorials/README.md)
-  * [Sending and receiving messages](apis/tutorials/sending-and-receiving-messages.md)
+  * [Sending and receiving messages with Tiledesk APIs](apis/tutorials/sending-and-receiving-messages.md)
 
 ## Mobile SDK
 
