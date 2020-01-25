@@ -1,4 +1,4 @@
-
+# Team
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
 {% api-method-summary %}
@@ -22,7 +22,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -99,10 +98,6 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
 {% api-method-summary %}
 Invite an agent
@@ -121,7 +116,6 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
@@ -132,7 +126,6 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="email" type="string" required=true %}
 the agent email address
 {% endapi-method-parameter %}
@@ -142,13 +135,12 @@ the agent role. Accepted values: agent, admin
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="firstname" type="string" required=false %}
-the firstname of the agent 
+the firstname of the agent
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lastname" type="string" required=false %}
-the lastname of the agent 
+the lastname of the agent
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -165,16 +157,8 @@ the lastname of the agent
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
-
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
-
-
-
-
 
 {% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}
@@ -193,21 +177,15 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_user\_id" type="string" required=true %}
-The teammate identifier. 
+The teammate identifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
-
 {% endapi-method-headers %}
-
-
-{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -225,10 +203,4 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
-
-
-
 

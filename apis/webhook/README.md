@@ -2,7 +2,7 @@
 description: This is a Beta version of the documentation.
 ---
 
-# WebHook
+# Webhooks
 
 ## Introduction
 

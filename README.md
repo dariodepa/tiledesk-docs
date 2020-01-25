@@ -23,8 +23,10 @@
   * [Management Api](apis/api/management-api/README.md)
     * [Departments](apis/api/management-api/departments.md)
     * [Groups](apis/api/management-api/groups.md)
-* [WebHook](apis/webhook/README.md)
+* [Webhooks](apis/webhook/README.md)
   * [Subscriptions](apis/webhook/subscriptions.md)
+* [Tutorials](apis/tutorials/README.md)
+  * [Sending and receiving messages](apis/tutorials/sending-and-receiving-messages.md)
 
 ## Mobile SDK
 
@@ -49,7 +51,7 @@
 * [Installation](installation/installation.md)
 * [Running Tiledesk with Docker Compose](installation/running-tiledesk-with-docker-compose.md)
 * [Running Tiledesk from Source Code](installation/running-tiledesk-from-sourcecode.md)
-* [Create a Firebase project](installation/running-tiledesk-with-docker-compose/create-a-firebase-project.md)
+* [Create a Firebase project](installation/create-a-firebase-project.md)
 * [Detailed Chat21 Cloud Functions installation](installation/detailed-chat21-cloud-function-installation.md)
 * [Open the firewall ports](installation/open-the-ports.md)
 
