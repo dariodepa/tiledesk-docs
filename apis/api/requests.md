@@ -492,6 +492,10 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="first\_text" type="string" required=false %}
+the request first text
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="lead" type="string" required=false %}
 the lead identifier
 {% endapi-method-parameter %}
