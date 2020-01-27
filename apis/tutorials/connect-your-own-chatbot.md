@@ -12,7 +12,7 @@ This tutorial will show you how to create a very basic chatbot integration, allo
 
 To use Tiledesk APIs or integrate your own chatbots is mandatory to signup a new user on our beta environment. It's available on the following link [https://support-pre.tiledesk.com/dashboard](https://support-pre.tiledesk.com/dashboard)
 
-The previous APIs end-point will change as soon as the beta version will be released as **Tiledesk v2**. This tutorial will be updated accordingly.
+**The previous APIs end-point will change as soon as the beta version will be released as Tiledesk v2. This tutorial will be updated accordingly.**
 
 ![](../../.gitbook/assets/image%20%2832%29.png)
 
@@ -143,7 +143,7 @@ https://tiledesk-server-pre.herokuapp.com
 
 Is temporary and will change as soon as **Tiledesk v2** will be released. This tutorial will be updated accordingly.
 
-Now that our code is ok, we should configure a routing to make this chatbot available to our users. Select the **Routing** option and configure the corresponding rules as follows, activating the Bot, selecting Tolobot and marking the **Bot only** option for this routing, so **Tolobot will be the only available Agent**.
+Now that our code is ok, we should configure a routing rule to make this chatbot available to our users. Select the **Routing** option and configure the corresponding rules as follows, activating the Bot, selecting Tolobot and marking the **Bot only** option for this routing, so **Tolobot will be the only available Agent**.
 
 ![](../../.gitbook/assets/image%20%2836%29.png)
 
