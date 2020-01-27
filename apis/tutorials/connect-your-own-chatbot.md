@@ -1,4 +1,4 @@
-# Connect your own chatbot
+# Connect your own chatbot to Tiledesk
 
 Tiledesk is designed to allow external chatbots to easy communicate with your Agents or End users. Once a chatbot receive an authenticationn token from Tilesk he can easily call many APIs to modify the state of a Request \(the support conversation\) changing Departments, inviting Agents, sending scheduled messages, use the chatbot microlanguage to simplify interaction with buttons, images, messages' timing etc.
 
