@@ -1,4 +1,4 @@
-# Connect your own chatbot to Tiledesk
+# Connect your own chatbots to Tiledesk
 
 Tiledesk is designed to allow external chatbots to easy communicate with your Agents or End users. Once a chatbot receive an authenticationn token from Tilesk he can easily call many APIs to modify the state of a Request \(the support conversation\) changing Departments, inviting Agents, sending scheduled messages, use the chatbot microlanguage to simplify interaction with buttons, images, messages' timing etc.
 
@@ -98,12 +98,12 @@ app.post('/bot', (req, res) => {
   // immediatly reply to TILEDESK
   res.status(200).send({"success":true});
 
+  const endpoint =
+    "https://tiledesk-server-pre.herokuapp.com";
+    
   // Reply service is asynchronous.
   // Once you get the request token you can write to this
   // conversation as many times as you want
-  
-  const endpoint =
-    "https://tiledesk-server-pre.herokuapp.com";
   let msg = {
     "text": "Hello from chatbot!",
     "type": "text",
