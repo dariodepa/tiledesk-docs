@@ -20,7 +20,7 @@ description: Below the Tiledesk components.
 
 ## Other Components
 
-* [Chat REST API](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/api.md)$$a = b$$ 
+* [Chat REST API](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/api.md) 
 * [Chat21 Cloud Functions](https://github.com/chat21/chat21-cloud-functions)
 * [Chat21 Web Widget](https://github.com/chat21/chat21-web-widget)
 * [Chat21 Ionic Web App](https://github.com/chat21/chat21-ionic)
