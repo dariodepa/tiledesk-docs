@@ -24,9 +24,11 @@ We can jump the next step, relative to the widget installation. We will use the 
 
 Now you will jump in the project home.
 
-To integrate an external bot, we'll need a web endpoint where all the chatbot's requests will be forwarded. We'll use the well-known Repl.it service to fast create our own web endpoint.
+To integrate an external bot, we'll need a web endpoint where all the chatbot's requests will be forwarded. We'll use the well-known [Repl.it](https://repl.it) service to fast create our own web endpoint.
 
-Go on [the repl.it](https://repl.it/~) and press "+ new repl" button. Then select NodeJS as the programming environment and choose a unique name of you repl propject. in this case _tiledeskbot_, that obviously you can't use before it was already taken for this tutorial :\)
+## Create and configure external chatbot endpoint
+
+Go on the [repl.it](https://repl.it) and press "+ new repl" button. Then select NodeJS as the programming environment and choose a unique name of you repl propject. in this case _tiledeskbot_, that obviously you can't use before it was already taken for this tutorial :\)
 
 ![](../../.gitbook/assets/image%20%2829%29.png)
 
@@ -115,15 +117,19 @@ app.listen(3000, () => {
 
 You can find the full code of this tutorial on the repl linked here:
 
-{% embed url="https://repl.it/@andreasponziell/tiledeskwelcomebot" %}
+[https://repl.it/@andreasponziell/tiledeskwelcomebot](https://repl.it/@andreasponziell/tiledeskwelcomebot)
 
-Here you can find a version using a version with raw calls to Tiledesk REST APIs.
+While here you can find a version of the same code using raw calls to Tiledesk REST APIs.
 
 [https://repl.it/@andreasponziell/tiledeskbot](https://repl.it/@andreasponziell/tiledeskbot)
+
+## Configure a Route for the chatbot
 
 Now that our code is ok, we should configure a routing rule to make this chatbot available to our users. Select the **Routing** option and configure the corresponding rules as follows, activating the Bot, selecting Tolobot and marking the **Bot only** option for this routing, so **Tolobot will be the only available Agent**.
 
 ![](../../.gitbook/assets/image%20%2836%29.png)
+
+## Live test
 
 To test our chhatbot go to the **Requests** menù and press the green "Simulate visitor" button as shown in the following figure.
 
