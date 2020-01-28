@@ -698,7 +698,7 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="" type="array" required=true %}
+{% api-method-parameter name="members" type="array" required=true %}
 the participants \(agent or bot\) identifiers array
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -870,7 +870,7 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="" type="object" required=true %}
+{% api-method-parameter name="body" type="object" required=true %}
 the request attributes
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
