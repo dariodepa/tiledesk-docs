@@ -81,7 +81,7 @@ Go back to the repl project. In the index.js file modify the **/bot** service, c
 ```text
 const express = require('express');
 const bodyParser = require('body-parser');
-const request = require('request');
+const { TiledeskClient } = require('@tiledesk/tiledesk-chatbot-client');
 
 const app = express();
 app.use(bodyParser.json());
@@ -91,57 +91,27 @@ app.get('/', (req, res) => {
 });
 
 app.post('/bot', (req, res) => {
-  let body = req.body;
-  let token = body.token;
-  let enduser_text = body.payload.text;
-  let tiledesk_request = body.payload.request;
-  let project_id = body.payload.id_project;
-  let request_id = tiledesk_request.request_id
-  let bot_name = tiledesk_request.department.bot.name;
-  
+  const tdclient = 
+    new TiledeskClient({request: req, response: res});
+  console.log("You asked: " + tdclient.text)
   // immediatly reply to TILEDESK
   res.status(200).send({"success":true});
-
-  const endpoint =
-    "https://tiledesk-server-pre.herokuapp.com";
-    
-  // Reply service is asynchronous.
-  // Once you get the request token you can write to this
-  // conversation as many times as you want
+  
+  // messaging is asynch.
   let msg = {
-    "text": "Hello from chatbot!",
+    "text": "Hello from Tiledesk external chatbot using APIs!",
     "type": "text",
-    "senderFullname": bot_name // or whatever you want
+    "senderFullname": tdclient.botName
   }
-  
-  request({
-    url: `${endpoint}/${project_id}/requests/${request_id}/messages`,
-    headers: {
-      'Content-Type' : 'application/json',
-      'Authorization': 'JWT '+token
-    },
-    json: msg,
-    method: 'POST'
-    },
-    function(err, res, resbody) {
+  tdclient.sendMessage(msg, function(err, res, resbody) {
       console.log("Message sent.")
-    }
-  );
-  
+  })
 })
 
 app.listen(3000, () => {
   console.log('server started');
 });
 ```
-
-The APIs endpoint in the code:
-
-```text
-https://tiledesk-server-pre.herokuapp.com
-```
-
-Is temporary and will change as soon as **Tiledesk v2** will be released. This tutorial will be updated accordingly.
 
 You can find the full code of this tutorial on the repl linked here [https://repl.it/@andreasponziell/tiledeskbot](https://repl.it/@andreasponziell/tiledeskbot)
 
