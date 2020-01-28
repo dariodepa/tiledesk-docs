@@ -143,6 +143,8 @@ https://tiledesk-server-pre.herokuapp.com
 
 Is temporary and will change as soon as **Tiledesk v2** will be released. This tutorial will be updated accordingly.
 
+You can find the full code of thihs tutorial on the repl linked here [https://repl.it/@andreasponziell/tiledeskbot](https://repl.it/@andreasponziell/tiledeskbot) 
+
 Now that our code is ok, we should configure a routing rule to make this chatbot available to our users. Select the **Routing** option and configure the corresponding rules as follows, activating the Bot, selecting Tolobot and marking the **Bot only** option for this routing, so **Tolobot will be the only available Agent**.
 
 ![](../../.gitbook/assets/image%20%2836%29.png)
