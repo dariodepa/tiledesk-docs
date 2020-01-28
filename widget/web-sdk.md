@@ -62,6 +62,7 @@ You can customize the widget passing these parameters to window.tiledeskSettings
 * **showWaitTime**: Show the expected response time from your agents in the home widget window. Value type : boolean. The default value is true.
 * **showAvailableAgents**: Show the available agents with avatar in the home widget window. Value type : boolean. The default value is true.
 * **showLogoutOption**: Show the logout options in the home widget window. Value type : boolean. The default value is true.
+* **isLogEnabled**: Enable the widget log. Value type: boolean. The default value is false.
 
 #### Example 1. Widget with user fullname and email
 
