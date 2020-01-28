@@ -46,17 +46,17 @@ As soon as the _repl_ project is ready you will see something like this:
 
 ![](../../.gitbook/assets/image%20%2857%29.png)
 
-Now we can add a new HTTP method POST to our web application, lets call this /bot, so the code will look like this:
+Now we can add a new HTTP method POST to our web application, lets call this **/bot.** The new source will look like this:
 
  
 
 ![](../../.gitbook/assets/image%20%2842%29.png)
 
-We can reach this url using the full address \(with HTTP POST method\):
+We can reach this url using the full address \(with _HTTP POST_ method\):
 
 [https://tiledeskbot.andreasponziell.repl.co/bot](https://tiledeskbot.andreasponziell.repl.co/bot)
 
-We call the previuos url **external bot address service**. We'll use this later.
+We call the previuos url **external bot url**. We'll use this later.
 
 Now open the **Settings** menù on the left panel of our Tiledesk project, selecting the **Bots** option
 
@@ -64,7 +64,7 @@ Now open the **Settings** menù on the left panel of our Tiledesk project, selec
 
 Press the ADD BOT button, to create your own external bot.
 
-We must chose a name for our bot, set the "External" checkbox, and finally placing in the Url field the **external bot address service** from repl:
+We must chose a name for our bot, set the "External" checkbox, and finally placing in the Url field the **external bot url** from repl:
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
@@ -83,7 +83,8 @@ Go back to the repl project. In the index.js file modify the **/bot** service, c
 ```text
 const express = require('express');
 const bodyParser = require('body-parser');
-const { TiledeskClient } = require('@tiledesk/tiledesk-chatbot-client');
+const { TiledeskClient } = 
+  require('@tiledesk/tiledesk-chatbot-client');
 
 const app = express();
 app.use(bodyParser.json());
@@ -115,11 +116,18 @@ app.listen(3000, () => {
 });
 ```
 
+To send messages to the current conversation \(and to do other intersting stuff on the same conversation\) we used Tiledesk Chatbot Client library, that we imported on top of the the index.js file:
+
+```text
+const { TiledeskClient } = 
+  require('@tiledesk/tiledesk-chatbot-client');
+```
+
 You can find the full code of this tutorial on the repl linked here:
 
 [https://repl.it/@andreasponziell/tiledeskwelcomebot](https://repl.it/@andreasponziell/tiledeskwelcomebot)
 
-While here you can find a version of the same code using raw calls to Tiledesk REST APIs.
+Here you can find an alternative version of the same code using raw calls to Tiledesk REST APIs instead of the NodeJS library.
 
 [https://repl.it/@andreasponziell/tiledeskbot](https://repl.it/@andreasponziell/tiledeskbot)
 
