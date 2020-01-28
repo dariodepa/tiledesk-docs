@@ -754,7 +754,7 @@ the participants \(agent or bot\) identifiers array
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/participants" %}
+{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/participants/:participantid" %}
 {% api-method-summary %}
 Delete a participant from the request
 {% endapi-method-summary %}
@@ -767,6 +767,10 @@ Delete a participant \(agent or bot\) from the request.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
+{% api-method-parameter name="participantid" type="string" required=true %}
+the participant \(agent or bot\) identifier
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="id" type="string" required=true %}
 the request\_id field. It's the external request identifier
 {% endapi-method-parameter %}
@@ -781,12 +785,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% api-method-parameter name="member" type="string" required=true %}
-the participant \(agent or bot\) identifier
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
