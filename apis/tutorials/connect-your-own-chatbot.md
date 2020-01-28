@@ -26,7 +26,7 @@ Now you will jump in the project home.
 
 To integrate an external bot, we'll need a web endpoint where all the chatbot's requests will be forwarded. We'll use the well-known Repl.it service to fast create our own web endpoint.
 
-Go on [the repl.it](https://repl.it/~) and press "+ new repl" button. The select NodeJS as the programming environment and choose a unique name of you repl propject. in this case _tiledeskbot_, that obviously you can't use before it was already taken for this tutorial :\)
+Go on [the repl.it](https://repl.it/~) and press "+ new repl" button. Then select NodeJS as the programming environment and choose a unique name of you repl propject. in this case _tiledeskbot_, that obviously you can't use before it was already taken for this tutorial :\)
 
 ![](../../.gitbook/assets/image%20%2829%29.png)
 
