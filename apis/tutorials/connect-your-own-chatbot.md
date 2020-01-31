@@ -116,7 +116,7 @@ app.listen(3000, () => {
 });
 ```
 
-To send messages to the current conversation \(and to do other intersting stuff on the same conversation\) we used Tiledesk Chatbot Client library, that we imported on top of the the index.js file:
+To send messages to the current conversation \(and to do other interesting stuff on the same conversation\) we used Tiledesk Chatbot Client library, that we imported on top of the the index.js file:
 
 ```text
 const { TiledeskClient } = 
