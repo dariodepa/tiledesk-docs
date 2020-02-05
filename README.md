@@ -26,6 +26,8 @@
 * [Webhooks](apis/webhook/README.md)
   * [Subscriptions](apis/webhook/subscriptions.md)
 * [Tutorials](apis/tutorials/README.md)
+  * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
+  * [Dialogflow as external chatbot integration](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
   * [Hello World tutorial for external chatbots integration](apis/tutorials/connect-your-own-chatbot.md)
   * [Sending and receiving messages with Tiledesk APIs](apis/tutorials/sending-and-receiving-messages.md)
 
