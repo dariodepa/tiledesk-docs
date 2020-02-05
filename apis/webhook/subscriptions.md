@@ -224,13 +224,14 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/subscriptions/history" %}
+{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/subscriptions/history" %}
 {% api-method-summary %}
 Get the subscriptions history
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Receive subscription call history
+Receive subscription call history.  
+**Only works for Tiledesk v2 environment \(on-premises only\).**  
 {% endapi-method-description %}
 
 {% api-method-spec %}

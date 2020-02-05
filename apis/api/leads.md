@@ -38,7 +38,7 @@ sort direction: 1 or -1. Return the results in ascending or descending order. _d
 search a lead by the email address
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="page" type="string" required=false %}
+{% api-method-parameter name="page" type="number" required=false %}
 what page of results to fetch. defaults to first page.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
