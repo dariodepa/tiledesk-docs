@@ -224,20 +224,13 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
-
-
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/subscriptions/history" %}
 {% api-method-summary %}
-Get the subscriptions history 
+Get the subscriptions history
 {% endapi-method-summary %}
 
 {% api-method-description %}
+Receive subscription call history
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -253,6 +246,12 @@ the Project Id is a unique code assigned to your project when you create it in T
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="page" type="number" required=false %}
+what page of results to fetch. default to first page.
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -270,3 +269,4 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
