@@ -231,7 +231,7 @@ Get the subscriptions history
 
 {% api-method-description %}
 Receive subscription call history.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**  
+**Experimental. Only works for Tiledesk v2 environment \(on-premises only\).**  
 {% endapi-method-description %}
 
 {% api-method-spec %}

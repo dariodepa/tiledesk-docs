@@ -34,7 +34,7 @@ what field to sort the results by.
 sort direction: 1 or -1. Return the results in ascending or descending order. _defaults to desc_
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="page" type="number" required=false %}
+{% api-method-parameter name="page" type="string" required=false %}
 what page of results to fetch. defaults to first page.
 {% endapi-method-parameter %}
 
