@@ -88,11 +88,11 @@ service firebase.storage {
 
 **Step 23 :** Go to **project setting**
 
-![](../.gitbook/assets/image%20%2870%29.png)
+![](../.gitbook/assets/image%20%2876%29.png)
 
 **Step 24 :** Under on **Service Account** tab, click on **Generate new private key** button
 
-![](../.gitbook/assets/image%20%2868%29.png)
+![](../.gitbook/assets/image%20%2873%29.png)
 
 **Step 25**. Open the private key with a text editor and **view the parameters**
 
@@ -100,7 +100,7 @@ service firebase.storage {
 
 **Step 26**. Under **Functions** tab get the **Chat21 Cloud Function URL**
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 ## Enable Anonymous authentication
 

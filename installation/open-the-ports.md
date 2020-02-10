@@ -11,5 +11,5 @@ Tiledesk  installation requires the following ports to be open:
 * 8080: Web Ionic service
 * 4500: Tiledesk Dashboard
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%283%29.png)
 
