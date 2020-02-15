@@ -16,15 +16,15 @@ Tiledesk uses [Chat21](http://www.chat21.org) as messaging platform. Refer to [A
 
 Run the following code:
 
-```text
-$ mkdir tiledesk && cd tiledesk
-$ curl https://raw.githubusercontent.com/Tiledesk/tiledesk-server/dev/docker-compose.yml --output docker-compose.yml
+```bash
+mkdir tiledesk && cd tiledesk
+curl https://raw.githubusercontent.com/Tiledesk/tiledesk-server/dev/docker-compose.yml --output docker-compose.yml
 ```
 
 Start all the Tiledesk services just typing:
 
 ```text
-$ docker-compose up -d
+docker-compose up -d
 ```
 
 If docker is installed with root user run: sudo docker-compose up -d
@@ -40,7 +40,7 @@ You should see the message "Hello from Tiledesk server. It's UP."
 To see the log run:
 
 ```text
-$ docker-compose logs -t -f --tail 5
+docker-compose logs -t -f --tail 5
 ```
 
 ## 2. Firebase setup
@@ -58,7 +58,7 @@ Tiledesk uses [Chat21](http://www.chat21.org) and Chat21 relies on Firebase as t
 Start chat21-cloud-function service command line interface \(CLI\) typing:
 
 ```text
-$ docker-compose run --service-ports cloud-functions
+docker-compose run --service-ports cloud-functions
 ```
 
 Use sudo if you installed docker with root privilege.
@@ -70,25 +70,25 @@ More info here: [Detailed Chat21 Cloud Function installation](detailed-chat21-cl
 Authenticate to Firebase running :
 
 ```text
-$ firebase login
+firebase login
 ```
 
 Select the firebase project where you want to install Chat21 Cloud Functions
 
 ```text
-$ firebase use --add
+firebase use --add
 ```
 
 Deploy the Chat21 Cloud Functions:
 
 ```text
-$ firebase deploy
+firebase deploy
 ```
 
 Exit from the Chat21 Cloud Functions CLI with :
 
 ```text
-$ exit
+exit
 ```
 
 ### 3.2 Configure the Chat21 webhooks
@@ -118,19 +118,19 @@ At this point, you have a tunnel to your local Tiledesk server. It means your de
 If not already in use, start cloud-function service command line interface \(CLI\) typing:
 
 ```text
-$ docker-compose run --service-ports cloud-functions
+docker-compose run --service-ports cloud-functions
 ```
 
 Enable the webhook with :
 
 ```text
-$ firebase functions:config:set webhook.enabled=true
+firebase functions:config:set webhook.enabled=true
 ```
 
 Configure the webhook endpoint with:
 
 ```text
-$ firebase functions:config:set webhook.url=<PUBLIC_TILEDESK_URL_EXPOSED_BY_NGROK>/chat21/requests
+firebase functions:config:set webhook.url=<PUBLIC_TILEDESK_URL_EXPOSED_BY_NGROK>/chat21/requests
 ```
 
 Example: firebase functions:config:set webhook.url=[https://cf988f60.ngrok.io/chat21/requests](https://cf988f60.ngrok.io/chat21/requests)
@@ -138,7 +138,7 @@ Example: firebase functions:config:set webhook.url=[https://cf988f60.ngrok.io/ch
 Exit from the Chat21 Cloud Functions CLI with :
 
 ```text
-$ exit
+exit
 ```
 
 ## 4. Configure the clients
