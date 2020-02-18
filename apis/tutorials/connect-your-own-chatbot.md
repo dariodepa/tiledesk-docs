@@ -14,11 +14,11 @@ To use Tiledesk APIs or integrate your own chatbots is mandatory to signup a new
 
 **The previous APIs end-point will change as soon as the beta version will be released as Tiledesk v2. This tutorial will be updated accordingly.**
 
-![](../../.gitbook/assets/image%20%2844%29.png)
+![](../../.gitbook/assets/image%20%2845%29.png)
 
 After signup please follow the proposed wizard to create your first Tiledesk project.
 
-![](../../.gitbook/assets/image%20%2815%29.png)
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 We can jump the next step, relative to the widget installation. We will use the widget later.
 
@@ -30,27 +30,27 @@ To integrate an external bot, we'll need a web endpoint where all the chatbot's 
 
 Go on the [repl.it](https://repl.it) and press "+ new repl" button. Then select NodeJS as the programming environment and choose a unique name of you repl propject. in this case _tiledeskbot_, that obviously you can't use before it was already taken for this tutorial :\)
 
-![](../../.gitbook/assets/image%20%2841%29.png)
+![](../../.gitbook/assets/image%20%2842%29.png)
 
 Now push on the **examples** link in the generated code. A popup like the following will open. Choose the  "Server \(Express\)" option.
 
-![](../../.gitbook/assets/image%20%2837%29.png)
+![](../../.gitbook/assets/image%20%2838%29.png)
 
 Your source code will change, like the following:
 
-![](../../.gitbook/assets/image%20%2872%29.png)
+![](../../.gitbook/assets/image%20%2873%29.png)
 
 We'll use **NodeJS** and Express framework for this example, due to their semplicity, low cost hosting and low learning curve. But keep in mind that the concepts in this tutorial can be easily applied to every web framework of your choice.
 
 As soon as the _repl_ project is ready you will see something like this:
 
-![](../../.gitbook/assets/image%20%2882%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 Now we can add a new HTTP method POST to our web application, lets call this **/bot.** The new source will look like this:
 
  
 
-![](../../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
 We can reach this url using the full address \(with _HTTP POST_ method\):
 
@@ -60,21 +60,21 @@ We call the previuos url **external bot url**. We'll use this later.
 
 Now open the **Settings** menù on the left panel of our Tiledesk project, selecting the **Bots** option
 
-![](../../.gitbook/assets/image%20%2834%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 
 Press the ADD BOT button, to create your own external bot.
 
 We must chose a name for our bot, set the "External" checkbox, and finally placing in the Url field the **external bot url** from repl:
 
-![](../../.gitbook/assets/image%20%2868%29.png)
+![](../../.gitbook/assets/image%20%2869%29.png)
 
 Click the CREATE BOT button.
 
-![](../../.gitbook/assets/image%20%2873%29.png)
+![](../../.gitbook/assets/image%20%2874%29.png)
 
 Tolobot is now available in our summary list.
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2813%29.png)
 
 It's time to write some code to make our bot service functional.
 
@@ -135,23 +135,23 @@ Here you can find an alternative version of the same code using raw calls to Til
 
 Now that our code is ok, we should configure a routing rule to make this chatbot available to our users. Select the **Routing** option and configure the corresponding rules as follows, activating the Bot, selecting Tolobot and marking the **Bot only** option for this routing, so **Tolobot will be the only available Agent**.
 
-![](../../.gitbook/assets/image%20%2851%29.png)
+![](../../.gitbook/assets/image%20%2852%29.png)
 
 ## Live test
 
 To test our chhatbot go to the **Requests** menù and press the green "Simulate visitor" button as shown in the following figure.
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/image%20%2860%29.png)
 
 A new browser Tab will open with the widget working as if it is already installed on your website.
 
  
 
-![](../../.gitbook/assets/image%20%2878%29.png)
+![](../../.gitbook/assets/image%20%2879%29.png)
 
 Push the **New conversation** button. A new conversation will open on the default routing. A hidden message is sent to your bot, if activated \(as in our example\). Your bot will reply with the message you previously configured in the code:
 
-![](../../.gitbook/assets/image%20%2813%29.png)
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 In the next tutorial you will learn how to interact with the Request directly from your chatbot code, asking the end user for his fullname and email before continuing the conversation.
 

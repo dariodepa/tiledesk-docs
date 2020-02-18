@@ -63,7 +63,7 @@ docker-compose run --service-ports cloud-functions
 
 Use sudo if you installed docker with root privilege.
 
-![](../.gitbook/assets/image%20%2826%29.png)
+![](../.gitbook/assets/image%20%2827%29.png)
 
 More info here: [Detailed Chat21 Cloud Function installation](detailed-chat21-cloud-function-installation.md).
 
@@ -109,7 +109,7 @@ Open the the following URL:
 
 [localhost:4040](http://localhost:4040)
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 At this point, you have a tunnel to your local Tiledesk server. It means your development server is exposed to the outside world. Try making requests to your tunnel URLs – you will see that they hit your local server.
 
