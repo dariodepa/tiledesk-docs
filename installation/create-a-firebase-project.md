@@ -88,11 +88,11 @@ service firebase.storage {
 
 **Step 23 :** Go to **project setting**
 
-![](../.gitbook/assets/image%20%2878%29.png)
+![](../.gitbook/assets/image%20%2880%29.png)
 
 **Step 24 :** Under on **Service Account** tab, click on **Generate new private key** button
 
-![](../.gitbook/assets/image%20%2875%29.png)
+![](../.gitbook/assets/image%20%2877%29.png)
 
 **Step 25**. Open the private key with a text editor and **view the parameters**
 

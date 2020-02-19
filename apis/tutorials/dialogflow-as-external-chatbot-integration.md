@@ -26,7 +26,7 @@ If you don't have a Heroku account please create one. Once you created your acco
 
 In the top right corner menù of the Heroku Dashboard press _New_ &gt; _Create new app_ option:
 
-![](../../.gitbook/assets/image%20%2881%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 Now choose a name for your application. You can choose whatever name you prefer, but **my-tiledesk-proxy** will not be obiviously available 🙂
 
