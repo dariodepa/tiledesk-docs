@@ -18,7 +18,7 @@ Run the following code:
 
 ```bash
 mkdir tiledesk && cd tiledesk
-curl https://raw.githubusercontent.com/Tiledesk/tiledesk-server/dev/docker-compose.yml --output docker-compose.yml
+curl https://raw.githubusercontent.com/Tiledesk/tiledesk-server/master/docker-compose.yml --output docker-compose.yml
 ```
 
 Start all the Tiledesk services just typing:
