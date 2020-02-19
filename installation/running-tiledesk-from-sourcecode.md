@@ -43,7 +43,7 @@ To install and configure chat21-cloud-functions follow this README: [https://git
 
 ## 3. Install and configure tiledesk-server 
 
-To install tiledesk-server version 2 please use the **dev** branch of Github project and follow this guide: [https://github.com/Tiledesk/tiledesk-server/tree/dev\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server/tree/dev#install-from-source-code)
+To install tiledesk-server version 2 please follow this guide: [https://github.com/Tiledesk/tiledesk-server\#install-from-source-code](https://github.com/Tiledesk/tiledesk-server#install-from-source-code)
 
 You must set the following properties under .env file:
 
