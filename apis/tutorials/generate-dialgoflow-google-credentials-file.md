@@ -28,17 +28,17 @@ Now choose a name for your service account \(_Service account name_ field\). _Se
 
 ![](../../.gitbook/assets/image%20%2873%29.png)
 
-In the next step you will be asked to select the role for this Service account. Press the menù pointed by the arrow in the figure:
+In the next step you will be asked to select the role for this Service account. Press the menù pointed by the arrow in the figure \(Select a role\):
 
 ![](../../.gitbook/assets/image%20%2899%29.png)
 
-A menù will open with a autocompleting text box. Digit "dialogflow" and, from the listed results choose "Dialogflow API Client":
+A menù will open with a autocompleting text box. Digit "dialogflow" and, from the listed results choose **Dialogflow API Client** as role:
 
 ![](../../.gitbook/assets/image%20%2874%29.png)
 
-Then press "Continue". In the last step, leaving all the options with their default value, press **+ CREATE KEY** button.
+Then press "Continue". In the last step, leaving all the options with their default value, press **+ CREATE KEY** button on the Service Account form's bottom.
 
-Choose JSON \(default option\) from the right panel, then CREATE
+Choose JSON \(default option\) from the right panel, then CREATE.
 
 ![](../../.gitbook/assets/image%20%2860%29.png)
 
