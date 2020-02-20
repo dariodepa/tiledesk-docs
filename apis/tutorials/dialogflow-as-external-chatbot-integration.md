@@ -26,7 +26,7 @@ If you don't have a Heroku account please create one. Once you created your acco
 
 In the top right corner menù of the Heroku Dashboard press _New_ &gt; _Create new app_ option:
 
-![](../../.gitbook/assets/image%20%2888%29.png)
+![](../../.gitbook/assets/image%20%2890%29.png)
 
 Now choose a name for your application. You can choose whatever name you prefer, but **my-tiledesk-proxy** will not be obiviously available 🙂
 
@@ -44,7 +44,7 @@ Now that your Heroku's app is connected to Github you can enable automatic deplo
 
  
 
-![](../../.gitbook/assets/image%20%2824%29.png)
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 In this tutorial we suppose you already set up a Dialogflow agent and you already have the credentials file. If you do not have the Google Credentials file please refer to this [tutorial](generate-dialgoflow-google-credentials-file.md).
 

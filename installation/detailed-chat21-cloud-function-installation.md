@@ -6,13 +6,13 @@ Authenticate to Firebase running :
 $ firebase login
 ```
 
-![](../.gitbook/assets/image%20%2892%29.png)
+![](../.gitbook/assets/image%20%2894%29.png)
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 If you are installing Tiledesk not in localhost change the firebase redirect url to your server ip. Change from localhost:9005?state=....... to &lt;YOUR\_IP&gt;:9005?state=......
 
-![](../.gitbook/assets/image%20%2866%29.png)
+![](../.gitbook/assets/image%20%2867%29.png)
 
 Select the firebase project where you want to install Chat21 Cloud Functions
 
@@ -24,7 +24,7 @@ $ firebase use --add
 
 Specify an alias for the firebase project \(Example test\)
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../.gitbook/assets/image%20%2832%29.png)
 
 Deploy the Chat21 Cloud Functions:
 
@@ -32,7 +32,7 @@ Deploy the Chat21 Cloud Functions:
 $ firebase deploy
 ```
 
-![](../.gitbook/assets/image%20%2850%29.png)
+![](../.gitbook/assets/image%20%2851%29.png)
 
 Exit from the Chat21 Cloud Functions CLI with :
 
