@@ -34,7 +34,9 @@ Your source code will change, like the following:
 
 ![](../../.gitbook/assets/image%20%2880%29.png)
 
-We'll use **NodeJS** and Express framework for this example, due to their semplicity, low cost hosting and low learning curve. But keep in mind that the concepts in this tutorial can be easily applied to every web framework of your choice.
+{% hint style="info" %}
+We'll use **NodeJS** for this example, due to his simplicity, low cost hosting and low learning curve. But keep in mind that the concepts in this tutorial can be easily applied to every web framework of your choice.
+{% endhint %}
 
 As soon as the _repl_ project is ready you will see something like this:
 
