@@ -2,9 +2,9 @@
 
 Tiledesk  installation requires the following ports to be open:
 
-* 80: Nginx proxy service
+* 80: Nginx proxy service. 443 for https. 
 * 3000: Tiledesk server service
-* 4040: Ngrok service
+* 4040: Ngrok service. Ngrok is required only if you don't have a public ip for the tiledesk server \(local development installation\). 
 * 4200: Web Widget UI
 * 9005: Firebase CLI service. Required only for the installation steps. 
 * 5000: Firebase CLI service. Required only for the installation steps.
