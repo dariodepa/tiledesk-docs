@@ -160,11 +160,15 @@ You must configure the following properties:
 * CHAT21\_URL. Get it [here](create-a-firebase-project.md#get-the-cloud-function-url).
 * CHAT21\_APPID. Enter the value **tilechat**
 * CHAT21\_ADMIN\_TOKEN. The Chat21 admin token. The default value is `chat21-secret-orgAa,`. See [here](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#admin-token) to change it.
+* WIDGET\_LOCATION. 
+* WIDGET\_TEST\_LOCATION. 
 
 To configure the parameters run the following command:
 
 ```text
-nano .env
+nano .env #configure your environment
+docker-compose stop #restart docker compose
+docker-compose up -d 
 ```
 
 Open the the following URL:
