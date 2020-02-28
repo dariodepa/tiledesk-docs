@@ -19,6 +19,7 @@ Run the following code:
 ```bash
 mkdir tiledesk && cd tiledesk
 curl https://raw.githubusercontent.com/Tiledesk/tiledesk-server/master/docker-compose.yml --output docker-compose.yml
+curl https://raw.githubusercontent.com/Tiledesk/tiledesk-server/master/.env.sample --output .env
 ```
 
 Start all the Tiledesk services just typing:
@@ -130,10 +131,10 @@ firebase functions:config:set webhook.enabled=true
 Configure the webhook endpoint with:
 
 ```text
-firebase functions:config:set webhook.url=<PUBLIC_TILEDESK_URL_EXPOSED_BY_NGROK>/chat21/requests
+firebase functions:config:set webhook.url=<PUBLIC_TILEDESK_URL>/chat21/requests
 ```
 
-Example: firebase functions:config:set webhook.url=[https://cf988f60.ngrok.io/chat21/requests](https://cf988f60.ngrok.io/chat21/requests)
+Example with ngrok: firebase functions:config:set webhook.url=[https://XYZ123.ngrok.io/chat21/request](https://XYZ123.ngrok.io/chat21/requests)s
 
 Exit from the Chat21 Cloud Functions CLI with :
 
@@ -141,11 +142,11 @@ Exit from the Chat21 Cloud Functions CLI with :
 exit
 ```
 
-## 4. Configure the clients
+## 4. Configure the .env file
 
 Tiledesk is composed by different clients \(web widget, web chat, dashboard, etc..\).
 
-You must set the following properties:
+You must configure the following properties:
 
 * FIREBASE\_PRIVATE\_KEY. Get it [here](create-a-firebase-project.md#create-an-sdk-firebase-admin-account). More info about firebase private key [here](https://firebase.google.com/docs/admin/setup#initialize_the_sdk).
 * FIREBASE\_CLIENT\_EMAIL. Get it [here](create-a-firebase-project.md#create-an-sdk-firebase-admin-account).
