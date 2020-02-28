@@ -164,7 +164,7 @@ You must configure the following properties:
 To configure the parameters run the following command:
 
 ```text
-docker-compose run server nano ./confenv/.env
+nano .env
 ```
 
 Open the the following URL:
