@@ -26,7 +26,7 @@ If you don't have a Heroku account please create one. Once you created your acco
 
 In the top right corner menù of the Heroku Dashboard press _New_ &gt; _Create new app_ option:
 
-![](../../.gitbook/assets/image%20%28104%29.png)
+![](../../.gitbook/assets/image%20%28105%29.png)
 
 Now choose a name for your application. You can choose whatever name you prefer, we choose **my-dialogflow-proxy:**
 
@@ -38,7 +38,7 @@ Leave all other settings as default and push the _Create app_ button.
 
 Now in the "Deployment method" section select Github. In the "Connect to Github" section insert the exact name of the repo you just forked - tiledesk-dialogflow-proxy-tutorial - and press Search. If everything is correct Heroku will show your repo just below the search filed. Press "Connect".
 
-![](../../.gitbook/assets/image%20%2882%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
 Now that your Heroku's app is connected to Github you can enable automatic deploys, so Heroku will restart your app every time you push new code on the repo.
 
@@ -64,13 +64,13 @@ Now move to the Bots section and create a new bot pressing the ADD BOT button:
 
 Choose the type **External**, not the Dialogflow one. This tutorial aims to connect you with a Dialogflow agent using the "external bot" feature, allowing you to have full control over the integration.
 
-![](../../.gitbook/assets/image%20%2871%29.png)
+![](../../.gitbook/assets/image%20%2872%29.png)
 
 Choose whatever name you prefer for the bot. This name will also be the Sender name of the bot every time the bot writes something. But from the proxy code you are adding you can easily change this default name if you want.
 
 Set in the url field the hostname of your heroku application followed by **/bot**. Every time Tiledesk will invoke you bot it will send a HTTP POST request to this url.
 
-![](../../.gitbook/assets/image%20%2896%29.png)
+![](../../.gitbook/assets/image%20%2897%29.png)
 
 To activate the bot you must attach it to the default routing or to a department. For semplicity we'll use the default Routing. Choose the Routing option on the left menu, the switch on Activate Bot, and choose your Dialogflow bot from the right menu. Press UPDATE ROUTING RULES.
 
@@ -82,7 +82,7 @@ To test the bot, switch to the Requests option and press the **SIMULATE VISITOR*
 
 On the widget test page press "New conversation" button. The default routing will start, sending a default "hello" message through a HTTP POST call to the external url. Your Dialogflow bot will reply, as you can see in the next picture.
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2871%29.png)
 
 You can do much more in communicating with an external url, for example sending buttons or images. We will treat these and other tools in the next tutorials.
 
