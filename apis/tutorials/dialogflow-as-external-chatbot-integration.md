@@ -26,13 +26,13 @@ If you don't have a Heroku account please create one. Once you created your acco
 
 In the top right corner menù of the Heroku Dashboard press _New_ &gt; _Create new app_ option:
 
-![](../../.gitbook/assets/image%20%2892%29.png)
+![](../../.gitbook/assets/image%20%2893%29.png)
 
-Now choose a name for your application. You can choose whatever name you prefer, but **my-tiledesk-proxy** will not be obiviously available 🙂
+Now choose a name for your application. You can choose whatever name you prefer, we choose **my-dialogflow-proxy:**
 
-![](../../.gitbook/assets/image%20%288%29.png)
+![](../../.gitbook/assets/image%20%2856%29.png)
 
-Leave all other settings as default and finally push the _Create app_ button.
+Leave all other settings as default and push the _Create app_ button.
 
 ## Connect Heroku app to your Github repo
 

@@ -94,7 +94,7 @@ Looking at the dashboard of your project you will see your first conversation in
 
 The agent \(you\) can now see the same conversation in the agent chat \(first option of the menu panel will open the desktop chat\).
 
-![](../../.gitbook/assets/image%20%2897%29.png)
+![](../../.gitbook/assets/image%20%2898%29.png)
 
 ## Receiving new messages notifications using Webhooks
 
@@ -129,7 +129,7 @@ https://tiledesk-server-pre.herokuapp.com/5e2c35c8f0dbc10017bb3aac/subscriptions
 
 Now you are notified for each messages sent to your Tiledesk project. Now, for example, if the agent sends a message to the end user, your webhook endpoint will be notified with the message payload.  
 
-![](../../.gitbook/assets/image%20%2893%29.png)
+![](../../.gitbook/assets/image%20%2894%29.png)
 
 This is the webhook notification with the message payload. You can use this notification to create a copy of all messages sent/received in your project, generate new custom events, communicate in real time on other channels etc.
 
