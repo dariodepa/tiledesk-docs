@@ -62,7 +62,7 @@ Now move to the Bots section and create a new bot pressing the ADD BOT button:
 
 ![](../../.gitbook/assets/image%20%2846%29.png)
 
-Choose the type external, not the Dialogflow one. This tutorial aims to connect with a Dialogflow agent with the _external bot_ feature, allowing you to have full control with the integration.
+Choose the type **External**, not the Dialogflow one. This tutorial aims to connect you with a Dialogflow agent using the "external bot" feature, allowing you to have full control over the integration.
 
 ![](../../.gitbook/assets/image%20%2871%29.png)
 
