@@ -26,31 +26,59 @@ If you don't have a Heroku account please create one. Once you created your acco
 
 In the top right corner menù of the Heroku Dashboard press _New_ &gt; _Create new app_ option:
 
-![](../../.gitbook/assets/image%20%2893%29.png)
+![](../../.gitbook/assets/image%20%28103%29.png)
 
 Now choose a name for your application. You can choose whatever name you prefer, we choose **my-dialogflow-proxy:**
 
-![](../../.gitbook/assets/image%20%2856%29.png)
+![](../../.gitbook/assets/image%20%2862%29.png)
 
 Leave all other settings as default and push the _Create app_ button.
 
 ## Connect Heroku app to your Github repo
 
-Now in the "Deployment method" section select Github \(image label: 1\). In the "Connect to Github" form insert the exact name of the repo you just forked, that is "tiledesk-dialogflow-proxy-tutorial" and press Search \(image label: 2\). If everything is correct heroku will show your repo just below the search filed. Press "Connect" \(image label: 3\).
+Now in the "Deployment method" section select Github. In the "Connect to Github" section insert the exact name of the repo you just forked - tiledesk-dialogflow-proxy-tutorial - and press Search. If everything is correct Heroku will show your repo just below the search filed. Press "Connect".
 
-![](../../.gitbook/assets/image.png)
+![](../../.gitbook/assets/image%20%2881%29.png)
 
 Now that your Heroku's app is connected to Github you can enable automatic deploys, so Heroku will restart your app every time you push new code on the repo.
 
  
 
-![](../../.gitbook/assets/image%20%2826%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 
 In this tutorial we suppose you already set up a Dialogflow agent and you already have the credentials file. If you do not have the Google Credentials file please refer to this [tutorial](generate-dialgoflow-google-credentials-file.md).
 
+Now that you have the credentials file on your hand open the Heroku Dashboard of your project and move to the Settings tab. Then, in the Config Vars section press the "Reveal config vars" button.
 
+Add a new variable named GOOGLE\_CREDENTIALS and fill his value field with the content of the credentials file you already created in the previous step:
 
+![](../../.gitbook/assets/image%20%2832%29.png)
 
+Now switch to Tiledesk console and create a new project. Enter whatever name you prefer.
+
+![](../../.gitbook/assets/image%20%2845%29.png)
+
+Now move to the Bots section and create a new bot pressing the ADD BOT button:
+
+![](../../.gitbook/assets/image%20%2846%29.png)
+
+Choose the type external, not the Dialogflow one. This tutorial aims to connect with a Dialogflow agent with the _external bot_ feature, allowing you to have full control with the integration.
+
+![](../../.gitbook/assets/image%20%2870%29.png)
+
+Choose whatever name you prefer for the bot. This name will also be the Sender name of the bot every time the bot writes something. But from the proxy code you are adding you can easily change this default name if you want.
+
+Set in the url field the hostname of your heroku application followed by **/bot**. Every time Tiledesk will invoke you bot it will send a HTTP POST request to this url.
+
+![](../../.gitbook/assets/image%20%2895%29.png)
+
+To activate the bot you must attach it to the default routing or to a department. For semplicity we'll use the default Routing. Choose the Routing option on the left menu, the switch on Activate Bot, and choose your Dialogflow bot from the right menu. Press UPDATE ROUTING RULES.
+
+![](../../.gitbook/assets/image%20%2856%29.png)
+
+TO Test the bot switch to the Requests option and press the SIMULATE VISITOR button as shown in the next figure.
+
+![](../../.gitbook/assets/image%20%2855%29.png)
 
 
 
