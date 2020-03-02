@@ -88,9 +88,21 @@ You can do much more in communicating with an external url, for example sending 
 
 ## Chatbot handoff to Human Agents
 
+To handoff control to Tiledesk agents the bot can simply reply \agent. So simply you can train a Dialogflow intent to reply "\agent" to a phrase like "I want to talk to an agent". As soon as Tiledesk receives the \agent command in reply to a conversation activates the human handoff and switches control to humans following the department rules.
 
+\[Example\]
+
+But you can also automatically activate switch to humans on a fallback \(or a fallback repeating N times\). So, if the user repeatedly triggers the fallback response \(due to questions not correctly interpreted by the Dialogflow chatbot\) the proxy passes control to a human agent.
+
+\[Example\]
+
+Another approach can be to use the "confidence" of the reply to trigger the handoff if the same confidence is under a determined threshold.
+
+\[Example\]
 
 Enjoy you custom Dialogflow connection!
+
+Do you have feedback on this article? Please send us your feedback writing an email to info@tiledesk.com
 
 
 
