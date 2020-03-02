@@ -53,6 +53,11 @@ filter by department id
 {% api-method-parameter name="lead" type="string" required=false %}
 filter by lead id
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="participant" type="array" required=false %}
+filter by participants (agent or bot)
+{% endapi-method-parameter %}
+
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
