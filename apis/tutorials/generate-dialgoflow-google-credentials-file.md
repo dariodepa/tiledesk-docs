@@ -52,5 +52,7 @@ In some Tiledesk tutorials or in documentation you will be sometimes asked to ha
 
 Enjoy!
 
+Do you have feedback on this article? Please send us your feedback writing an email to info@tiledesk.com
+
 
 
