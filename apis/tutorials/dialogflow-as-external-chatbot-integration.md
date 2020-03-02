@@ -86,6 +86,10 @@ On the widget test page press "New conversation" button. The default routing wil
 
 You can do much more in communicating with an external url, for example sending buttons or images. We will treat these and other tools in the next tutorials.
 
+## Chatbot handoff to Human Agents
+
+
+
 Enjoy you custom Dialogflow connection!
 
 
