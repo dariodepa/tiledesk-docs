@@ -55,9 +55,8 @@ filter by lead id
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="participant" type="array" required=false %}
-filter by participants (agent or bot)
+filter by participants \(agent or bot\)
 {% endapi-method-parameter %}
-
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 

@@ -11,5 +11,5 @@ Tiledesk  installation requires the following ports to be open:
 * 8080: Web Ionic UI . This is optional because you have to access to Web Ionic UI through the Nginx proxy.
 * 4500: Tiledesk Dashboard UI. This is optional because you have to access to Tiledesk Dashboard UI through the Nginx proxy.
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%286%29.png)
 

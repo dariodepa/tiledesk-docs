@@ -1,6 +1,6 @@
-# Table of contents
+# Introduction
 
-* [Introduction](README.md)
+* [Introduction](./)
 
 ## Widget
 
@@ -9,7 +9,7 @@
 
 ## APIs
 
-* [REST API](apis/api/README.md)
+* [REST API](apis/api/)
   * [Authentication](apis/api/authentication.md)
   * [Requests](apis/api/requests.md)
   * [Leads](apis/api/leads.md)
@@ -17,15 +17,15 @@
   * [Activities](apis/api/activities.md)
   * [Projects](apis/api/projects.md)
   * [Team](apis/api/team.md)
-  * [Chat Bots](apis/api/bots/README.md)
+  * [Chat Bots](apis/api/bots/)
     * [Bots](apis/api/bots/bots.md)
     * [Faq](apis/api/bots/faq.md)
-  * [Management Api](apis/api/management-api/README.md)
+  * [Management Api](apis/api/management-api/)
     * [Departments](apis/api/management-api/departments.md)
     * [Groups](apis/api/management-api/groups.md)
-* [Webhooks](apis/webhook/README.md)
+* [Webhooks](apis/webhook/)
   * [Subscriptions](apis/webhook/subscriptions.md)
-* [Tutorials](apis/tutorials/README.md)
+* [Tutorials](apis/tutorials/)
   * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
   * [Dialogflow as external chatbot integration](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
   * [Hello World tutorial for external chatbots integration](apis/tutorials/connect-your-own-chatbot.md)
