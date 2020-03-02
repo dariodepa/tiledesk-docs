@@ -143,3 +143,5 @@ Push the **New conversation** button on the widget. A conversation will open on 
 
 In the next tutorial you will learn how to interact with a Dialogflow agent directly from an external chatbot endpoint.
 
+Do you have feedback on this article? Please send us your feedback writing an email to info@tiledesk.com
+
