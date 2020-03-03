@@ -94,7 +94,9 @@ Follow this guide to install and configure Tiledesk-Dasboard: [https://github.co
 
 Follow this guide to install and configure the Web Widget: [https://github.com/chat21/chat21-web-widget](https://github.com/chat21/chat21-web-widget)
 
-## 7. Configure push notification
+## 7. Install and configure chat21-ionic with push notification
+
+Follow this guide to install chat21-ionic from source code: [https://github.com/chat21/chat21-ionic\#installation](https://github.com/chat21/chat21-ionic#installation)
 
 Follow this guide to configure push notification for chat21-cloud-functions: [https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup\_options.md\#push-notification](https://github.com/chat21/chat21-cloud-functions/blob/master/docs/setup_options.md#push-notification) 
 
