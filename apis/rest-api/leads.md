@@ -201,7 +201,6 @@ The lead fullname
 {% api-method-parameter name="attributes" type="object" required=false %}
 The lead custom attributes
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -278,7 +277,6 @@ The lead fullname
 {% api-method-parameter name="attributes" type="object" required=false %}
 The lead custom attributes
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 

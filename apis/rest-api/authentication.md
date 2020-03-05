@@ -140,7 +140,6 @@ the user firstname
 the user password
 {% endapi-method-parameter %}
 
-
 {% api-method-parameter name="email" type="string" required=false %}
 the user email
 {% endapi-method-parameter %}
@@ -148,7 +147,6 @@ the user email
 {% api-method-parameter name="attributes" type="object" required=false %}
 the user custom attributes
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -183,7 +181,7 @@ Custom authentication for a user.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows to authenticate with a custom JWT token.   
+Allows to authenticate with a custom JWT token.  
 **Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 

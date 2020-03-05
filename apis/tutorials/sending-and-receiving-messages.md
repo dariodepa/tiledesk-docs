@@ -29,7 +29,7 @@ Get the **PROJECT\_ID** of the created project under _Project Settings_ menu. We
 
 ## Anonymous end-user authentication through APIs
 
-In this tutorial we will authenticate _end-users_ through anonymous authentication \(you can find more info on anomymous authentication [here](../api/authentication.md#anonymous-authentication-for-a-user)\).
+In this tutorial we will authenticate _end-users_ through anonymous authentication \(you can find more info on anomymous authentication [here](../rest-api/authentication.md#anonymous-authentication-for-a-user)\).
 
 All APIs in this tutorial will use the following endpoint:
 
@@ -62,7 +62,7 @@ This will reply with the JWT token that we'll use to send our first message:
 
 ## Sending messages to a conversation
 
-You can send a message using the [Send Message API](../api/messages.md#send-a-message).
+You can send a message using the [Send Message API](../rest-api/messages.md#send-a-message).
 
 To send a message you need to choose a _unique_ **request identifier.** A _request_  is an object containing the all the metadata describing the conversation between end-user and _support team_\).
 
@@ -98,9 +98,9 @@ The agent \(you\) can now see the same conversation in the agent chat \(first op
 
 ## Receiving new messages notifications using Webhooks
 
-You can subscribe to the messages events sent to a conversation using [Webhook](../webhook/)s.
+You can subscribe to the messages events sent to a conversation using [Webhook]()s.
 
-You must first [create a subscription](../webhook/subscriptions.md#create-a-new-subscription) to an [event](../webhook/#webhook-events) that points to a url on your server.
+You must first [create a subscription](../webhooks/subscriptions.md#create-a-new-subscription) to an [event]() that points to a url on your server.
 
 In this case we will subscribe to _message creation_ event on a custom url \(/test\) on requestcatcher.com, a free, beautiful service to debug your webhooks: 
 
