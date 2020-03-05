@@ -139,6 +139,16 @@ the user firstname
 {% api-method-parameter name="lastname" type="string" required=false %}
 the user password
 {% endapi-method-parameter %}
+
+
+{% api-method-parameter name="email" type="string" required=false %}
+the user email
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="attributes" type="object" required=false %}
+the user custom attributes
+{% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
