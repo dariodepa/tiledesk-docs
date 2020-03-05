@@ -1,11 +1,15 @@
-# Activities
+# Analytics
 
 You can use the API to get the analytics data.
 
-{% api-method method="get" host="YOUR_TILEDESK_DOMAIN" path="/:project_id/analytics/requests/waiting" %}
+{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/analytics/requests/waiting" %}
 {% api-method-summary %}
 Get the average waiting time
 {% endapi-method-summary %}
+
+{% api-method-description %}
+This is calculated over the last 30 days. You can change this value using "last" parameter. 
+{% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
@@ -23,9 +27,8 @@ authorization token. Basic Auth or JWT
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="last" type="number" required=false %}
-Last 
+Number of seconds since the waiting time is calculated
 {% endapi-method-parameter %}
-
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
@@ -35,7 +38,7 @@ Last
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 ....
 ```
 {% endapi-method-response-example %}
