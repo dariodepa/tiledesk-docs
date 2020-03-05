@@ -17,6 +17,7 @@
   * [Activities](apis/rest-api/activities.md)
   * [Projects](apis/rest-api/projects.md)
   * [Team](apis/rest-api/team.md)
+  * [Analytics](apis/rest-api/analytics.md)
   * [Chat Bots]()
     * [Bots](apis/rest-api/chat-bots/bots.md)
     * [Faq](apis/rest-api/chat-bots/faq.md)
