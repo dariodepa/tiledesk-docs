@@ -197,6 +197,11 @@ the external id of the lead
 {% api-method-parameter name="fullname" type="string" required=false %}
 The lead fullname
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="attributes" type="object" required=false %}
+The lead custom attributes
+{% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -269,6 +274,11 @@ the lead email address
 {% api-method-parameter name="fullname" type="string" required=false %}
 The lead fullname
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="attributes" type="object" required=false %}
+The lead custom attributes
+{% endapi-method-parameter %}
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
