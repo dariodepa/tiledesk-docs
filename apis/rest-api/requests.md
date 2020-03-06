@@ -43,7 +43,7 @@ make a fulltext search query
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="string" required=false %}
-filter by request status. Values: 100 for served requests, 200 for unserved requests, 1000 for closed requests
+filter by request status. Values: 100 for unserved  requests, 200 for served requests, 1000 for closed requests
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="dept\_id" type="string" required=false %}
