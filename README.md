@@ -12,7 +12,7 @@
 * [REST API](./)
   * [Authentication](apis/rest-api/authentication.md)
   * [Requests](apis/rest-api/requests.md)
-  * [Leads](./)
+  * [Leads](apis/rest-api/lead.md)
   * [Messages](apis/rest-api/messages.md)
   * [Activities](apis/rest-api/activities.md)
   * [Projects](apis/rest-api/projects.md)
