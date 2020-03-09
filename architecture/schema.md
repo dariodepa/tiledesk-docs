@@ -4,7 +4,9 @@
 
 ![](../.gitbook/assets/tiledesk-architecture-design.001.jpeg)
 
-Widget, Web Chat and Native mobile apps are Chat21 modules. Chat21 relies on Google Firebase as the backend database. 
+[Chat21](http://www.chat21.org) is a messaging engine with a multi platform SDKs:  native iOS and Android mobile SDKs and Web SDKs.  
+
+Widget, Web Chat and Native mobile apps are Chat21 modules. Chat21 relies on Google [Firebase](http://firebase.google.com/) as the backend database. 
 
 ## Components overview
 
