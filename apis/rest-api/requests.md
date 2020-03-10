@@ -27,11 +27,11 @@ authorization token. Basic Auth or JWT
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="sortField" type="string" required=false %}
-what field to sort the results by.
+what field to sort the results by. _default is createdAt_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="direction" type="string" required=false %}
-sort direction: 1 or -1. Return the results in ascending or descending order. _defaults to desc_
+sort direction: 1 (asc) or -1 (desc). Return the results in ascending (1) or descending (-1) order. _defaults to desc (-1)_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="number" required=false %}
