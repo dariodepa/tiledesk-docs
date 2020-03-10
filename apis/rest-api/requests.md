@@ -38,6 +38,10 @@ sort direction: 1 (asc) or -1 (desc). Return the results in ascending (1) or des
 what page of results to fetch. defaults to first page.
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="limit" type="number" required=false %}
+specify the maximum number of results to be returned. _default is 40 rows_
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="full\_text" type="string" required=false %}
 make a fulltext search query
 {% endapi-method-parameter %}
