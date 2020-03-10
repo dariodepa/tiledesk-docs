@@ -224,6 +224,82 @@ the lastname of the agent
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
+
+
+{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
+{% api-method-summary %}
+Update a teammate by id
+{% endapi-method-summary %}
+
+{% api-method-description %}
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="project\_id" type="string" required=true %}
+The project\_id is a unique code assigned to your project when you create it in Tiledesk
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="project\_user\_id" type="string" required=true %}
+The teammate identifier.
+{% endapi-method-parameter %}
+
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+authorization token. Basic Auth or JWT
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+use "application/json" value
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="role" type="string" required=false %}
+The teammate role.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="user_available" type="boolean" required=false %}
+The teammate availability.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="max_served_chat" type="number" required=false %}
+The teammate maximum number of chat served.
+{% endapi-method-parameter %}
+
+
+{% api-method-parameter name="attributes" type="object" required=false %}
+The teammate custom attributes
+{% endapi-method-parameter %}
+
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+{  
+         ..
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
+
+
+
 {% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}
 Leave a project
