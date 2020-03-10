@@ -260,7 +260,7 @@ use "application/json" value
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="role" type="string" required=false %}
-The teammate role.
+The teammate role. Permitted values: admin, agent.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="user_available" type="boolean" required=false %}
