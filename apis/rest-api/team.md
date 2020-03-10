@@ -115,7 +115,6 @@ Get a teammate by id
 the Project Id is a unique code assigned to your project when you create it in Tiledesk.
 {% endapi-method-parameter %}
 
-{% api-method-path-parameters %}
 {% api-method-parameter name="project\_user\_id" type="string" required=true %}
 The teammate identifier.
 {% endapi-method-parameter %}
