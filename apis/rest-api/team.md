@@ -264,11 +264,11 @@ The teammate role.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="user_available" type="boolean" required=false %}
-The teammate availability.
+The teammate availability. True for available, false for unavailable. _Default is true_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="max_served_chat" type="number" required=false %}
-The teammate maximum number of chat served.
+The number of concurrent chats the teammate can take at once.
 {% endapi-method-parameter %}
 
 
