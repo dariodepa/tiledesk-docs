@@ -27,7 +27,7 @@ authorization token. Basic Auth or JWT
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="sortField" type="string" required=false %}
-what field to sort the results by. _default is createdAt_
+what field to sort the results by. _default field is createdAt_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="direction" type="string" required=false %}
