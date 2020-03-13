@@ -105,6 +105,15 @@ filter by participants \(agent or bot\)
             ],
             "tags":[
             ],
+            "notes":[
+               {
+                  "_id":"5e6ba903261616001752b9f4",
+                  "text":"note 1",
+                  "createdBy":"5aaa99024c3b110014b478f0",
+                  "updatedAt":"2020-03-13T15:38:43.880Z",
+                  "createdAt":"2020-03-13T15:38:43.880Z"
+               }
+            ],
             "messages_count":7,
             "participants":[
                "5aaa99024c3b110014b478f0"
@@ -191,6 +200,15 @@ authorization token. Basic Auth or JWT
       }
    ],
    "tags":[
+   ],
+   "notes":[
+      {
+         "_id":"5e6ba903261616001752b9f4",
+         "text":"note 1",
+         "createdBy":"5aaa99024c3b110014b478f0",
+         "updatedAt":"2020-03-13T15:38:43.880Z",
+         "createdAt":"2020-03-13T15:38:43.880Z"
+      }
    ],
    "messages_count":7,
    "participants":[
