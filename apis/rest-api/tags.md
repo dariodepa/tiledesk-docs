@@ -1,4 +1,4 @@
-You can use the API to get or set canned response information.
+You can use the API to get or set tags.
 
 {% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags" %}
 {% api-method-summary %}
