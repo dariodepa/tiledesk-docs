@@ -212,7 +212,7 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="string" required=true %}
-The id is the canned response indentifier.
+The id is the tag indentifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -280,7 +280,7 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="id" type="string" required=true %}
-The id is the canned response indentifier.
+The id is the tag indentifier.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
