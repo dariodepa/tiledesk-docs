@@ -167,6 +167,10 @@ the tag name
 the tag color
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="attributes" type="object" required=false %}
+The tag custom attributes
+{% endapi-method-parameter %}
+
 
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -234,6 +238,10 @@ the tag name
 
 {% api-method-parameter name="color" type="string" required=false %}
 the tag color
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="attributes" type="object" required=false %}
+The tag custom attributes
 {% endapi-method-parameter %}
 
 
