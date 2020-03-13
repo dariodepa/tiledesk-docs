@@ -48,18 +48,25 @@ what page of results to fetch. defaults to first page.
 ```text
 [
    {
-      "status":100,
-      "_id":"5e67c1c89d86fa001755ed90",
-      "title":"howcanhelpyou",
-      "text":"Hi $recipient_name my name is $agent_name how can I help you?",
+      "_id":"5e67b8bafb930c0017aa4e42",
+      "tag":"tag1",
+      "color":"#66C549",
       "id_project":"5e5d40b2bd0a9b00179ff3cd",
       "createdBy":"5e09d16d4d36110017506d7f",
-      "createdAt":"2020-03-10T16:35:20.458Z",
-      "updatedAt":"2020-03-10T16:35:20.458Z",
+      "createdAt":"2020-03-10T15:56:42.374Z",
+      "updatedAt":"2020-03-10T15:56:42.374Z",
       "__v":0
    },
-   ...
-]
+   {
+      "_id":"5e67b737fb930c0017aa4e40",
+      "tag":"important",
+      "color":"#43B1F2",
+      "id_project":"5e5d40b2bd0a9b00179ff3cd",
+      "createdBy":"5e09d16d4d36110017506d7f",
+      "createdAt":"2020-03-10T15:50:15.759Z",
+      "updatedAt":"2020-03-10T15:50:15.759Z",
+      "__v":0
+   },
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -81,7 +88,7 @@ Only works for Tiledesk v2 environment (on-premises only).
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the canned identifier
+the tag identifier
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -107,15 +114,14 @@ use "application/json" value
 {% endapi-method-response-example-description %}
 
 ```text
-{
-      "status":100,
-      "_id":"5e67c1c89d86fa001755ed90",
-      "title":"howcanhelpyou",
-      "text":"Hi $recipient_name my name is $agent_name how can I help you?",
+  {
+      "_id":"5e67b737fb930c0017aa4e40",
+      "tag":"important",
+      "color":"#43B1F2",
       "id_project":"5e5d40b2bd0a9b00179ff3cd",
       "createdBy":"5e09d16d4d36110017506d7f",
-      "createdAt":"2020-03-10T16:35:20.458Z",
-      "updatedAt":"2020-03-10T16:35:20.458Z",
+      "createdAt":"2020-03-10T15:50:15.759Z",
+      "updatedAt":"2020-03-10T15:50:15.759Z",
       "__v":0
    }
 ```
@@ -153,17 +159,14 @@ use "application/json" value
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="title" type="string" required=false %}
-the canned response title
+{% api-method-parameter name="tag" type="string" required=true %}
+the tag name
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="text" type="string" required=true %}
-the canned response content
+{% api-method-parameter name="color" type="string" required=false %}
+the tag color
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="attributes" type="object" required=false %}
-The canned response custom attributes
-{% endapi-method-parameter %}
 
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -175,15 +178,14 @@ The canned response custom attributes
 {% endapi-method-response-example-description %}
 
 ```text
-{
-      "status":100,
-      "_id":"5e67c1c89d86fa001755ed90",
-      "title":"howcanhelpyou",
-      "text":"Hi $recipient_name my name is $agent_name how can I help you?",
+  {
+      "_id":"5e67b737fb930c0017aa4e40",
+      "tag":"important",
+      "color":"#43B1F2",
       "id_project":"5e5d40b2bd0a9b00179ff3cd",
       "createdBy":"5e09d16d4d36110017506d7f",
-      "createdAt":"2020-03-10T16:35:20.458Z",
-      "updatedAt":"2020-03-10T16:35:20.458Z",
+      "createdAt":"2020-03-10T15:50:15.759Z",
+      "updatedAt":"2020-03-10T15:50:15.759Z",
       "__v":0
    }
 ```
@@ -195,7 +197,7 @@ The canned response custom attributes
 
 {% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
-Update a canned response by id
+Update a tag by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -226,16 +228,12 @@ use "application/json" value
 
 {% api-method-body-parameters %}
 
-{% api-method-parameter name="title" type="string" required=false %}
-the canned response title
+{% api-method-parameter name="tag" type="string" required=true %}
+the tag name
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="text" type="string" required=true %}
-the canned response content
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="attributes" type="object" required=false %}
-The canned response custom attributes
+{% api-method-parameter name="color" type="string" required=false %}
+the tag color
 {% endapi-method-parameter %}
 
 
@@ -249,15 +247,14 @@ The canned response custom attributes
 {% endapi-method-response-example-description %}
 
 ```text
-{
-      "status":100,
-      "_id":"5e67c1c89d86fa001755ed90",
-      "title":"howcanhelpyou",
-      "text":"Hi $recipient_name my name is $agent_name how can I help you?",
+  {
+      "_id":"5e67b737fb930c0017aa4e40",
+      "tag":"important",
+      "color":"#43B1F2",
       "id_project":"5e5d40b2bd0a9b00179ff3cd",
       "createdBy":"5e09d16d4d36110017506d7f",
-      "createdAt":"2020-03-10T16:35:20.458Z",
-      "updatedAt":"2020-03-10T16:35:20.458Z",
+      "createdAt":"2020-03-10T15:50:15.759Z",
+      "updatedAt":"2020-03-10T15:50:15.759Z",
       "__v":0
    }
 ```
@@ -268,7 +265,7 @@ The canned response custom attributes
 
 {% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
-Delete a canned response by id
+Delete a tag by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -301,17 +298,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response-example-description %}
 
 ```text
-{
-      "status":100,
-      "_id":"5e67c1c89d86fa001755ed90",
-      "title":"howcanhelpyou",
-      "text":"Hi $recipient_name my name is $agent_name how can I help you?",
-      "id_project":"5e5d40b2bd0a9b00179ff3cd",
-      "createdBy":"5e09d16d4d36110017506d7f",
-      "createdAt":"2020-03-10T16:35:20.458Z",
-      "updatedAt":"2020-03-10T16:35:20.458Z",
-      "__v":0
-   }
+...
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
