@@ -67,9 +67,9 @@ what page of results to fetch. defaults to first page.
 {% endapi-method %}
 
 
-{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned/:id" %}
+{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
-Get a canned respose by id
+Get a tag by id
 {% endapi-method-summary %}
 
 
@@ -124,9 +124,9 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned" %}
+{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags" %}
 {% api-method-summary %}
-Create a new canned response
+Create a new tag
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -193,7 +193,7 @@ The canned response custom attributes
 {% endapi-method %}
 
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned/:id" %}
+{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
 Update a canned response by id
 {% endapi-method-summary %}
@@ -266,7 +266,7 @@ The canned response custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned/:id" %}
+{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
 Delete a canned response by id
 {% endapi-method-summary %}
