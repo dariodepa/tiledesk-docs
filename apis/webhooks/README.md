@@ -93,7 +93,16 @@ The following Events are available and you can be notified when an action relati
 | lead.create | Subscribes to leads creations |
 | faq.create | Subscribes to faq creations |
 | faq.update | Subscribes to faq being updated |
-| faq.delete | Subscribes to faq being closed |
+| faq.delete | Subscribes to faq being deleted |
+| department.create | Subscribes to department creations |
+| department.update | Subscribes to department being updated |
+| department.delete | Subscribes to department being deleted |
+| project_user.invite | Subscribes to teammate project invitation |
+| project_user.update | Subscribes to teammate being updated |
+| project_user.delete | Subscribes to teammate project leave |
+| group.create | Subscribes to group creations |
+| group.update | Subscribes to group being updated |
+| group.delete | Subscribes to group being deleted |
 
 ### Webhook Notification object
 
