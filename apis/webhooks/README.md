@@ -1,5 +1,5 @@
 ---
-description: This is a Beta version of the documentation.
+description: This is a Beta version of the documentation for v2 version
 ---
 
 # Webhooks
