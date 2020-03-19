@@ -2,6 +2,25 @@
 
 You can use the API to get the message information.
 
+
+The Model 
+
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The unique identifier for the message which is given by Tiledesk. |
+| sender | String | A unique identifier of the sender. |
+| senderFullname | String | The sender fullname |
+| recipient | String | A unique identifier of the recipient. |
+| status | Number | The message status: FAILED : -100, SENDING : 0, SENT : 100, DELIVERED : 150, RECEIVED : 200, RETURN_RECEIPT: 250, SEEN : 300 |
+| text | String | The message text. |
+| type | String | The message type. Accepted values: text (default), image |
+| metadata | Object | The message metadata. |
+| attributes | Object | The custom attributes which are set for the message. |
+| createdAt | String | The time when the message was created. |
+| updatedAt | String |  The time when the message was updated.  |
+| createdBy | String | The unique identifier of the row creator |
+| id_project | String | The unique identifier of the project |
+      
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/messages" %}
 {% api-method-summary %}
 Get the messages of a request by id
