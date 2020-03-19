@@ -10,8 +10,8 @@ The Model
 | department | Object | the department object selected for the request. |
 | lead | Object | the lead involved in this request. |
 | participants | Array | The list of the identifier of the teammates or bots who participated in the request. |
-| participingAgents | Array | The list of the teammates who participated in the request. |
-| participingBots | Array | The list of the bots who participated in the request. |
+| participatingAgents | Array | The list of the teammates who participated in the request. |
+| participatingBots | Array | The list of the bots who participated in the request. |
 | status | Number | The request status: UNSERVED : 100, SERVED : 200, CLOSED : 1000 |
 | sourcePage | String | The request source page. |
 | language | String | The request language. |
