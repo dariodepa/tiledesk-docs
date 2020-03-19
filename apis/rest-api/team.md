@@ -7,7 +7,7 @@ The Model
 | id | String | The unique identifier for the teammate which is given by Tiledesk. |
 | role | String | The teammate role.  Values: owner, agent, admin, user, guest |
 | user_available | Boolean | Dermine if the teammate is available or unavailable to accept requests |
-| role | String | The teammate role.  Values: owner, agent, admin, user, guest |
+| id_user | Object | The user object referenced by the teammate |
 | max_served_chat | Number | Number of chats that agent is allowed to take at one time |
 | attributes | Object | The custom attributes which are set for the teammate. |
 | createdAt | String | The time when the teammate was created. |
