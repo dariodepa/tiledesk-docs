@@ -1,5 +1,18 @@
 # Team
 
+The Model 
+
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The unique identifier for the teammate which is given by Tiledesk. |
+| role | String | The teammate role.  Values: owner, agent, admin, user, guest |
+| attributes | Object | The custom attributes which are set for the teammate. |
+| createdAt | String | The time when the teammate was created. |
+| updatedAt | String |  The time when the teammate was updated.  |
+| createdBy | String | The unique identifier of the row creator |
+| id_project | String | The unique identifier of the project |
+      
+      
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
 {% api-method-summary %}
 Get the team
