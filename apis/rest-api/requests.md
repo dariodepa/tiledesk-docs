@@ -1,5 +1,33 @@
 # Requests
 
+The Model 
+
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The unique identifier for the request which is given by Tiledesk. |
+| request_id | String | A unique identifier for the request which is given to Tiledesk. It's an external id |
+| first_text | String | the request first text. |
+| department | Object | the department object selected for the request. |
+| lead | Object | the lead involved in this request. |
+| participants | Array | The list of the identifier of the teammates or bots who participated in the request. |
+| participingAgents | Array | The list of the teammates who participated in the request. |
+| participingBots | Array | The list of the bots who participated in the request. |
+| status | Number | The request status: UNSERVED : 100, SERVED : 200, CLOSED : 1000 |
+| sourcePage | String | The request source page. |
+| language | String | The request language. |
+| userAgent | String | The user agent. |
+| messages_count | Number | The number of messages of the request. |
+| tags | Array | A list of tags objects associated with the request. |
+| notes | Array |  A list of notes objects associated with the request. |
+| rating | Number | The requet rating. |
+| rating_message | String | The rating message. |
+| waiting_time | Number | Wait time is calculated as duration between the first visitor message in the chat and the first agent message. |
+| attributes | Object | The custom attributes which are set for the request. |
+| createdAt | String | The time when the request was created. |
+| updatedAt | String |  The time when the request was updated.  |
+| createdBy | String | The unique identifier of the row creator |
+| id_project | String | The unique identifier of the project |
+
 You can use the API to get the request information.
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests" %}
