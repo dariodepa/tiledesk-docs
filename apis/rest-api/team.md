@@ -289,6 +289,12 @@ the firstname of the agent
 {% api-method-parameter name="lastname" type="string" required=false %}
 the lastname of the agent
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="user_available" type="boolean" required=false %}
+the initial agent status. Available (true) or unavailable (false).
+{% endapi-method-parameter %}
+
+
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
