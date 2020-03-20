@@ -1,5 +1,18 @@
 You can use the API to get or set canned response information.
 
+The Model 
+
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The unique identifier for the canned respose which is given by Tiledesk. |
+| title | String | The canned respose title. |
+| text | String | The canned respose content |
+| attributes | Object | The custom attributes which are set for the canned respose. |
+| createdAt | String | The time when the canned respose was created. |
+| updatedAt | String |  The time when the canned respose was updated.  |
+| createdBy | String | The unique identifier of the row creator |
+| id_project | String | The unique identifier of the project |
+
 {% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned" %}
 {% api-method-summary %}
 Get all canned responses
