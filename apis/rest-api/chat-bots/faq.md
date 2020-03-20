@@ -1,5 +1,20 @@
 # Faq
 
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The unique identifier for the faq which is given by Tiledesk. |
+| question | String | The faq question. |
+| answer | String | The faq answer |
+| language | String | The faq language |
+| topic | String | The faq topic |
+| id_faq_kb | String |  The bot identifier of the faq |
+| attributes | Object | The custom attributes which are set for the faq. |
+| createdAt | String | The time when the faq was created. |
+| updatedAt | String |  The time when the faq was updated.  |
+| createdBy | String | The unique identifier of the row creator |
+| id_project | String | The unique identifier of the project |
+
+
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/faq" %}
 {% api-method-summary %}
 Get all faqs of a bot
