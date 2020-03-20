@@ -19,7 +19,7 @@ The Request model
 | messages_count | Number | The number of messages of the request. |
 | tags | Array | A list of tags objects associated with the request. |
 | notes | Array |  A list of notes objects associated with the request. |
-| rating | Number | The requet rating. |
+| rating | Number | The request rating. From 0 to 5. |
 | rating_message | String | The rating message. |
 | waiting_time | Number | Wait time is calculated as duration between the first visitor message in the chat and the first agent message. |
 | closed_at | String | The time (ISO-8601 date string) when the request is closed (status = 1000). |
