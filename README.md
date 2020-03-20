@@ -29,7 +29,7 @@
     * [Groups](apis/rest-api/management-api/groups.md)
 * [Webhooks](apis/webhooks/README.md)
   * [Subscriptions](apis/webhooks/subscriptions.md)
-* [Tutorials](https://github.com/Tiledesk/tiledesk-docs/tree/838ae19deec271b2cdaa1855d1299090d2555b77/apis/tutorials/README.md)
+* [Tutorials](apis/tutorials/README.md)
   * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
   * [Dialogflow as external chatbot integration](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
   * [Hello World tutorial for external chatbots integration](apis/tutorials/connect-your-own-chatbot.md)
