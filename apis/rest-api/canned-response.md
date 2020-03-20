@@ -1,6 +1,6 @@
 You can use the API to get or set canned response information.
 
-The Model 
+The Canned respose model 
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
