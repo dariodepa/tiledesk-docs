@@ -8,8 +8,8 @@ The Model
 | title | String | The canned respose title. |
 | text | String | The canned respose content |
 | attributes | Object | The custom attributes which are set for the canned respose. |
-| createdAt | String | The time when the canned respose was created. |
-| updatedAt | String |  The time when the canned respose was updated.  |
+| createdAt | String | The time (ISO-8601 date string) when the canned respose was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the canned respose was updated.  |
 | createdBy | String | The unique identifier of the row creator |
 | id_project | String | The unique identifier of the project |
 
