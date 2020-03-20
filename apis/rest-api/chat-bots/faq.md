@@ -1,5 +1,7 @@
 # Faq
 
+The Faq model
+
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the faq which is given by Tiledesk. |
