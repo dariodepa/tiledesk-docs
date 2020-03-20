@@ -34,7 +34,7 @@ Fetches the messages by his or her request\_id
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -110,7 +110,7 @@ Fetche the message by his or her id
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request identifier
+the request_id field. It's the external request identifier.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="message\_id" type="string" required=true %}
