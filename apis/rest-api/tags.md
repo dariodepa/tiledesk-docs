@@ -8,8 +8,8 @@ The Model
 | tag | String | The tag name. |
 | color | String | The tag hexadecimal color |
 | attributes | Object | The custom attributes which are set for the tag. |
-| createdAt | String | The time when the tag was created. |
-| updatedAt | String |  The time when the tag was updated.  |
+| createdAt | String | The time (ISO-8601 date string) when the tag was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the tag was updated.  |
 | createdBy | String | The unique identifier of the row creator |
 | id_project | String | The unique identifier of the project |
 
