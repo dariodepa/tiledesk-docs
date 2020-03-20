@@ -10,6 +10,7 @@
 ## APIs
 
 * [REST API](./)
+  * [Introduction](apis/rest-api/introduction.md)
   * [Authentication](apis/rest-api/authentication.md)
   * [Requests](apis/rest-api/requests.md)
   * [Leads](apis/rest-api/leads.md)
