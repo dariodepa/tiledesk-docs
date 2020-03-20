@@ -1,5 +1,21 @@
 # Bots
 
+The Model 
+
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The unique identifier for the bot which is given by Tiledesk. |
+| name | String | The bot name. |
+| type | String | The bot type. Permitted values: internal, external |
+| secret | String | The bot secret token used for JWT authentication |
+| url | String | The bot external endpoint address |
+| trashed | Boolean |  The bot status |
+| attributes | Object | The custom attributes which are set for the bot. |
+| createdAt | String | The time when the bot was created. |
+| updatedAt | String |  The time when the bot was updated.  |
+| createdBy | String | The unique identifier of the row creator |
+| id_project | String | The unique identifier of the project |
+
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/faq\_kb" %}
 {% api-method-summary %}
 Get all bots
