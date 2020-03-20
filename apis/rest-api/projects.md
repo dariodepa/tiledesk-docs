@@ -46,31 +46,40 @@ authorization token. Basic Auth or JWT
 ```text
 [
 {
-   "versions":30,
-   "_id":"5df2240cecd41b00173a06bb",
-   "name":"000000",
-   "activeOperatingHours":true,
-   "createdBy":"5aaa99024c3b110014b478f0",
-   "profile":{
-      "name":"free",
-      "trialDays":30,
-      "agents":0,
-      "type":"free"
+      "_id":"5acdc6d86fb82500141d56c9",
+      "updatedAt":"2019-01-31T18:09:53.417Z",
+      "createdAt":"2018-04-11T08:27:04.509Z",
+      "id_project":{
+         "versions":30,
+         "_id":"5acba41a213ae3001451b723",
+         "updatedAt":"2019-01-29T12:01:06.793Z",
+         "createdAt":"2018-04-09T17:34:18.064Z",
+         "name":"conversational landing page",
+         "createdBy":"5aabade839db7d001477d3d5",
+         "__v":0,
+         "profile":{
+            "name":"free",
+            "trialDays":30,
+            "agents":0,
+            "type":"free"
+         },
+         "channels":[
+            {
+               "name":"chat21"
+            }
+         ],
+         "trialExpired":true,
+         "trialDaysLeft":680,
+         "isActiveSubscription":false,
+         "id":"5acba41a213ae3001451b723"
+      },
+      "id_user":"5aaa99024c3b110014b478f0",
+      "role":"admin",
+      "createdBy":"5aabade839db7d001477d3d5",
+      "__v":0,
+      "user_available":true,
+      "id":"5acdc6d86fb82500141d56c9"
    },
-   "channels":[
-      {
-         "name":"chat21"
-      }
-   ],
-   "createdAt":"2019-12-12T11:27:08.548Z",
-   "updatedAt":"2020-01-08T10:53:12.844Z",
-   "__v":0,
-   "operatingHours":"{\"0\":[{\"start\":\"09:00\",\"end\":\"13:00\"},{\"start\":\"14:00\",\"end\":\"18:00\"}],\"1\":[{\"start\":\"09:00\",\"end\":\"13:00\"},{\"start\":\"14:00\",\"end\":\"18:00\"}],\"tzname\":\"Europe/Rome\"}",
-   "trialExpired":false,
-   "trialDaysLeft":-4,
-   "isActiveSubscription":false,
-   "id":"5df2240cecd41b00173a06bb"
-},
 ...
 ]
 ```
