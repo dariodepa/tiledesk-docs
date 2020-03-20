@@ -17,6 +17,7 @@
   * [Activities](apis/rest-api/activities.md)
   * [Projects](apis/rest-api/projects.md)
   * [Team](apis/rest-api/team.md)
+  * [User](apis/rest-api/user.md)
   * [Analytics](apis/rest-api/analytics.md)
   * [Canned responses](apis/rest-api/canned-response.md)
   * [Tags](apis/rest-api/tags.md)
