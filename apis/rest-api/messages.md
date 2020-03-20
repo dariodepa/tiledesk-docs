@@ -16,8 +16,8 @@ The Model
 | type | String | The message type. Accepted values: text (default), image |
 | metadata | Object | The message metadata. |
 | attributes | Object | The custom attributes which are set for the message. |
-| createdAt | String | The time when the message was created. |
-| updatedAt | String |  The time when the message was updated.  |
+| createdAt | String | The time (ISO-8601 date string) when the message was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the message was updated.  |
 | createdBy | String | The unique identifier of the row creator |
 | id_project | String | The unique identifier of the project |
       
