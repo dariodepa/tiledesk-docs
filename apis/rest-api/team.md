@@ -10,8 +10,8 @@ The Model
 | id_user | Object | The user object referenced by the teammate |
 | max_served_chat | Number | Number of chats that agent is allowed to take at one time |
 | attributes | Object | The custom attributes which are set for the teammate. |
-| createdAt | String | The time when the teammate was created. |
-| updatedAt | String |  The time when the teammate was updated.  |
+| createdAt | String | The time (ISO-8601 date string) when the teammate was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the teammate was updated.  |
 | createdBy | String | The unique identifier of the row creator |
 | id_project | String | The unique identifier of the project |
       
