@@ -22,11 +22,11 @@ The Request model
 | rating | Number | The requet rating. |
 | rating_message | String | The rating message. |
 | waiting_time | Number | Wait time is calculated as duration between the first visitor message in the chat and the first agent message. |
-| closed_at | String | The timestamp when the request is closed (status = 1000). |
+| closed_at | String | The time (ISO-8601 date string) when the request is closed (status = 1000). |
 | transcript | String | The chat transcript. |
 | attributes | Object | The custom attributes which are set for the request. |
-| createdAt | String | The time when the request was created. |
-| updatedAt | String |  The time when the request was updated.  |
+| createdAt | String | The time (ISO-8601 date string) when the request was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the request was updated.   |
 | createdBy | String | The unique identifier of the row creator |
 | id_project | String | The unique identifier of the project |
 
