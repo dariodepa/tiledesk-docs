@@ -1,6 +1,6 @@
 # Projects
 
-The Model 
+The Project model 
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
