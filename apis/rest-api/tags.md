@@ -1,6 +1,6 @@
 You can use the API to get or set tags.
 
-The Model 
+The Tag model 
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
