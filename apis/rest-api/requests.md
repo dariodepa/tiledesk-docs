@@ -5,7 +5,7 @@ The Request model
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the request which is given by Tiledesk. |
-| request_id | String | A unique identifier for the request which is given to Tiledesk. It's an external id |
+| request_id | String | A unique identifier for the request which is given to Tiledesk. It's an external id. Follow this pattern 'support-group-UUID' |
 | first_text | String | the request first text. |
 | department | Object | the department object selected for the request. |
 | lead | Object | the lead involved in this request. |
