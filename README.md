@@ -1,7 +1,5 @@
 # Introduction
 
-* [Introduction](./)
-
 ## Widget
 
 * [Web SDK](widget/web-sdk.md)
