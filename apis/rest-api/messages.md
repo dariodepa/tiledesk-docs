@@ -3,7 +3,7 @@
 You can use the API to get the message information.
 
 
-The Model 
+The Message model 
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
