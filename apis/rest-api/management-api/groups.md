@@ -1,6 +1,6 @@
 # Groups
 
-The Model 
+The Group model 
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
