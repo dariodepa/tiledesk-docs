@@ -1,6 +1,6 @@
 # Bots
 
-The Model 
+The Bot model 
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
