@@ -1,5 +1,20 @@
 # Projects
 
+The Model 
+
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The unique identifier for the project which is given by Tiledesk. |
+| name | String | The project name. |
+| activeOperatingHours | Boolena | Determine if the operating hours option is enabled |
+| operatingHours | Object | The operating hours settings. |
+| settings | Object | The project settings |
+| widget | Object | The widget settings. |
+| profile | Object | The project profile object |
+| createdAt | String | The time when the project was created. |
+| updatedAt | String |  The time when the project was updated.  |
+| createdBy | String | The unique identifier of the row creator |
+
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id" %}
 {% api-method-summary %}
 Get the project detail
