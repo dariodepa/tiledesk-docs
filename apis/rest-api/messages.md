@@ -8,9 +8,9 @@ The Model
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the message which is given by Tiledesk. |
-| sender | String | A unique identifier of the sender. |
-| senderFullname | String | The sender fullname |
-| recipient | String | A unique identifier of the recipient. |
+| sender | String | A unique identifier of the sender. It can be: the user identifier, a bot identifier or the system user |
+| senderFullname | String | The sender fullname. It can be: the user fullname, the bot name o an alias |
+| recipient | String | A unique identifier of the recipient. It can be: the request_id field (external id) of the request |
 | status | Number | The message status: FAILED : -100, SENDING : 0, SENT : 100, DELIVERED : 150, RECEIVED : 200, RETURN_RECEIPT: 250, SEEN : 300 |
 | text | String | The message text. |
 | type | String | The message type. Accepted values: text (default), image |
