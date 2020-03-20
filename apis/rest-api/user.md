@@ -11,8 +11,8 @@ The Model
 | firstname | String | The user firstname. |
 | lastname | String | The user lastname. |
 | emailverified | Boolean | Determine if the user has a email validated. |
-| createdAt | String | The time when the user was created. |
-| updatedAt | String |  The time when the user was updated.  |
+| createdAt | String | The time (ISO-8601 date string) when the user was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the user was updated.  |
 | createdBy | String | The unique identifier of the row creator |
 | id_project | String | The unique identifier of the project |
 
