@@ -11,8 +11,8 @@ The Model
 | settings | Object | The project settings |
 | widget | Object | The widget settings. |
 | profile | Object | The project profile object |
-| createdAt | String | The time when the project was created. |
-| updatedAt | String |  The time when the project was updated.  |
+| createdAt | String | The time (ISO-8601 date string) when the project was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the project was updated.  |
 | createdBy | String | The unique identifier of the row creator |
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/" %}
