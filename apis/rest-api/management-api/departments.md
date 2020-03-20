@@ -1,6 +1,6 @@
 # Departments
 
-The Model 
+The Department model 
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
