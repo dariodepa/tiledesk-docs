@@ -1,6 +1,6 @@
 # Requests
 
-The Model 
+The Request model 
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
