@@ -1,5 +1,20 @@
 # Groups
 
+The Model 
+
+| Key | Type | Description |
+| :--- | :--- | :--- |
+| id | String | The unique identifier for the group which is given by Tiledesk. |
+| name | String | The group name. |
+| members | Array | The group members |
+| trashed | Boolean | Determine if the group is deleted |
+| attributes | Object | The custom attributes which are set for the group. |
+| createdAt | String | The time when the group was created. |
+| updatedAt | String |  The time when the group was updated.  |
+| createdBy | String | The unique identifier of the row creator |
+| id_project | String | The unique identifier of the project |
+
+
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/groups" %}
 {% api-method-summary %}
 Get all groups
