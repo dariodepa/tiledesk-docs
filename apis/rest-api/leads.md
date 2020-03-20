@@ -12,8 +12,8 @@ Our Lead API is a central place to gather all information and take actions on yo
 | lead_id | String | A unique identifier for the lead which is given to Tiledesk.It's an external id |
 | fullname | String | The lead name and surname. |
 | attributes | Object | The custom attributes which are set for the lead. |
-| createdAt | String | The time when the lead was created. |
-| updatedAt | String |  The time when the lead was updated.  |
+| createdAt | String | The time (ISO-8601 date string) when the lead was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the lead was updated.  |
 | createdBy | String | The unique identifier of the row creator |
 | id_project | String | The unique identifier of the project |
 
