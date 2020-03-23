@@ -11,6 +11,7 @@ The Model
 | firstname | String | The user firstname. |
 | lastname | String | The user lastname. |
 | emailverified | Boolean | Determine if the user has a email validated. |
+| status | Number | User status. Permitted values: 100 active, 0 disabled |
 | createdAt | String | The time (ISO-8601 date string) when the user was created. |
 | updatedAt | String |  The time (ISO-8601 date string) when the user was updated.  |
 | createdBy | String | The unique identifier of the row creator |
