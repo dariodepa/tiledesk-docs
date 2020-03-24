@@ -11,6 +11,7 @@ The Project model
 | settings | Object | The project settings |
 | widget | Object | The widget settings. |
 | profile | Object | The project profile object |
+| status | Number | The project status. Permitted values: 100 active, 0 disabled |
 | createdAt | String | The time (ISO-8601 date string) when the project was created. |
 | updatedAt | String |  The time (ISO-8601 date string) when the project was updated.  |
 | createdBy | String | The unique identifier of the row creator |
