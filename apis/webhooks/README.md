@@ -103,6 +103,7 @@ The following Events are available and you can be notified when an action relati
 | group.create | Subscribes to group creations (available only on version v2) |
 | group.update | Subscribes to group being updated (available only on version v2) |
 | group.delete | Subscribes to group being deleted (available only on version v2) |
+| event.emit | Subscribes to event emitting (available only on version v2) |
 
 ### Webhook Notification object
 
