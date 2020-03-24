@@ -9,9 +9,9 @@ The Event Model
 | id | String | The unique identifier for the event which is given by Tiledesk. |
 | name | String | The event name |
 | project_user | Object | The user who creates the event. |
-| attributes | Object | The custom attributes which are set for the lead. |
-| createdAt | String | The time (ISO-8601 date string) when the lead was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the lead was updated.  |
+| attributes | Object | The custom attributes which are set for the event. |
+| createdAt | String | The time (ISO-8601 date string) when the event was created. |
+| updatedAt | String |  The time (ISO-8601 date string) when the event was updated.  |
 | createdBy | String | The unique identifier of the row creator |
 | id_project | String | The unique identifier of the project |
 
