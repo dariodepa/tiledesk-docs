@@ -20,7 +20,7 @@ Chat21 communicates with Tiledesk through webhooks. When a Chat21 event occurs -
 
 * [Tiledesk Server](https://github.com/Tiledesk/tiledesk-server) 
 * [Chat21 Cloud Functions](https://github.com/chat21/chat21-cloud-functions)
-* [Tiledesk Backend Dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
+* [Tiledesk Dashboard](https://github.com/Tiledesk/tiledesk-dashboard)
 
 #### Clients
 
