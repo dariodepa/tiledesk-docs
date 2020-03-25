@@ -59,3 +59,7 @@
 * [Detailed Chat21 Cloud Functions installation](installation/detailed-chat21-cloud-function-installation.md)
 * [Open the firewall ports](installation/open-the-ports.md)
 
+
+## Components
+
+* [Components](components/components.md)
