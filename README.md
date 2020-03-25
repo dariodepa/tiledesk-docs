@@ -60,6 +60,6 @@
 * [Open the firewall ports](installation/open-the-ports.md)
 
 
-## Components
+## Components2
 
-* [Components](components/components.md)
+* [Components2](components/components.md)
