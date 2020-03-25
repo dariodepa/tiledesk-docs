@@ -47,7 +47,7 @@
 
 ## Components
 
-* [Components](components/components.md)
+* [Components](components/README.md)
 
 ## ChatBot
 
