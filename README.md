@@ -40,6 +40,10 @@
 * [Integrate Widget for Android with WebView](mobile-sdk/integrate-widget-for-android-with-webview.md)
 * [Integrate Widget for iOS with WKWebView](mobile-sdk/integrate-widget-for-ios-with-wkwebview.md)
 
+## Components
+
+* [Components](components/README.md)
+
 ## Architecture
 
 * [Architecture overview](architecture/schema.md)
