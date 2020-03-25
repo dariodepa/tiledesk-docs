@@ -1,22 +1,21 @@
+# Leads
+
 You can use the API to get or set lead information.
 
-The Model 
+The Model
 
-Our Lead API is a central place to gather all information and take actions on your contacts (leads), such as fetching, searching, creating, updating, and deleting.
-
-
+Our Lead API is a central place to gather all information and take actions on your contacts \(leads\), such as fetching, searching, creating, updating, and deleting.
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the lead which is given by Tiledesk. |
-| lead_id | String | A unique identifier for the lead which is given to Tiledesk.It's an external id |
+| lead\_id | String | A unique identifier for the lead which is given to Tiledesk.It's an external id |
 | fullname | String | The lead name and surname. |
 | attributes | Object | The custom attributes which are set for the lead. |
-| createdAt | String | The time (ISO-8601 date string) when the lead was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the lead was updated.  |
+| createdAt | String | The time \(ISO-8601 date string\) when the lead was created. |
+| updatedAt | String | The time \(ISO-8601 date string\) when the lead was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
-
+| id\_project | String | The unique identifier of the project |
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
 {% api-method-summary %}
@@ -383,3 +382,4 @@ Example:
 ```text
 curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
 ```
+

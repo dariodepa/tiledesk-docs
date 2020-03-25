@@ -27,9 +27,9 @@
   * [Management Api](./)
     * [Departments](apis/rest-api/management-api/departments.md)
     * [Groups](apis/rest-api/management-api/groups.md)
-* [Webhooks](apis/webhooks/README.md)
+* [Webhooks](apis/webhooks/)
   * [Subscriptions](apis/webhooks/subscriptions.md)
-* [Tutorials](apis/tutorials/README.md)
+* [Tutorials](apis/tutorials/)
   * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
   * [Dialogflow as external chatbot integration](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
   * [Hello World tutorial for external chatbots integration](apis/tutorials/connect-your-own-chatbot.md)
@@ -39,7 +39,6 @@
 
 * [Integrate Widget for Android with WebView](mobile-sdk/integrate-widget-for-android-with-webview.md)
 * [Integrate Widget for iOS with WKWebView](mobile-sdk/integrate-widget-for-ios-with-wkwebview.md)
-
 
 ## Architecture
 

@@ -26,7 +26,7 @@ If you don't have a Heroku account please create one. Once you created your acco
 
 In the top right corner menù of the Heroku Dashboard press _New_ &gt; _Create new app_ option:
 
-![](../../.gitbook/assets/image%20%28111%29.png)
+![](../../.gitbook/assets/image%20%28112%29.png)
 
 Now choose a name for your application. You can choose whatever name you prefer, we choose **my-tiledesk-proxy:**
 
@@ -41,8 +41,6 @@ Now in the "Deployment method" section select Github. In the "Connect to Github"
 ![](../../.gitbook/assets/image%20%2889%29.png)
 
 Now that your Heroku's app is connected to Github you can enable automatic deploys, so Heroku will restart your app every time you push new code on the repo.
-
- 
 
 ![](../../.gitbook/assets/image%20%2871%29.png)
 
@@ -70,7 +68,7 @@ Choose whatever name you prefer for the bot. This name will also be the Sender n
 
 Set in the url field the hostname of your heroku application followed by **/bot**. Every time Tiledesk will invoke you bot it will send a HTTP POST request to this url.
 
-![](../../.gitbook/assets/image%20%28103%29.png)
+![](../../.gitbook/assets/image%20%28104%29.png)
 
 To activate the bot you must attach it to the default routing or to a department. For semplicity we'll use the default Routing. Choose the Routing option on the left menu, the switch on Activate Bot, and choose your Dialogflow bot from the right menu. Press UPDATE ROUTING RULES.
 
@@ -103,6 +101,4 @@ Another approach can be to use the "confidence" of the reply to trigger the hand
 Enjoy you custom Dialogflow connection!
 
 Do you have feedback on this article? Please send us your feedback writing an email to info@tiledesk.com
-
-
 

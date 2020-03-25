@@ -1,21 +1,20 @@
 # Team
 
-The Model 
+The Model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the teammate which is given by Tiledesk. |
 | role | String | The teammate role.  Values: owner, agent, admin, user, guest |
-| user_available | Boolean | Dermine if the teammate is available or unavailable to accept requests |
-| id_user | Object | The user object referenced by the teammate |
-| max_served_chat | Number | Number of chats that agent is allowed to take at one time |
+| user\_available | Boolean | Dermine if the teammate is available or unavailable to accept requests |
+| id\_user | Object | The user object referenced by the teammate |
+| max\_served\_chat | Number | Number of chats that agent is allowed to take at one time |
 | attributes | Object | The custom attributes which are set for the teammate. |
-| createdAt | String | The time (ISO-8601 date string) when the teammate was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the teammate was updated.  |
+| createdAt | String | The time \(ISO-8601 date string\) when the teammate was created. |
+| updatedAt | String | The time \(ISO-8601 date string\) when the teammate was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
-      
-      
+| id\_project | String | The unique identifier of the project |
+
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
 {% api-method-summary %}
 Get the team
@@ -114,14 +113,13 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}
 Get a teammate by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -134,7 +132,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% api-method-parameter name="project\_user\_id" type="string" required=true %}
 The teammate identifier.
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -176,16 +173,13 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/users/:user\_id" %}
 {% api-method-summary %}
 Get a teammate by user id
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -198,7 +192,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% api-method-parameter name="user\_id" type="string" required=true %}
 The user identifier.
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -239,12 +232,6 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
-
-
-
 
 {% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
 {% api-method-summary %}
@@ -290,11 +277,9 @@ the firstname of the agent
 the lastname of the agent
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="user_available" type="boolean" required=false %}
-the initial agent status. Available (true) or unavailable (false).
+{% api-method-parameter name="user\_available" type="boolean" required=false %}
+the initial agent status. Available \(true\) or unavailable \(false\).
 {% endapi-method-parameter %}
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -314,15 +299,13 @@ the initial agent status. Available (true) or unavailable (false).
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
 {% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}
 Update a teammate by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -335,7 +318,6 @@ The project\_id is a unique code assigned to your project when you create it in 
 {% api-method-parameter name="project\_user\_id" type="string" required=true %}
 The teammate identifier.
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -353,19 +335,17 @@ use "application/json" value
 The teammate role. Permitted values: admin, agent.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="user_available" type="boolean" required=false %}
+{% api-method-parameter name="user\_available" type="boolean" required=false %}
 The teammate availability. True for available, false for unavailable. _Default is true_
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="max_served_chat" type="number" required=false %}
+{% api-method-parameter name="max\_served\_chat" type="number" required=false %}
 The number of concurrent chats the teammate can take at once.
 {% endapi-method-parameter %}
-
 
 {% api-method-parameter name="attributes" type="object" required=false %}
 The teammate custom attributes
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -384,11 +364,6 @@ The teammate custom attributes
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
-
-
 
 {% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}

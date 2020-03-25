@@ -1,6 +1,8 @@
+# Tags
+
 You can use the API to get or set tags.
 
-The Tag model 
+The Tag model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
@@ -8,10 +10,10 @@ The Tag model
 | tag | String | The tag name. |
 | color | String | The tag hexadecimal color |
 | attributes | Object | The custom attributes which are set for the tag. |
-| createdAt | String | The time (ISO-8601 date string) when the tag was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the tag was updated.  |
+| createdAt | String | The time \(ISO-8601 date string\) when the tag was created. |
+| updatedAt | String | The time \(ISO-8601 date string\) when the tag was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
+| id\_project | String | The unique identifier of the project |
 
 {% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags" %}
 {% api-method-summary %}
@@ -19,8 +21,7 @@ Get all tags
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows an account to list all the tags.
-Only works for Tiledesk v2 environment (on-premises only).
+Allows an account to list all the tags. Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -43,7 +44,7 @@ what field to sort the results by. _Default field is createdAt_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="direction" type="string" required=false %}
-sort direction: 1 or -1. Return the results in ascending (1) or descending (-1) order. _defaults to desc_
+sort direction: 1 or -1. Return the results in ascending \(1\) or descending \(-1\) order. _defaults to desc_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="number" required=false %}
@@ -86,15 +87,13 @@ what page of results to fetch. defaults to first page.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
 Get a tag by id
 {% endapi-method-summary %}
 
-
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -149,7 +148,7 @@ Create a new tag
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -171,7 +170,6 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="tag" type="string" required=true %}
 the tag name
 {% endapi-method-parameter %}
@@ -183,8 +181,6 @@ the tag color
 {% api-method-parameter name="attributes" type="object" required=false %}
 The tag custom attributes
 {% endapi-method-parameter %}
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -211,14 +207,13 @@ The tag custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
 Update a tag by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -244,7 +239,6 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="tag" type="string" required=true %}
 the tag name
 {% endapi-method-parameter %}
@@ -256,8 +250,6 @@ the tag color
 {% api-method-parameter name="attributes" type="object" required=false %}
 The tag custom attributes
 {% endapi-method-parameter %}
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -290,7 +282,7 @@ Delete a tag by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}

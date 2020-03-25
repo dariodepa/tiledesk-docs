@@ -22,7 +22,7 @@ For instance if you’re integrating a marketing automation tool, you could add 
 
 To use this tool you need to have basic knowledge about webhooks and Tiledesk authorization protocol.
 
-This tutorial is will not be helpful for integration that pulls data on demand \(not in reaction to some Tiledesk event\). If you just want to pull Tiledesk reports on user request, you’d rather just use [REST API](../api/).
+This tutorial is will not be helpful for integration that pulls data on demand \(not in reaction to some Tiledesk event\). If you just want to pull Tiledesk reports on user request, you’d rather just use [REST API](https://github.com/Tiledesk/tiledesk-docs/tree/456064986d3a1957a2a2244285aaf7d2c14777ae/apis/api/README.md).
 
 ### Prerequisites
 
@@ -94,17 +94,17 @@ The following Events are available and you can be notified when an action relati
 | faq.create | Subscribes to faq creations |
 | faq.update | Subscribes to faq being updated |
 | faq.delete | Subscribes to faq being deleted |
-| department.create | Subscribes to department creations (available only on version v2) |
-| department.update | Subscribes to department being updated (available only on version v2) |
-| department.delete | Subscribes to department being deleted (available only on version v2) |
-| project_user.invite | Subscribes to teammate project invitation (available only on version v2) |
-| project_user.update | Subscribes to teammate being updated (available only on version v2) |
-| project_user.delete | Subscribes to teammate project leave (available only on version v2) |
-| group.create | Subscribes to group creations (available only on version v2) |
-| group.update | Subscribes to group being updated (available only on version v2) |
-| group.delete | Subscribes to group being deleted (available only on version v2) |
-| event.emit | Subscribes to event emitting (available only on version v2) |
-| event.emit.<EVENT_NAME> | Subscribes to a specific event emitting (available only on version v2). Example: event.emit.typing.start to subscribe to typing indicator events.  |
+| department.create | Subscribes to department creations \(available only on version v2\) |
+| department.update | Subscribes to department being updated \(available only on version v2\) |
+| department.delete | Subscribes to department being deleted \(available only on version v2\) |
+| project\_user.invite | Subscribes to teammate project invitation \(available only on version v2\) |
+| project\_user.update | Subscribes to teammate being updated \(available only on version v2\) |
+| project\_user.delete | Subscribes to teammate project leave \(available only on version v2\) |
+| group.create | Subscribes to group creations \(available only on version v2\) |
+| group.update | Subscribes to group being updated \(available only on version v2\) |
+| group.delete | Subscribes to group being deleted \(available only on version v2\) |
+| event.emit | Subscribes to event emitting \(available only on version v2\) |
+| event.emit. | Subscribes to a specific event emitting \(available only on version v2\). Example: event.emit.typing.start to subscribe to typing indicator events. |
 
 ### Webhook Notification object
 
@@ -132,3 +132,4 @@ Payload is the data associated with the notification.
 ### Signed Notifications
 
 Each webhook notification is signed by Tiledesk via an _x-hook-secret_ header. We do this so that you can verify the notification came from Tiledesk.
+

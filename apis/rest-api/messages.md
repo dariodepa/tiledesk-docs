@@ -2,25 +2,24 @@
 
 You can use the API to get the message information.
 
-
-The Message model 
+The Message model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the message which is given by Tiledesk. |
 | sender | String | A unique identifier of the sender. It can be: the user identifier, a bot identifier or the system user |
 | senderFullname | String | The sender fullname. It can be: the user fullname, the bot name or an alias |
-| recipient | String | A unique identifier of the recipient. It can be: the request_id field (external id) of the request |
-| status | Number | The message status: FAILED : -100, SENDING : 0, SENT : 100, DELIVERED : 150, RECEIVED : 200, RETURN_RECEIPT: 250, SEEN : 300 |
+| recipient | String | A unique identifier of the recipient. It can be: the request\_id field \(external id\) of the request |
+| status | Number | The message status: FAILED : -100, SENDING : 0, SENT : 100, DELIVERED : 150, RECEIVED : 200, RETURN\_RECEIPT: 250, SEEN : 300 |
 | text | String | The message text. |
-| type | String | The message type. Accepted values: text (default), image |
+| type | String | The message type. Accepted values: text \(default\), image |
 | metadata | Object | The message metadata. |
 | attributes | Object | The custom attributes which are set for the message. |
-| createdAt | String | The time (ISO-8601 date string) when the message was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the message was updated.  |
+| createdAt | String | The time \(ISO-8601 date string\) when the message was created. |
+| updatedAt | String | The time \(ISO-8601 date string\) when the message was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
-      
+| id\_project | String | The unique identifier of the project |
+
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/messages" %}
 {% api-method-summary %}
 Get the messages of a request by id
@@ -34,7 +33,7 @@ Fetches the messages by his or her request\_id
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request_id field. It's the external request identifier.
+the request\_id field. It's the external request identifier.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -110,7 +109,7 @@ Fetche the message by his or her id
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request_id field. It's the external request identifier.
+the request\_id field. It's the external request identifier.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="message\_id" type="string" required=true %}
@@ -167,7 +166,7 @@ Send a message.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows to send a message.   
+Allows to send a message.  
 **Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 

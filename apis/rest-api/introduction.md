@@ -2,7 +2,7 @@
 description: This is a Beta version of the documentation.
 ---
 
-# REST API
+# Introduction
 
 ## Introduction
 
@@ -110,8 +110,8 @@ Below the apis:
 * [Activities](activities.md)
 * [Projects](projects.md)
 * [Team](team.md)
-* [ChatBot](bots/)
-* [Management](management-api/)
+* [ChatBot](https://github.com/Tiledesk/tiledesk-docs/tree/782fa84dbf0a19a68076756029cbb9a33ce2b6f1/apis/rest-api/bots/README.md)
+* [Management](https://github.com/Tiledesk/tiledesk-docs/tree/782fa84dbf0a19a68076756029cbb9a33ce2b6f1/apis/rest-api/management-api/README.md)
 
 ### Legal notices
 

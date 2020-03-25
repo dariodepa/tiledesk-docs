@@ -1,6 +1,6 @@
 # Projects
 
-The Project model 
+The Project model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
@@ -12,13 +12,13 @@ The Project model
 | widget | Object | The widget settings. |
 | profile | Object | The project profile object |
 | status | Number | The project status. Permitted values: 100 active, 0 disabled |
-| createdAt | String | The time (ISO-8601 date string) when the project was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the project was updated.  |
+| createdAt | String | The time \(ISO-8601 date string\) when the project was created. |
+| updatedAt | String | The time \(ISO-8601 date string\) when the project was updated. |
 | createdBy | String | The unique identifier of the row creator |
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/" %}
 {% api-method-summary %}
-Get a list of  projects the user belongs
+Get a list of projects the user belongs
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -27,10 +27,6 @@ Get a list of  projects the user belongs
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
@@ -88,12 +84,6 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
-
-
-
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id" %}
 {% api-method-summary %}
@@ -157,10 +147,6 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
-
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id/users/availables" %}
 {% api-method-summary %}

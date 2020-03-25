@@ -1,22 +1,22 @@
 # Departments
 
-The Department model 
+The Department model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the department which is given by Tiledesk. |
 | name | String | The department name. |
-| id_bot | Array | The bot identifier associated to the department |
-| bot_only | Boolean | Determine if only the bot will reply to the visitor. |
+| id\_bot | Array | The bot identifier associated to the department |
+| bot\_only | Boolean | Determine if only the bot will reply to the visitor. |
 | routing | String | The department routing type. Permitted values: 'assigned', 'pooled' |
-| id_group | String |  The group identifier associated to the department |
-| default | Boolean |  Determines if it is the default department |
-| status | Number |  The request status: VISIBLE : 1, INVISIBLE : 0 |
+| id\_group | String | The group identifier associated to the department |
+| default | Boolean | Determines if it is the default department |
+| status | Number | The request status: VISIBLE : 1, INVISIBLE : 0 |
 | attributes | Object | The custom attributes which are set for the department. |
 | createdAt | String | The time when the department was created. |
-| updatedAt | String |  The time when the department was updated.  |
+| updatedAt | String | The time when the department was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
+| id\_project | String | The unique identifier of the project |
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
 {% api-method-summary %}

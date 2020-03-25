@@ -64,7 +64,7 @@ This will reply with the JWT token that we'll use to send our first message:
 
 You can send a message using the [Send Message API](../rest-api/messages.md#send-a-message).
 
-To send a message you need to choose a _unique_ **request identifier.** A _request_  is an object containing the all the metadata describing the conversation between end-user and _support team_\).
+To send a message you need to choose a _unique_ **request identifier.** A _request_ is an object containing the all the metadata describing the conversation between end-user and _support team_\).
 
 The request identifier must follow the following pattern:
 
@@ -94,15 +94,15 @@ Looking at the dashboard of your project you will see your first conversation in
 
 The agent \(you\) can now see the same conversation in the agent chat \(first option of the menu panel will open the desktop chat\).
 
-![](../../.gitbook/assets/image%20%28116%29.png)
+![](../../.gitbook/assets/image%20%28117%29.png)
 
 ## Receiving new messages notifications using Webhooks
 
-You can subscribe to the messages events sent to a conversation using [Webhook]()s.
+You can subscribe to the messages events sent to a conversation using [Webhook](sending-and-receiving-messages.md)s.
 
-You must first [create a subscription](../webhooks/subscriptions.md#create-a-new-subscription) to an [event]() that points to a url on your server.
+You must first [create a subscription](../webhooks/subscriptions.md#create-a-new-subscription) to an [event](sending-and-receiving-messages.md) that points to a url on your server.
 
-In this case we will subscribe to _message creation_ event on a custom url \(/test\) on requestcatcher.com, a free, beautiful service to debug your webhooks: 
+In this case we will subscribe to _message creation_ event on a custom url \(/test\) on requestcatcher.com, a free, beautiful service to debug your webhooks:
 
 ```text
 curl -v -X POST -H 'Content-Type:application/json' \
@@ -111,7 +111,7 @@ curl -v -X POST -H 'Content-Type:application/json' \
 https://tiledesk-server-pre.herokuapp.com/5e2c35c8f0dbc10017bb3aac/subscriptions
 ```
 
- The subscription endpoint returns:
+The subscription endpoint returns:
 
 ```text
 {
@@ -127,9 +127,9 @@ https://tiledesk-server-pre.herokuapp.com/5e2c35c8f0dbc10017bb3aac/subscriptions
 }
 ```
 
-Now you are notified for each messages sent to your Tiledesk project. Now, for example, if the agent sends a message to the end user, your webhook endpoint will be notified with the message payload.  
+Now you are notified for each messages sent to your Tiledesk project. Now, for example, if the agent sends a message to the end user, your webhook endpoint will be notified with the message payload.
 
-![](../../.gitbook/assets/image%20%28112%29.png)
+![](../../.gitbook/assets/image%20%28113%29.png)
 
 This is the webhook notification with the message payload. You can use this notification to create a copy of all messages sent/received in your project, generate new custom events, communicate in real time on other channels etc.
 

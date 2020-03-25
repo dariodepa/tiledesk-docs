@@ -1,12 +1,12 @@
 # Requests
 
-The Request model 
+The Request model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the request which is given by Tiledesk. |
-| request_id | String | A unique identifier for the request which is given to Tiledesk. It's an external id. Follow this pattern 'support-group-UUID' |
-| first_text | String | the request first text. |
+| request\_id | String | A unique identifier for the request which is given to Tiledesk. It's an external id. Follow this pattern 'support-group-UUID' |
+| first\_text | String | the request first text. |
 | department | Object | the department object selected for the request. |
 | lead | Object | the lead involved in this request. |
 | participants | Array | The list of the identifier of the teammates or bots who participated in the request. |
@@ -16,19 +16,19 @@ The Request model
 | sourcePage | String | The request source page. |
 | language | String | The request language. |
 | userAgent | String | The user agent. |
-| messages_count | Number | The number of messages of the request. |
+| messages\_count | Number | The number of messages of the request. |
 | tags | Array | A list of tags objects associated with the request. |
-| notes | Array |  A list of notes objects associated with the request. |
+| notes | Array | A list of notes objects associated with the request. |
 | rating | Number | The request rating. From 0 to 5. |
-| rating_message | String | The rating message. |
-| waiting_time | Number | Wait time is calculated as duration between the first visitor message in the chat and the first agent message. |
-| closed_at | String | The time (ISO-8601 date string) when the request is closed (status = 1000). |
+| rating\_message | String | The rating message. |
+| waiting\_time | Number | Wait time is calculated as duration between the first visitor message in the chat and the first agent message. |
+| closed\_at | String | The time \(ISO-8601 date string\) when the request is closed \(status = 1000\). |
 | transcript | String | The chat transcript. |
 | attributes | Object | The custom attributes which are set for the request. |
-| createdAt | String | The time (ISO-8601 date string) when the request was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the request was updated.   |
+| createdAt | String | The time \(ISO-8601 date string\) when the request was created. |
+| updatedAt | String | The time \(ISO-8601 date string\) when the request was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
+| id\_project | String | The unique identifier of the project |
 
 You can use the API to get the request information.
 
@@ -61,7 +61,7 @@ what field to sort the results by. _default field is createdAt_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="direction" type="string" required=false %}
-sort direction: 1 (asc) or -1 (desc). Return the results in ascending (1) or descending (-1) order. _defaults to desc (-1)_
+sort direction: 1 \(asc\) or -1 \(desc\). Return the results in ascending \(1\) or descending \(-1\) order. _defaults to desc \(-1\)_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="number" required=false %}
@@ -77,7 +77,7 @@ make a fulltext search query
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="string" required=false %}
-filter by request status. Values: 100 for unserved  requests, 200 for served requests, 1000 for closed requests
+filter by request status. Values: 100 for unserved requests, 200 for served requests, 1000 for closed requests
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="dept\_id" type="string" required=false %}
@@ -179,7 +179,7 @@ Fetches a request by his or her request\_id
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="id" type="string" required=true %}
-the request_id field. It's the external request identifier.
+the request\_id field. It's the external request identifier.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="project\_id" type="string" required=true %}
@@ -982,13 +982,6 @@ the request attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
-
-
-
 {% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/notes" %}
 {% api-method-summary %}
 Add a note to a request
@@ -1068,18 +1061,9 @@ the note content
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
-
-
-
-
-
 {% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/notes/:noteid" %}
 {% api-method-summary %}
-Delete a note 
+Delete a note
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -1101,7 +1085,6 @@ the Project Id is a unique code assigned to your project when you create it in T
 {% api-method-parameter name="noteid" type="string" required=true %}
 the note identifier
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
@@ -1113,9 +1096,6 @@ authorization token. Basic Auth or JWT
 use "application/json" value
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}

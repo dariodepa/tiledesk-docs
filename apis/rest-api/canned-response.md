@@ -1,6 +1,8 @@
+# Canned responses
+
 You can use the API to get or set canned response information.
 
-The Canned respose model 
+The Canned respose model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
@@ -8,10 +10,10 @@ The Canned respose model
 | title | String | The canned respose title. |
 | text | String | The canned respose content |
 | attributes | Object | The custom attributes which are set for the canned respose. |
-| createdAt | String | The time (ISO-8601 date string) when the canned respose was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the canned respose was updated.  |
+| createdAt | String | The time \(ISO-8601 date string\) when the canned respose was created. |
+| updatedAt | String | The time \(ISO-8601 date string\) when the canned respose was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
+| id\_project | String | The unique identifier of the project |
 
 {% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned" %}
 {% api-method-summary %}
@@ -19,8 +21,7 @@ Get all canned responses
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows an account to list all the canned responses.
-Only works for Tiledesk v2 environment (on-premises only).
+Allows an account to list all the canned responses. Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -43,7 +44,7 @@ what field to sort the results by. _Default field is createdAt_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="direction" type="string" required=false %}
-sort direction: 1 or -1. Return the results in ascending (1) or descending (-1) order. _defaults to desc_
+sort direction: 1 or -1. Return the results in ascending \(1\) or descending \(-1\) order. _defaults to desc_
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="number" required=false %}
@@ -79,15 +80,13 @@ what page of results to fetch. defaults to first page.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned/:id" %}
 {% api-method-summary %}
 Get a canned respose by id
 {% endapi-method-summary %}
 
-
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -143,7 +142,7 @@ Create a new canned response
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -165,7 +164,6 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="title" type="string" required=false %}
 the canned response title
 {% endapi-method-parameter %}
@@ -177,7 +175,6 @@ the canned response content
 {% api-method-parameter name="attributes" type="object" required=false %}
 The canned response custom attributes
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -205,14 +202,13 @@ The canned response custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned/:id" %}
 {% api-method-summary %}
 Update a canned response by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -238,7 +234,6 @@ use "application/json" value
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="title" type="string" required=false %}
 the canned response title
 {% endapi-method-parameter %}
@@ -250,8 +245,6 @@ the canned response content
 {% api-method-parameter name="attributes" type="object" required=false %}
 The canned response custom attributes
 {% endapi-method-parameter %}
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -285,7 +278,7 @@ Delete a canned response by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}

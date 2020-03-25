@@ -14,8 +14,6 @@ With the agent's name shown in the top left corner, click on the ⚙︎besides t
 
 ![](../../.gitbook/assets/image%20%2814%29.png)
 
-
-
 The "General" tab is selected. Click on the Service Account link, as shown by the arrow in the following figure:
 
 ![](../../.gitbook/assets/image%20%285%29.png)
@@ -30,7 +28,7 @@ Now choose a name for your service account \(_Service account name_ field\). _Se
 
 In the next step you will be asked to select the role for this Service account. Press the menù pointed by the arrow in the figure \(Select a role\):
 
-![](../../.gitbook/assets/image%20%28118%29.png)
+![](../../.gitbook/assets/image%20%28119%29.png)
 
 A menù will open with a autocompleting text box. Digit "dialogflow" and, from the listed results choose **Dialogflow API Client** as role:
 
@@ -53,6 +51,4 @@ In some Tiledesk tutorials or in documentation you will be sometimes asked to ha
 Enjoy!
 
 Do you have feedback on this article? Please send us your feedback writing an email to info@tiledesk.com
-
-
 

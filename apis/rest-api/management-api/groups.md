@@ -1,6 +1,6 @@
 # Groups
 
-The Group model 
+The Group model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
@@ -10,10 +10,9 @@ The Group model
 | trashed | Boolean | Determine if the group is deleted |
 | attributes | Object | The custom attributes which are set for the group. |
 | createdAt | String | The time when the group was created. |
-| updatedAt | String |  The time when the group was updated.  |
+| updatedAt | String | The time when the group was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
-
+| id\_project | String | The unique identifier of the project |
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/groups" %}
 {% api-method-summary %}

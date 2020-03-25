@@ -1,20 +1,19 @@
+# Events
+
 You can use the API to get or set event information.
 
-The Event Model 
-
-
+The Event Model
 
 | Key | Type | Description |
 | :--- | :--- | :--- |
 | id | String | The unique identifier for the event which is given by Tiledesk. |
 | name | String | The event name |
-| project_user | Object | The user who creates the event. |
+| project\_user | Object | The user who creates the event. |
 | attributes | Object | The custom attributes which are set for the event. |
-| createdAt | String | The time (ISO-8601 date string) when the event was created. |
-| updatedAt | String |  The time (ISO-8601 date string) when the event was updated.  |
+| createdAt | String | The time \(ISO-8601 date string\) when the event was created. |
+| updatedAt | String | The time \(ISO-8601 date string\) when the event was updated. |
 | createdBy | String | The unique identifier of the row creator |
-| id_project | String | The unique identifier of the project |
-
+| id\_project | String | The unique identifier of the project |
 
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/events" %}
 {% api-method-summary %}
@@ -22,6 +21,7 @@ Get all events
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -39,7 +39,6 @@ authorization token. Basic Auth or JWT
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-
 {% api-method-parameter name="sortField" type="string" required=false %}
 what field to sort the results by.
 {% endapi-method-parameter %}
@@ -70,13 +69,13 @@ what page of results to fetch. defaults to first page.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/events/:id" %}
 {% api-method-summary %}
 Get a event by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -124,6 +123,7 @@ Create a new event
 {% endapi-method-summary %}
 
 {% api-method-description %}
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -170,3 +170,4 @@ The event custom attributes
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
