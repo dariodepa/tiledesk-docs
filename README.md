@@ -45,10 +45,6 @@
 * [Architecture overview](architecture/schema.md)
 * [Bot Design diagram](architecture/bot-schema.md)
 
-## Components
-
-* [Components](components/README.md)
-
 ## ChatBot
 
 * [Integrate your ChatBot](chatbot/integrate-your-chatbot.md)
