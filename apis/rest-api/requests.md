@@ -1138,9 +1138,11 @@ use "application/json" value
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/history" %}
 {% api-method-summary %}
 Get a request history by id
+
 {% endapi-method-summary %}
 
 {% api-method-description %}
+Only works for Tiledesk v2 environment (on-premises only).
 {% endapi-method-description %}
 
 {% api-method-spec %}
