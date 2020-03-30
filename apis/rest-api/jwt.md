@@ -1,6 +1,6 @@
 # JWT
 
-{% api-method method="delete" host="YOUR_TILEDESK_DOMAIN" path="/v1/jwt/history" %}
+{% api-method method="get" host="YOUR_TILEDESK_DOMAIN" path="/v1/jwt/history" %}
 {% api-method-summary %}
 List the jwt tokens of a user
 {% endapi-method-summary %}
