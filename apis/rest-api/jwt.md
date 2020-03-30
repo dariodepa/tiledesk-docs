@@ -78,6 +78,10 @@ The JTI Json Web Token identifier.
 use "application/json" value
 {% endapi-method-parameter %}
 
+{% api-method-parameter name="Authorization" type="string" required=true %}
+authorization token. Basic Auth or JWT
+{% endapi-method-parameter %}
+
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
@@ -126,6 +130,11 @@ The JWT identifier
 {% api-method-parameter name="Content-Type" type="string" required=true %}
 use "application/json" value
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="Authorization" type="string" required=true %}
+authorization token. Basic Auth or JWT
+{% endapi-method-parameter %}
+
 
 {% endapi-method-headers %}
 
