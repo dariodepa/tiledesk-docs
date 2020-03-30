@@ -11,13 +11,18 @@ Only works for Tiledesk v2 environment (on-premises only).
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=true %}
-use "application/json" value
-{% endapi-method-parameter %}
+{% api-method-path-parameters %}
 
 {% api-method-parameter name="jti" type="string" required=true %}
 The JTI Json Web Token identifier.
+{% endapi-method-parameter %}
+
+{% endapi-method-path-parameters %}
+
+
+{% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+use "application/json" value
 {% endapi-method-parameter %}
 
 {% endapi-method-headers %}
