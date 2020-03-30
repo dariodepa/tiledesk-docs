@@ -1,5 +1,58 @@
 # JWT
 
+{% api-method method="delete" host="YOUR_TILEDESK_DOMAIN" path="/v1/jwt/history" %}
+{% api-method-summary %}
+List the jwt tokens of a user
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Only works for Tiledesk v2 environment (on-premises only).
+{% endapi-method-description %}
+
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+authorization token. Basic Auth or JWT
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="sortField" type="string" required=false %}
+what field to sort the results by.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="direction" type="string" required=false %}
+sort direction: 1 or -1. Return the results in ascending or descending order. _defaults to desc_
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page" type="number" required=false %}
+what page of results to fetch. defaults to first page.
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+..
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
 {% api-method method="delete" host="YOUR_TILEDESK_DOMAIN" path="/v1/jwt/history/:jti" %}
 {% api-method-summary %}
 Revoke a jwt token by JTI (JWT identifier)
