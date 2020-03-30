@@ -21,6 +21,7 @@
   * [Canned responses](apis/rest-api/canned-response.md)
   * [Tags](apis/rest-api/tags.md)
   * [Events](apis/rest-api/events.md)
+  * [Jwt](apis/rest-api/jwt.md)
   * [Chat Bots](./)
     * [Bots](apis/rest-api/chat-bots/bots.md)
     * [Faq](apis/rest-api/chat-bots/faq.md)
