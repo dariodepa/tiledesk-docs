@@ -8,7 +8,9 @@ The Model
 | role | String | The teammate role.  Values: owner, agent, admin, user, guest |
 | user\_available | Boolean | Dermine if the teammate is available or unavailable to accept requests |
 | id\_user | Object | The user object referenced by the teammate |
-| max\_served\_chat | Number | Number of chats that agent is allowed to take at one time |
+| max\_served\_chat | Number | Number of chats that agent is allowed to take at one time (Only Enterprise) |
+| number_assigned_requests | Number | Number of active request for the teammate (Only Enterprise) |
+| isBusy | Boolean | Determine if the teammate is busy (Only Enterprise) |
 | attributes | Object | The custom attributes which are set for the teammate. |
 | createdAt | String | The time \(ISO-8601 date string\) when the teammate was created. |
 | updatedAt | String | The time \(ISO-8601 date string\) when the teammate was updated. |
