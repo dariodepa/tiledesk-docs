@@ -1091,7 +1091,6 @@ the note identifier
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
 {% endapi-method-request %}
 
@@ -1125,21 +1124,13 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
-
-
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/history" %}
 {% api-method-summary %}
 Get a request history by id
-
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1174,5 +1165,4 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
 

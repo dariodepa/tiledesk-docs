@@ -1,21 +1,16 @@
-# JWT
+# Jwt
 
-{% api-method method="get" host="YOUR_TILEDESK_DOMAIN" path="/v1/jwt/history" %}
+{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/v1/jwt/history" %}
 {% api-method-summary %}
 List the jwt tokens of a user
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
-
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
@@ -51,39 +46,28 @@ what page of results to fetch. defaults to first page.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-{% api-method method="delete" host="YOUR_TILEDESK_DOMAIN" path="/v1/jwt/history/:jti" %}
+{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/v1/jwt/history/:jti" %}
 {% api-method-summary %}
-Revoke a jwt token by JTI (JWT identifier)
+Revoke a jwt token by JTI \(JWT identifier\)
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-
 {% api-method-parameter name="jti" type="string" required=true %}
 The JTI Json Web Token identifier.
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
-
 {% api-method-headers %}
-
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
 {% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-
-{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -100,42 +84,28 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-{% api-method method="delete" host="YOUR_TILEDESK_DOMAIN" path="/v1/jwt/history/id/:id" %}
+{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/v1/jwt/history/id/:id" %}
 {% api-method-summary %}
-Revoke a jwt token by id 
+Revoke a jwt token by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment (on-premises only).
+Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-
 {% api-method-parameter name="id" type="string" required=true %}
 The JWT identifier
 {% endapi-method-parameter %}
-
 {% endapi-method-path-parameters %}
 
-
 {% api-method-headers %}
-
-
 {% api-method-parameter name="Authorization" type="string" required=true %}
 authorization token. Basic Auth or JWT
 {% endapi-method-parameter %}
-
-
 {% endapi-method-headers %}
-
-{% api-method-body-parameters %}
-
-{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -151,3 +121,4 @@ authorization token. Basic Auth or JWT
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+

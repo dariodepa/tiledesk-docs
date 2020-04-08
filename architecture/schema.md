@@ -12,7 +12,7 @@ Chat21 communicates with Tiledesk through webhooks. When a Chat21 event occurs -
 
 ## Components overview
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../.gitbook/assets/image%20%2860%29.png)
 
 ### Components list
 
