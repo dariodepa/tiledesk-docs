@@ -42,7 +42,7 @@ Now in the "Deployment method" section select Github. In the "Connect to Github"
 
 Now that your Heroku's app is connected to Github you can enable automatic deploys, so Heroku will restart your app every time you push new code on the repo.
 
-![image(3)](https://user-images.githubusercontent.com/32564846/78923647-da0b1b00-7a98-11ea-94f6-d1bc88fc9453.png)
+![](https://user-images.githubusercontent.com/32564846/78923647-da0b1b00-7a98-11ea-94f6-d1bc88fc9453.png)
 
 In this tutorial we suppose you already set up a Dialogflow agent and you already have the credentials file. If you do not have the Google Credentials file please refer to this [tutorial](generate-dialgoflow-google-credentials-file.md).
 
@@ -50,37 +50,37 @@ Now that you have the credentials file on your hand open the Heroku Dashboard of
 
 Add a new variable named GOOGLE\_CREDENTIALS and fill his value field with the content of the credentials file you already created in the previous step:
 
-![image(4)](https://user-images.githubusercontent.com/32564846/78923682-e7c0a080-7a98-11ea-9d6e-dfe385122046.png)
+![](https://user-images.githubusercontent.com/32564846/78923682-e7c0a080-7a98-11ea-9d6e-dfe385122046.png)
 
 Now switch to Tiledesk console and create a new project. Enter whatever name you prefer.
 
-![image(5)](https://user-images.githubusercontent.com/32564846/78923744-fe66f780-7a98-11ea-829c-d6639fbf7986.png)
+![](https://user-images.githubusercontent.com/32564846/78923744-fe66f780-7a98-11ea-829c-d6639fbf7986.png)
 
 Now move to the Bots section and create a new bot pressing the ADD BOT button:
 
-![image(6)](https://user-images.githubusercontent.com/32564846/78923774-09218c80-7a99-11ea-9b9e-567eb8125439.png)
+![](https://user-images.githubusercontent.com/32564846/78923774-09218c80-7a99-11ea-9b9e-567eb8125439.png)
 
 Choose the type **External**, not the Dialogflow one. This tutorial aims to connect you with a Dialogflow agent using the "external bot" feature, allowing you to have full control over the integration.
 
-![image(7)](https://user-images.githubusercontent.com/32564846/78923825-1a6a9900-7a99-11ea-97aa-4ad8ca83a739.png)
+![](https://user-images.githubusercontent.com/32564846/78923825-1a6a9900-7a99-11ea-97aa-4ad8ca83a739.png)
 
 Choose whatever name you prefer for the bot. This name will also be the Sender name of the bot every time the bot writes something. But from the proxy code you are adding you can easily change this default name if you want.
 
 Set in the url field the hostname of your heroku application followed by **/bot**. Every time Tiledesk will invoke you bot it will send a HTTP POST request to this url.
 
-![image(8)](https://user-images.githubusercontent.com/32564846/78923885-2fdfc300-7a99-11ea-9930-57bd3337d15e.png)
+![](https://user-images.githubusercontent.com/32564846/78923885-2fdfc300-7a99-11ea-9930-57bd3337d15e.png)
 
 To activate the bot you must attach it to the default routing or to a department. For semplicity we'll use the default Routing. Choose the Routing option on the left menu, the switch on Activate Bot, and choose your Dialogflow bot from the right menu. Press UPDATE ROUTING RULES.
 
-![image(9)](https://user-images.githubusercontent.com/32564846/78923929-40903900-7a99-11ea-93c5-af85df7cbcda.png)
+![](https://user-images.githubusercontent.com/32564846/78923929-40903900-7a99-11ea-93c5-af85df7cbcda.png)
 
 To test the bot, switch to the Requests option and press the **SIMULATE VISITOR** button as shown in the next figure.
 
-![image(10)](https://user-images.githubusercontent.com/32564846/78923956-4d149180-7a99-11ea-9eaa-e6197b2ff7fd.png)
+![](https://user-images.githubusercontent.com/32564846/78923956-4d149180-7a99-11ea-9eaa-e6197b2ff7fd.png)
 
 On the widget test page press "New conversation" button. The default routing will start, sending a default "hello" message through a HTTP POST call to the external url. Your Dialogflow bot will reply, as you can see in the next picture.
 
-![image(11)](https://user-images.githubusercontent.com/32564846/78923978-59005380-7a99-11ea-8363-73658e6dd6a6.png)
+![](https://user-images.githubusercontent.com/32564846/78923978-59005380-7a99-11ea-8363-73658e6dd6a6.png)
 
 You can do much more in communicating with an external url, for example sending buttons or images. We will treat these and other tools in the next tutorials.
 
