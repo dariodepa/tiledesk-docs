@@ -330,8 +330,11 @@ Important payload of event\_data:
 
 Example:
 
+In the following example Departments are filtered based on the current
+widget language.
+
 ```text
- <script type="application/javascript">    
+<script type="application/javascript">    
 window.tileDeskAsyncInit = function() {
     window.tiledesk.on('onBeforeDepartmentsFormRender', function(event_data) {
         var departments =  event_data.detail.departments;
