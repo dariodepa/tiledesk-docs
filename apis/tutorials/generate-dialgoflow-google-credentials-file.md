@@ -16,7 +16,7 @@ With the agent's name shown in the top left corner, click on the ⚙︎besides t
 
 The "General" tab is selected. Click on the Service Account link, as shown by the arrow in the following figure:
 
-![](../../.gitbook/assets/image%20%285%29.png)
+![image(1)](https://user-images.githubusercontent.com/32564846/78911703-f43bfd80-7a86-11ea-864e-6e096adb49dc.png)
 
 In the Service accounts section click on the top menù option **+ CREATE SERVICE ACCOUNT**:
 
