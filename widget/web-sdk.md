@@ -157,10 +157,27 @@ window.tiledesk.logout();
 
 ### Show or hide the PreChatForm
 
-This parameter configurare the PreChatForm visibility:
+This parameter configures the PreChatForm visibility:
 
 ```text
 window.tiledesk.setPreChatForm(true|false);
+```
+
+### Send a message to a support conversation
+
+This method sends a message to the current support conversation:
+
+```text
+const message = 'hello';
+const type = 'text';
+const metadata = {};
+const attributes = {};
+window.tiledesk.sendSupportMessage(
+    message,
+    type,
+    metadata,
+    attributes
+)
 ```
 
 ## Events
@@ -385,7 +402,7 @@ window.tileDeskAsyncInit = function() {
         const message = 'hello';
         const type = 'text';
         const metadata = {};
-        const attributes = {test:'hello', subtype: 'info'}; // widget never shows subtybe: 'info' messages
+        const attributes = {subtype: 'info'}; // widget never shows {subtybe: 'info'} messages
         window.tiledesk.sendSupportMessage(
             message,
             type,
