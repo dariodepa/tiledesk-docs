@@ -40,7 +40,7 @@ Choose JSON \(default option\) from the right panel, then CREATE.
 
 ![image](https://user-images.githubusercontent.com/32564846/78918681-120e6000-7a91-11ea-9732-795f006b4647.png)
 
-In the last step Google Cloud Console will generate your private key \(you Google Credentials file\) that will allow you to call Dialogflow APIs from the Tiledesk proxy \(or from whatever you want\):
+Now Google Cloud Console will generate your private key \(you Google Credentials file\) that will allow you to call Dialogflow APIs from the Tiledesk proxy \(or from whatever you want\):
 
 ![image](https://user-images.githubusercontent.com/32564846/78918739-24889980-7a91-11ea-8da4-e98fd63e4753.png)
 
