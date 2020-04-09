@@ -317,6 +317,45 @@ Example:
 </script>
 ```
 
+### onBeforeDepartmentsFormRender
+
+This event is generated before rendering the Departments selection View.
+Use this event if you want to filter the default Departments list based on some conditions. 
+
+Important payload of event\_data:
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| detail.departments | Object | the array of the default Departments |
+
+Example:
+
+```text
+ <script type="application/javascript">    
+window.tileDeskAsyncInit = function() {
+    window.tiledesk.on('onBeforeDepartmentsFormRender', function(event_data) {
+        var departments =  event_data.detail.departments;
+        var lang = window.tiledesk.angularcomponent.component.g.lang;
+        if (lang && lang === 'ca'){
+            return departments.filter(function(dep) {
+                if (dep.name.includes(':Spanish')){
+                    dep.name = dep.name.split(":")[0]
+                    return dep;
+                }
+            });
+        } else {
+            return departments.filter(function(dep) {
+                if (dep.name.includes(':Valenciano')){
+                    dep.name = dep.name.split(":")[0]
+                    return dep;
+                }
+            });
+        }
+    });
+}
+</script>
+```
+
 ## Enabling authenticated visitors in the Chat widget
 
 You can configure your widget to authenticate visitors using the Javascript API and JWT token. More info [Widget Authentication](auth.md)
