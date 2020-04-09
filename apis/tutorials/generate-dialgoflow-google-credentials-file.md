@@ -12,7 +12,7 @@ Go to you Dialogflow console and select the agent for whom you want to generate 
 
 With the agent's name shown in the top left corner, click on the ⚙︎besides the name:
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![image](https://user-images.githubusercontent.com/32564846/78907742-627dc180-7a81-11ea-85e1-43fffdff2fe2.png)
 
 The "General" tab is selected. Click on the Service Account link, as shown by the arrow in the following figure:
 
