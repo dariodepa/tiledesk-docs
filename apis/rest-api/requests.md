@@ -1183,7 +1183,7 @@ Rate a request by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**Only works for Tiledesk v2 environment \(on-premises only\).**
+**Only works for Tiledesk v2 environment from ver 2.0.7 \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
