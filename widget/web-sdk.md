@@ -181,7 +181,9 @@ Available events:
 | onClose | Fired when the widget is closed |
 | onOpenEyeCatcher | Fired when the callout box is open |
 | onClosedEyeCatcher | Fired when the callout box is closed |
+| onNewConversationComponentInit | Fired just after a new conversation is initialized |
 | isLoggedIn | The event is generated when the user is logged in |
+| onBeforeDepartmentsFormRender | Fired just before rendering Departments in the Departments view |
 
 The handler will have the signature function\(event\_data\).
 
