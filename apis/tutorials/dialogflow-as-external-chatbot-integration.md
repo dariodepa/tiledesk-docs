@@ -38,7 +38,7 @@ Leave all other settings as default and push the _Create app_ button.
 
 Now in the "Deployment method" section select Github. In the "Connect to Github" section insert the exact name of the repo you just forked - tiledesk-dialogflow-proxy-tutorial - and press Search. If everything is correct Heroku will show your repo just below the search filed. Press "Connect".
 
-![image(2)](https://user-images.githubusercontent.com/32564846/78923614-cd86c280-7a98-11ea-97bf-3f11fd92f62d.png)
+!(https://user-images.githubusercontent.com/32564846/78923614-cd86c280-7a98-11ea-97bf-3f11fd92f62d.png)
 
 Now that your Heroku's app is connected to Github you can enable automatic deploys, so Heroku will restart your app every time you push new code on the repo.
 
