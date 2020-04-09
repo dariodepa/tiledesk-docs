@@ -361,6 +361,42 @@ window.tileDeskAsyncInit = function() {
 </script>
 ```
 
+### onNewConversationComponentInit
+
+This event is generated as soon as a new conversation view is rendered.
+Use this event if you want to execute some actions on a Conversation start. 
+
+Important payload of event\_data:
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| detail.conversation_id | Object | the id of the conversation that fired the event |
+
+Example:
+
+In the following example a hidden message is sent as soon as a conversation starts.
+Sending a hidden message is useful to fire a bot welcome message, if one is invited
+in the conversation.
+
+```text
+<script type="application/javascript">    
+window.tileDeskAsyncInit = function() {
+    window.tiledesk.on('onNewConversationComponentInit', function(event_data) {
+        const message = 'hello';
+        const type = 'text';
+        const metadata = {};
+        const attributes = {test:'hello', subtype: 'info'}; // widget never shows subtybe: 'info' messages
+        window.tiledesk.sendSupportMessage(
+            message,
+            type,
+            metadata,
+            attributes
+        )
+    });
+}
+</script>
+```
+
 ## Enabling authenticated visitors in the Chat widget
 
 You can configure your widget to authenticate visitors using the Javascript API and JWT token. More info [Widget Authentication](auth.md)
