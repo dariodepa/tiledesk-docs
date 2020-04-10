@@ -50,17 +50,17 @@ This url is the **external bot endpoint**. We'll use this later.
 
 Now open the **Settings** menù on the left panel of our Tiledesk project, selecting the **Bots** option
 
-![](../../.gitbook/assets/image%20%28113%29.png)
+![](https://user-images.githubusercontent.com/32564846/78983111-d7093c80-7b23-11ea-9839-2bf132961f88.png)
 
 Press the ADD BOT button, to create your own external bot. Choose the "External" option.
 
 We must chose a name for the bot and placing in the Url field the **external bot endpoint** url of the repl app:
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](https://user-images.githubusercontent.com/32564846/78983158-f1dbb100-7b23-11ea-8a81-5c4141ebadf3.png)
 
 Click the CREATE BOT button. Tolobot is now available in our summary list:
 
-![](../../.gitbook/assets/image%20%28100%29.png)
+![](https://user-images.githubusercontent.com/32564846/78983199-0455ea80-7b24-11ea-9e4a-dae6748d5237.png)
 
 Now it's time to write some code to make our bot service functional.
 
