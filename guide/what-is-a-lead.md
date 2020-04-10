@@ -14,12 +14,15 @@ In general, if the user is connected as “Anonymous” a Lead is created automa
 
 A user first will be asked for some metadata to follow up a conversation:
 
+![image](https://user-images.githubusercontent.com/9378770/79008740-561b6680-7b5e-11ea-8d0e-3e51ac69bc08.png)
 
 Then the user contacts the support two times, as you can see by conversations summary:
 
+![image](https://user-images.githubusercontent.com/9378770/79008779-66cbdc80-7b5e-11ea-91c5-475c5950fdf4.png)
 
 Now in Contacts module you can search by email (andrea1@gmail.com) for the Lead:
 
+![image](https://user-images.githubusercontent.com/9378770/79008872-95e24e00-7b5e-11ea-8af8-3331ee479377.png)
 
 As you can see there is only one Contact with that email. Now in contact detail you can see all the two requests made by this user:
 
