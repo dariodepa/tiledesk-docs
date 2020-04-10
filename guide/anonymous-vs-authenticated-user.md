@@ -15,8 +15,9 @@ https://www.tiledesk.com/tiledesk-for-unisalento/
 
 As you can see, authenticated users differs from anonymous users by the presence of a shield in the user profile image:
 
-
+![image](https://user-images.githubusercontent.com/9378770/79009344-87486680-7b5f-11ea-87df-7c3bdfe38019.png)
 
 All the details about authentication are always available to Agents in the senderAuthInfo section in the Contact and Request panel:
 
 
+![image](https://user-images.githubusercontent.com/9378770/79009292-726bd300-7b5f-11ea-9a22-451ae5c5b42b.png)
