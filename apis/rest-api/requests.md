@@ -1124,7 +1124,6 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/history" %}
 {% api-method-summary %}
 Get a request history by id
@@ -1167,16 +1166,6 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
-
-
-
-
-
-
-
-
 {% api-method method="patch" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/rating" %}
 {% api-method-summary %}
 Rate a request by id
@@ -1213,11 +1202,9 @@ use "application/json" value
 the request rate from 0 to 5
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="rate_message" type="string" required=false %}
+{% api-method-parameter name="rate\_message" type="string" required=false %}
 the rate message
 {% endapi-method-parameter %}
-
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -1272,6 +1259,4 @@ the rate message
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

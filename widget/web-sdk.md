@@ -338,8 +338,7 @@ Example:
 
 ### onBeforeDepartmentsFormRender
 
-This event is generated before rendering the Departments selection View.
-Use this event if you want to filter the default Departments list based on some conditions. 
+This event is generated before rendering the Departments selection View. Use this event if you want to filter the default Departments list based on some conditions.
 
 Important payload of event\_data:
 
@@ -349,8 +348,7 @@ Important payload of event\_data:
 
 Example:
 
-In the following example Departments are filtered based on the current
-widget language.
+In the following example Departments are filtered based on the current widget language.
 
 ```text
 <script type="application/javascript">    
@@ -380,20 +378,17 @@ window.tileDeskAsyncInit = function() {
 
 ### onNewConversationComponentInit
 
-This event is generated as soon as a new conversation view is rendered.
-Use this event if you want to execute some actions on a Conversation start. 
+This event is generated as soon as a new conversation view is rendered. Use this event if you want to execute some actions on a Conversation start.
 
 Important payload of event\_data:
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| detail.conversation_id | Object | the id of the conversation that fired the event |
+| detail.conversation\_id | Object | the id of the conversation that fired the event |
 
 Example:
 
-In the following example a hidden message is sent as soon as a conversation starts.
-Sending a hidden message is useful to fire a bot welcome message, if one is invited
-in the conversation.
+In the following example a hidden message is sent as soon as a conversation starts. Sending a hidden message is useful to fire a bot welcome message, if one is invited in the conversation.
 
 ```text
 <script type="application/javascript">    

@@ -21,7 +21,7 @@ The previous APIs end-point will change as soon as the beta version will be rele
 
 After signup please follow the proposed wizard to create your first Tiledesk project.
 
-![](../../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/image%20%2847%29.png)
 
 Get the **PROJECT\_ID** of the created project under _Project Settings_ menu. We will use this later.
 
@@ -90,11 +90,11 @@ curl -v -X POST -H 'Content-Type:application/json' \
 
 Looking at the dashboard of your project you will see your first conversation in the Requests panel. The requests are updated in real time, so you don't have to manunally update the Requests' page. If you left unchanged all the default settings, the request will be assigned to you \(make sure you are "available", looking in the lower right corner of your profile image in the left menu panel\).
 
-![](../../.gitbook/assets/image%20%2869%29.png)
+![](../../.gitbook/assets/image%20%2873%29.png)
 
 The agent \(you\) can now see the same conversation in the agent chat \(first option of the menu panel will open the desktop chat\).
 
-![](../../.gitbook/assets/image%20%28121%29.png)
+![](https://github.com/Tiledesk/tiledesk-docs/tree/6bd23e296aab5b622259789ea03469a5da696e5b/.gitbook/assets/image%20%28121%29.png)
 
 ## Receiving new messages notifications using Webhooks
 
@@ -129,7 +129,7 @@ The subscription endpoint returns:
 
 Now you are notified for each messages sent to your Tiledesk project. Now, for example, if the agent sends a message to the end user, your webhook endpoint will be notified with the message payload.
 
-![](../../.gitbook/assets/image%20%28117%29.png)
+![](../../.gitbook/assets/image%20%28121%29.png)
 
 This is the webhook notification with the message payload. You can use this notification to create a copy of all messages sent/received in your project, generate new custom events, communicate in real time on other channels etc.
 
