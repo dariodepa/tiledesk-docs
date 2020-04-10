@@ -83,7 +83,7 @@ app.post('/bot', (req, res) => {
   const tdclient = 
     new TiledeskClient({request: req, response: res});
   console.log("You asked: " + tdclient.text)
-  // immediatly reply to TILEDESK
+  // immediately reply to TILEDESK
   res.status(200).send({"success":true});
 
   // messaging is asynch.
