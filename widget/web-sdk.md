@@ -168,7 +168,7 @@ window.tiledesk.setPreChatForm(true|false);
 This method sends a message to the current support conversation:
 
 ```text
-const recipientId = window.tiledesk.angularcomponent.component.g.recipientId
+const recipientId = window.tiledesk.angularcomponent.component.g.activeConversation
 const message = 'hello';
 const type = 'text';
 const metadata = {};
