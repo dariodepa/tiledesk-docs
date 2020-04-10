@@ -121,19 +121,19 @@ Here you can find an alternative version of the same code using raw calls to Til
 
 Now that our code is ok, we should configure a routing rule to make this chatbot available to our users. Select the **Routing** option and configure the corresponding rules as follows, activating the Bot, selecting Tolobot and marking the **Bot only** option for this routing, so **Tolobot will be the only available Agent**.
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](https://user-images.githubusercontent.com/32564846/78983393-6a427200-7b24-11ea-9aa6-79bc08e1ae30.png)
 
 ## Live test
 
 To test our chatbot go to the **Requests** menù and press the green "Simulate visitor" button as shown in the following figure.
 
-![](../../.gitbook/assets/image%20%28111%29.png)
+![image](https://user-images.githubusercontent.com/32564846/78983453-86461380-7b24-11ea-8408-5f2a9bd7eae2.png)
 
 A new browser Tab will open with the widget working as if it is already installed on your website.
 
 Push the **New conversation** button on the widget. A conversation will open on the default routing. A hidden message is sent to your bot, if activated \(as in our example\). Your bot will reply with the message you previously configured in the code:
 
-![](../../.gitbook/assets/image%20%28110%29.png)
+![](https://user-images.githubusercontent.com/32564846/78983508-a37ae200-7b24-11ea-90d7-29891c8612b7.png)
 
 In the next tutorial you will learn how to interact with a Dialogflow agent directly from an external chatbot endpoint.
 
