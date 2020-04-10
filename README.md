@@ -63,4 +63,5 @@
 ## Guide
 
 * [What is a Lead](guide/what-is-a-lead.md)
+* [Anonymous vs Authenticated User](guide/anonymous-vs-authenticated-user.md)
 
