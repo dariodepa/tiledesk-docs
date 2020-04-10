@@ -59,3 +59,8 @@
 * [Detailed Chat21 Cloud Functions installation](installation/detailed-chat21-cloud-function-installation.md)
 * [Open the firewall ports](installation/open-the-ports.md)
 
+
+## Guide
+
+* [What is a Lead](guide/what-is-a-lead.md)
+
