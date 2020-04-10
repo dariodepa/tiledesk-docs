@@ -18,7 +18,7 @@ We'll use [Heroku](https://www.heroku.com/) and [Github](https://github.com/) to
 
 The tutorial code is already available on Github [here](https://github.com/Tiledesk/tiledesk-dialogflow-proxy-tutorial).
 
-Fork the tutorial code on your favourite repo using the Fork button. Now you have a copy of the tutorial on your own repo.
+**Fork the tutorial** code using the Fork button. Now you have a copy of the tutorial on your own repo.
 
 ## Create the Heroku app
 
