@@ -168,12 +168,14 @@ window.tiledesk.setPreChatForm(true|false);
 This method sends a message to the current support conversation:
 
 ```text
+const recipientId = window.tiledesk.angularcomponent.component.g.recipientId
 const message = 'hello';
 const type = 'text';
 const metadata = {};
 const attributes = {};
 window.tiledesk.sendSupportMessage(
     message,
+    recipientId,
     type,
     metadata,
     attributes
@@ -384,7 +386,7 @@ Important payload of event\_data:
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| detail.conversation\_id | Object | the id of the conversation that fired the event |
+| detail.newConvId | Object | the id of the conversation that fired the event |
 
 Example:
 
@@ -394,16 +396,18 @@ In the following example a hidden message is sent as soon as a conversation star
 <script type="application/javascript">    
 window.tileDeskAsyncInit = function() {
     window.tiledesk.on('onNewConversationComponentInit', function(event_data) {
-        const message = 'hello';
-        const type = 'text';
-        const metadata = {};
-        const attributes = {subtype: 'info'}; // widget never shows {subtybe: 'info'} messages
-        window.tiledesk.sendSupportMessage(
-            message,
-            type,
-            metadata,
-            attributes
-        )
+    const message = 'hello';
+    const recipientId = event_data.detail.newConvId;
+    const type = 'text';
+    const metadata = {};
+    const attributes = {test:'test attributes', subtype: 'info'};
+    window.tiledesk.sendSupportMessage(
+        message,
+        recipientId,
+        type,
+        metadata,
+        attributes
+    )
     });
 }
 </script>
