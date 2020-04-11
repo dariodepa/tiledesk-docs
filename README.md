@@ -28,9 +28,9 @@
   * [Management Api](./)
     * [Departments](apis/rest-api/management-api/departments.md)
     * [Groups](apis/rest-api/management-api/groups.md)
-* [Webhooks](apis/webhooks/)
+* [Webhooks](https://github.com/Tiledesk/tiledesk-docs/tree/f0e8920801e51974fd8ebefd8819608ceae88a14/apis/webhooks/README.md)
   * [Subscriptions](apis/webhooks/subscriptions.md)
-* [Tutorials](apis/tutorials/)
+* [Tutorials](https://github.com/Tiledesk/tiledesk-docs/tree/f0e8920801e51974fd8ebefd8819608ceae88a14/apis/tutorials/README.md)
   * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
   * [Dialogflow as external chatbot integration](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
   * [Hello World tutorial for external chatbots integration](apis/tutorials/connect-your-own-chatbot.md)
@@ -58,7 +58,6 @@
 * [Create a Firebase project](installation/create-a-firebase-project.md)
 * [Detailed Chat21 Cloud Functions installation](installation/detailed-chat21-cloud-function-installation.md)
 * [Open the firewall ports](installation/open-the-ports.md)
-
 
 ## Guide
 

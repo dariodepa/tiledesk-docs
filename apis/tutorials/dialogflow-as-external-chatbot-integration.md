@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-Integrating Dialogflow agents in Tiledesk offers many advantages, first of all the possibility to handoff current chatbot's conversation to humans. This is a very common task in chatbot integration design, because a chatbot cannot always satisfy every user request or simply because the first chatbot was there just to welcome the user, get the user question and some user data (i.e. email, name), choose the right team and then forward the request to the first available agent.
+Integrating Dialogflow agents in Tiledesk offers many advantages, first of all the possibility to handoff current chatbot's conversation to humans. This is a very common task in chatbot integration design, because a chatbot cannot always satisfy every user request or simply because the first chatbot was there just to welcome the user, get the user question and some user data \(i.e. email, name\), choose the right team and then forward the request to the first available agent.
 
 We just created this first toturial to allow a more customized integration experience with Dialogflow, allowing you to understand how easy is to attach an external chatbot, Dialogflow in this case, to Tiledesk and switch conversation to humans when needed.
 
