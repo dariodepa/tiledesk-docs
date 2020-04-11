@@ -31,10 +31,11 @@
 * [Webhooks](apis/webhooks/README.md)
   * [Subscriptions](apis/webhooks/subscriptions.md)
 * [Tutorials](apis/tutorials/README.md)
-  * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
-  * [Dialogflow as external chatbot integration](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
   * [Hello World tutorial for external chatbots integration](apis/tutorials/connect-your-own-chatbot.md)
+  * [Dialogflow Tutorial 1 - Dialogflow as external chatbot](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
+  * [Dialogflow Tutorial 2 - Buttons and images](apis/tutorials/dialogflow-tutorial-2-micro-language-integration.md)
   * [Sending and receiving messages with Tiledesk APIs](apis/tutorials/sending-and-receiving-messages.md)
+  * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
 
 ## Mobile SDK
 
