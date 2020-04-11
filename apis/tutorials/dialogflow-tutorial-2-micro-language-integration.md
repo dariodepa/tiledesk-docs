@@ -24,7 +24,10 @@ First we need to create a Dialogflow agent. Then we can just focus on the defaul
 
 Choose the defaultWelcomeIntent and move to the 'responses' section. Remove all other responses, because we only want one welcome message from our Agent. Edit the response as the following with a copy & paste:
 
-![image](https://user-images.githubusercontent.com/32564846/79048521-eff61880-7c1d-11ea-950e-379b2824eb43.png)
+![image](https://user-images.githubusercontent.com/32564846/79048582-7c084000-7c1e-11ea-8b56-9375033d7930.png)
+
+With micro language it's sufficient that you place a '\*' followed by the button text on the end of the response. You must place every button on a new line.
+
 
 
 
