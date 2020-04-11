@@ -20,7 +20,12 @@ You must use the code in Tutorial 1. The code is available on Github [here](http
 
 This time we'll give a try to the second end point already embedded into the nodeJS app: **/microlang-bot**
 
-First we need to create a Dialogflow agent. Then we can just focus on the defaultWelcomeIntent to show how buttons and images work. This same logic also applies to every other intent in the Dialogflow agent.
+First we need to create a Dialogflow agent. Then we can just focus on the defaultWelcomeIntent to show how buttons and images work. This same logic will also apply to every other intent in the Dialogflow agent.
+
+Choose the defaultWelcomeIntent and move to the 'responses' section. Remove all other responses, because we only want one welcome message from our Agent. Edit the response as the following with a copy & paste:
+
+![image](https://user-images.githubusercontent.com/32564846/79048521-eff61880-7c1d-11ea-950e-379b2824eb43.png)
+
 
 
 
