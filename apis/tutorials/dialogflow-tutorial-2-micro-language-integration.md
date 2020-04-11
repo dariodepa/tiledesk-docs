@@ -4,7 +4,7 @@ description: >-
   replies
 ---
 
-# Dialogflow Tutorial 2 - Micro language integration
+# Dialogflow Tutorial 2 - Buttons and images
 
 We'll start from Dialogflow Tutorial 1, just adding a small library to our original endpoint.
 
