@@ -26,7 +26,12 @@ Choose the defaultWelcomeIntent and move to the 'responses' section. Remove all 
 
 ![image](https://user-images.githubusercontent.com/32564846/79048582-7c084000-7c1e-11ea-8b56-9375033d7930.png)
 
-With micro language it's sufficient that you place a '\*' followed by the button text on the end of the response. You must place every button on a new line.
+With micro language it's sufficient that you place a '\*' followed by the button text on the end of the response. Every button must placed on a new line.
+
+The final effect will be like this
+
+![image](https://user-images.githubusercontent.com/32564846/79064642-e1097780-7caa-11ea-8710-a54c90987ceb.png)
+
 
 
 
