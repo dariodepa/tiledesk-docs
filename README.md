@@ -34,6 +34,8 @@
   * [Hello World tutorial for external chatbots integration](apis/tutorials/connect-your-own-chatbot.md)
   * [Dialogflow Tutorial 1 - Dialogflow as external chatbot](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
   * [Dialogflow Tutorial 2 - Buttons and images](apis/tutorials/dialogflow-tutorial-2-micro-language-integration.md)
+  * [Dialogflow Tutorial 3 - Automatic human handoff with fallback intent](apis/tutorials/dialogflow-tutorial-3-automatic-human-handoff.md)
+  * [Dialogflow Tutorial 4 - Explicit Human handoff with user intent](apis/tutorials/dialogflow-tutorial-4-explicit-human-handoff.md)  
   * [Sending and receiving messages with Tiledesk APIs](apis/tutorials/sending-and-receiving-messages.md)
   * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
 
