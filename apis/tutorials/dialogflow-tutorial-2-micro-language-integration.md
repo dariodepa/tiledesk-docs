@@ -25,7 +25,7 @@ app.post("/microlang-bot/:botid", (req, res) => {
 })
 ```
 
-As in [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration) you have to create a Dialogflow agent, train it following these instructions, go in Tiledesk, create an external bot and connecting it to the Routing (or to a Department).
+As in [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration) you have to create a Dialogflow agent, train the Agent following these instructions, go to Tiledesk and create an external bot, connecting it to the Routing (or to a Department).
 
 ## Train an agent with the micro language
 
