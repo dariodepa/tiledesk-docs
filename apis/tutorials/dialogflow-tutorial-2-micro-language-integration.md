@@ -8,8 +8,6 @@ description: >-
 
 We'll start from [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration), just adding a small library to our original endpoint.
 
-Follow all the steps in Tutorial 1 but stop to deploy and run the project on Heroku.
-
 ## Fork the tutorial code
 
 You must use the code in *Tutorial 1*. The code is available on Github [here](https://github.com/Tiledesk/tiledesk-dialogflow-proxy-tutorial).
