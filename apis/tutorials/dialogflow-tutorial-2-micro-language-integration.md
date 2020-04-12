@@ -46,9 +46,20 @@ It will look like in the following image:
 
 With micro language it's sufficient that you place a '\*' followed by the button text on the end of the response. Every button must placed on a new line.
 
-The final effect will be like this
+The final effect will be like this:
 
 ![image](https://user-images.githubusercontent.com/32564846/79064642-e1097780-7caa-11ea-8710-a54c90987ceb.png)
+
+To send an image simply use the \image command in the response:
+
+```text
+Your image
+\image:https://www.tiledesk.com/wp-content/uploads/2019/11/backoffice-analytics-1.png
+```
+
+And the image will be shown in the widget like this:
+
+![image](https://user-images.githubusercontent.com/32564846/79065860-cee00700-7cb3-11ea-8b93-39608855fa8a.png)
 
 
 
