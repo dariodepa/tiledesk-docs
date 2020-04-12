@@ -6,13 +6,13 @@ description: >-
 
 # Dialogflow Tutorial 2 - Buttons and images
 
-We'll start from Dialogflow Tutorial 1, just adding a small library to our original endpoint.
+We'll start from [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration), just adding a small library to our original endpoint.
 
 Follow all the steps in Tutorial 1 but stop to deploy and run the project on Heroku.
 
 ## Fork the tutorial code
 
-You must use the code in Tutorial 1. The code is available on Github [here](https://github.com/Tiledesk/tiledesk-dialogflow-proxy-tutorial).
+You must use the code in *Tutorial 1*. The code is available on Github [here](https://github.com/Tiledesk/tiledesk-dialogflow-proxy-tutorial).
 
 **Fork the tutorial** code using the Fork button. Now you have a copy of the tutorial on your own repo.
 
@@ -27,7 +27,7 @@ app.post("/microlang-bot/:botid", (req, res) => {
 })
 ```
 
-As in Dialogflow Turial 1 you have to create a Dialogflow agent, train it following these instructions, go in Tiledesk, create an external bot and connecting it to the Routing (or to a Department).
+As in [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration) you have to create a Dialogflow agent, train it following these instructions, go in Tiledesk, create an external bot and connecting it to the Routing (or to a Department).
 
 ## Train an agent with the micro language
 
