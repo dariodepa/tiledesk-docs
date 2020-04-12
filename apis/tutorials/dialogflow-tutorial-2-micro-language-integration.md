@@ -16,11 +16,20 @@ You must use the code in Tutorial 1. The code is available on Github [here](http
 
 **Fork the tutorial** code using the Fork button. Now you have a copy of the tutorial on your own repo.
 
-## Step 1
+## Introduction
 
 This time we'll give a try to the second end point already embedded into the nodeJS app:
 
-**/microlang-bot**
+```javascript
+// Tutorial 2 - Use 'micro language' to easily render buttons or images
+app.post("/microlang-bot/:botid", (req, res) => {
+  ...
+})
+```
+
+As in Dialogflow Turial 1 you have to create a Dialogflow agent, train it following these instructions, go in Tiledesk, create an external bot and connecting it to the Routing (or to a Department).
+
+## Train an agent with the micro language
 
 First we need to create a Dialogflow agent. Then we can just focus on the defaultWelcomeIntent to show how buttons and images work. This same logic will also apply to every other intent in the Dialogflow agent.
 
