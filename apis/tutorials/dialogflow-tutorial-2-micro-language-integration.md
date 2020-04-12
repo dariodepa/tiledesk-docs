@@ -59,10 +59,19 @@ Your image
 
 And the image will be shown in the widget like this:
 
-![image](https://user-images.githubusercontent.com/32564846/79065860-cee00700-7cb3-11ea-8b93-39608855fa8a.png)
+![](https://user-images.githubusercontent.com/32564846/79065860-cee00700-7cb3-11ea-8b93-39608855fa8a.png)
 
+You can also use buttons and images togheter:
 
+```text
+Your image
+\image:https://www.tiledesk.com/wp-content/uploads/2019/11/backoffice-analytics-1.png
+*Switch to agent
+*Menu
+```
+And this is the final effect:
 
+![](https://user-images.githubusercontent.com/32564846/79065982-9ee53380-7cb4-11ea-88d4-a6730d8b7c40.png)
 
 
 
