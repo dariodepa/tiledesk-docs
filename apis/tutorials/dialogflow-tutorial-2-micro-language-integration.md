@@ -25,6 +25,12 @@ app.post("/microlang-bot/:botid", (req, res) => {
 })
 ```
 
+As you can see on top of the tutorial code, to use microlanguage you must require:
+
+```javascript
+const { TiledeskChatbotUtil } = require('@tiledesk/tiledesk-chatbot-util')
+```
+
 As in [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration) you have to create a Dialogflow agent, train the same Agent following the instructions in this tutorial, then go to Tiledesk and create an external bot and connect it to Routing (or to a Department).
 
 ## Train an agent with the micro language
