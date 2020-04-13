@@ -48,9 +48,9 @@ In this tutorial we suppose you already set up a Dialogflow agent and you alread
 
 Now that you have the credentials file on your hand open the Heroku Dashboard of your project and move to the Settings tab. Then, in the Config Vars section press the "Reveal config vars" button.
 
-Add a new variable named _firstbot_ and fill his value field with the content of the credentials file you already created in the previous step:
+Add a new variable named **firstbot**** and fill his value field with the content of the credentials file you already created in the previous step:
 
-![](https://user-images.githubusercontent.com/32564846/78923682-e7c0a080-7a98-11ea-9d6e-dfe385122046.png)
+![](https://user-images.githubusercontent.com/32564846/79113874-2482e500-7d82-11ea-98bf-bdba1b21732c.png)
 
 Now switch to Tiledesk console and create a new project. Enter whatever name you prefer.
 
@@ -66,9 +66,9 @@ Choose the type **External**, not the Dialogflow one. This tutorial aims to conn
 
 Choose whatever name you prefer for the bot. This name will also be the Sender name of the bot every time the bot writes something. But from the proxy code you are adding you can easily change this default name if you want.
 
-Set in the url field the hostname of your heroku application followed by **/bot**. Every time Tiledesk will invoke you bot it will send a HTTP POST request to this url.
+Set in the url field the hostname of your heroku application followed by **/bot/firstbot**. Every time Tiledesk will invoke you bot it will send a HTTP POST request to this url.
 
-![](https://user-images.githubusercontent.com/32564846/78923885-2fdfc300-7a99-11ea-9930-57bd3337d15e.png)
+![](https://user-images.githubusercontent.com/32564846/79114021-7fb4d780-7d82-11ea-8b54-bed35b43f9a2.png)
 
 To activate the bot you must attach it to the default routing or to a department. For semplicity we'll use the default Routing. Choose the Routing option on the left menu, the switch on Activate Bot, and choose your Dialogflow bot from the right menu. Press UPDATE ROUTING RULES.
 
