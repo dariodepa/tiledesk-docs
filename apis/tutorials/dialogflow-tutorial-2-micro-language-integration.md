@@ -77,5 +77,6 @@ And this is the final effect:
 
 ![](https://user-images.githubusercontent.com/32564846/79065982-9ee53380-7cb4-11ea-88d4-a6730d8b7c40.png)
 
+Enjoy Tiledesk!
 
-
+Do you have feedback on this article? Please send us your feedback writing an email to info@tiledesk.com

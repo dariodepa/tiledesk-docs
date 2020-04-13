@@ -95,4 +95,3 @@ Another approach can be to use the "confidence" of the reply to trigger the hand
 Enjoy you custom Dialogflow connection!
 
 Do you have feedback on this article? Please send us your feedback writing an email to info@tiledesk.com
-

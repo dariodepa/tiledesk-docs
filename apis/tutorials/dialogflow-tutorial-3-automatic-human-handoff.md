@@ -15,20 +15,21 @@ You must use the code in *Tutorial 1*. The code is available on Github [here](ht
 
 ## Introduction
 
-This time we'll give a try to the second end point already embedded into the nodeJS app:
+This time we'll give a try to the second endpoint already embedded into our _nodejs_ app:
 
 ```javascript
 // Tutorial 3 - Automatic human handhoff based on fallback intent
 var consecutive_fallback_count = {};
 const MAX_FALLBACKS = 4;
 app.post("/bot-fallback-handoff/:botid", (req, res) => {
-  const tdclient = new TiledeskClient({request: req, response: res});
+  const tdclient = new TiledeskChatbotClient({request: req});
+  console.log("tdclient", tdclient)
   const botid = req.params.botid;
-  const conversation = tdclient.conversation
+  const supportRequest = tdclient.supportRequest
   // immediately reply back
   res.status(200).send({"success":true});
   // reply messages are sent asynchronously
-  const dialogflow_session_id = conversation.request_id
+  const dialogflow_session_id = supportRequest.request_id
   const lang = 'en-EN' // lang must be the same of the Dialogflow Agent
   const credentials = JSON.parse(process.env[botid])
   runDialogflowQuery(tdclient.text, dialogflow_session_id, lang, credentials)
@@ -104,3 +105,7 @@ msgs.push({
 ```
 
 To hide a message simply add a subtype: 'info' to the attributes section of a message.
+
+Enjoy Tiledesk!
+
+Do you have feedback on this article? Please send us your feedback writing an email to info@tiledesk.com
