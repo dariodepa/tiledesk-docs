@@ -103,4 +103,4 @@ msgs.push({
 })
 ```
 
-To hide a message sumply add a subtype: 'info' to the attributes section of a message.
+To hide a message simply add a subtype: 'info' to the attributes section of a message.
