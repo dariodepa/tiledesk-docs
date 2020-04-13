@@ -22,15 +22,11 @@ To integrate an external bot, we'll need a web endpoint where all the chatbot's 
 
 ## Create and configure external chatbot endpoint
 
-Go on the [repl.it](https://repl.it) and press "+ new repl" button. Then select NodeJS as the programming environment and choose a unique name of you repl propject. We use _tiledeskbot_, that obviously you can't use because it was already taken for this tutorial :\)
+Go on the [repl.it](https://repl.it) and press "+ new repl" button. Then select Express as the programming environment and choose a unique name of you repl propject. We use _tiledeskbot_, that obviously you can't use because it was already taken for this tutorial :\)
 
-![](https://user-images.githubusercontent.com/32564846/78982123-b5a75100-7b21-11ea-82c6-c81a4f2b6035.png)
+![](https://user-images.githubusercontent.com/32564846/79107072-fdbdb200-7d73-11ea-8455-919598937ecf.png)
 
-Now push on the **examples** link in the generated code. A popup like the following will open. Choose the "Server \(Express\)" option.
-
-![](https://user-images.githubusercontent.com/32564846/78982062-9a3c4600-7b21-11ea-8192-42e47b2bc73c.png)
-
-Your source code will change, like the following:
+Presse "Create Repl". Your initial source code will be generated, like the following:
 
 ![](https://user-images.githubusercontent.com/32564846/78982318-26e70400-7b22-11ea-9669-3d82c6223b90.png)
 
