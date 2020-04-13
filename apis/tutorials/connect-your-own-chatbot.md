@@ -26,7 +26,7 @@ Go on the [repl.it](https://repl.it) and press "+ new repl" button. Then select 
 
 ![](https://user-images.githubusercontent.com/32564846/79107072-fdbdb200-7d73-11ea-8455-919598937ecf.png)
 
-Your source code will change, like the following:
+Presse "Create Repl". Your initial source code will be generated, like the following:
 
 ![](https://user-images.githubusercontent.com/32564846/78982318-26e70400-7b22-11ea-9669-3d82c6223b90.png)
 
