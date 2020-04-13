@@ -25,11 +25,11 @@ app.post("/microlang-bot/:botid", (req, res) => {
 })
 ```
 
-As in [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration) you have to create a Dialogflow agent, train the Agent following these instructions, go to Tiledesk and create an external bot, connecting it to the Routing (or to a Department).
+As in [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration) you have to create a Dialogflow agent, train the same Agent following the instructions in this tutorial, then go to Tiledesk and create an external bot and connect it to Routing (or to a Department).
 
 ## Train an agent with the micro language
 
-First we need to create a Dialogflow agent. Then we can just focus on the defaultWelcomeIntent to show how buttons and images work. This same logic will also apply to every other intent in the Dialogflow agent.
+First we need to create a Dialogflow agent. Then we can just focus on the _defaultWelcomeIntent_ to show how buttons and images work. This same logic will also apply to every other intent in the Dialogflow agent.
 
 Choose the defaultWelcomeIntent and move to the 'responses' section. Remove all other responses, because we only want one welcome message from our Agent. Edit the response as the following with a copy & paste:
 

@@ -48,7 +48,7 @@ In this tutorial we suppose you already set up a Dialogflow agent and you alread
 
 Now that you have the credentials file on your hand open the Heroku Dashboard of your project and move to the Settings tab. Then, in the Config Vars section press the "Reveal config vars" button.
 
-Add a new variable named GOOGLE\_CREDENTIALS and fill his value field with the content of the credentials file you already created in the previous step:
+Add a new variable named _firstbot_ and fill his value field with the content of the credentials file you already created in the previous step:
 
 ![](https://user-images.githubusercontent.com/32564846/78923682-e7c0a080-7a98-11ea-9d6e-dfe385122046.png)
 
