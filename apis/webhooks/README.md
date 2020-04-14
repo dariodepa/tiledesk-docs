@@ -104,7 +104,7 @@ The following Events are available and you can be notified when an action relati
 | group.update | Subscribes to group being updated (available only on version v2) |
 | group.delete | Subscribes to group being deleted (available only on version v2) |
 | event.emit | Subscribes to event emitting (available only on version v2) |
-| event.emit.<EVENT_NAME> | Subscribes to a specific event emitting (available only on version v2). Example: event.emit.typing.start to subscribe to typing indicator events.  |
+| event.emit.EVENT_NAME | Subscribes to a specific event emitting (available only on version v2). Example: event.emit.typing.start to subscribe to typing indicator events.  |
 
 ### Webhook Notification object
 
