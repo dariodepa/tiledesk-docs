@@ -2,7 +2,7 @@
 
 Applicable to Tiledesk version 2.
 
-We do not support Tiledesk installation under Windows OS. 
+Actually we support Tiledesk installation under MacOS and Linux. Windows OS is not supported.
 
 Tiledesk uses [Chat21](http://www.chat21.org) as messaging platform. Refer to [Architecture overview](../architecture/schema.md) to undestand the product's modules.
 
