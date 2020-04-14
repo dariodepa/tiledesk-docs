@@ -104,7 +104,7 @@ msgs.push({
 })
 ```
 
-To hide a message simply add a subtype: 'info' to the attributes section of a message.
+To hide a message simply add a sub-property *subtype: 'info'* to the *attributes* property of a message.
 
 Enjoy Tiledesk!
 
