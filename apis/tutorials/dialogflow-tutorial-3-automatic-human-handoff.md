@@ -34,14 +34,19 @@ app.post("/bot-fallback-handoff/:botid", (req, res) => {
   const credentials = JSON.parse(process.env[botid])
   runDialogflowQuery(tdclient.text, dialogflow_session_id, lang, credentials)
   .then(function(result) {
+    if (!consecutive_fallback_count[dialogflow_session_id]) {
+      // init consecutive fallback count for this conversation
+      consecutive_fallback_count[dialogflow_session_id] = 0
+    }
     if (result.intent.isFallback) {
-      if (!consecutive_fallback_count[dialogflow_session_id]) {
-        consecutive_fallback_count[dialogflow_session_id] = 1
-      }
-      else {
-        consecutive_fallback_count[dialogflow_session_id]++
-        console.log("fallback of", dialogflow_session_id, "is", consecutive_fallback_count[dialogflow_session_id])
-      }
+      consecutive_fallback_count[dialogflow_session_id]++
+      console.log("fallback of", dialogflow_session_id, "is", consecutive_fallback_count[dialogflow_session_id])
+    }
+    else {
+      // reset fallback on every positive hit.
+      // here you can also evaluate result.intentDetectionConfidence
+      // and consider it as a fallback if under some threshold value
+      consecutive_fallback_count[dialogflow_session_id] = 0
     }
     if(res.statusCode === 200) {
       let msgs = [];
@@ -80,7 +85,6 @@ As in [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-inte
 As you can see this new end point starts with thse two lines of code
 
 ```javascript
-// Tutorial 3 - Automatic human handhoff based on fallback intent
 var consecutive_fallback_count = {};
 const MAX_FALLBACKS = 4;
 ```
