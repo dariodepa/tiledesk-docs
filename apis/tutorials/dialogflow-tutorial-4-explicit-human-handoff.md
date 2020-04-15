@@ -32,7 +32,7 @@ You can also place a button under every DF reply (i.e. using micro languge) to a
 
 ![](https://user-images.githubusercontent.com/32564846/79378880-5baded80-7f5e-11ea-8bed-296904a6b986.png)
 
-## Gracefully handling operating hours in bot to humans handoff
+## Gracefully handling operating hours in bot-humans handoff
 
 What happens if, while you switch to the human operator, your support team is outside of operating hours? The request will be placed in the unserved queue and will became served as soon as your team became available again. Meanwhile you should notice to the user that the request will be taken in some hours, or probably the day after. So, telling "I'm putting you in touch with an operator" is not enough.
 
@@ -89,7 +89,7 @@ Switch to the intent UI from Dialogflow dashboard, the go on the form bottom and
 
 ![](https://user-images.githubusercontent.com/32564846/79383410-6a4bd300-7f65-11ea-96ac-a94670dd5c79.png)
 
-Now go on your project in Tiledesk dashboard and activate operating hours, taking care to put offline the interval when you ask the bot to skitch to human agents. If you will switch to human operators during offline hours you will get this message:
+Now go on your project in Tiledesk dashboard and activate operating hours, taking care to put offline the interval when you ask the bot to switch to human agents. If you will try to switch to human operators during offline hours you will get the following message:
 
 ![](https://user-images.githubusercontent.com/32564846/79382698-3ae89680-7f64-11ea-87b6-176205b8ecff.png)
 
