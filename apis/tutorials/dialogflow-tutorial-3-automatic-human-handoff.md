@@ -5,7 +5,7 @@ description: >-
 
 # Dialogflow  Tutorial 3 - Automatic human handoff with fallback intent
 
-We'll start from [Dialogflow Tutorial 1](apis/tutorials/dialogflow-as-external-chatbot-integration), just adding a small library to our original endpoint.
+We'll start from [Dialogflow Tutorial 1](/apis/tutorials/dialogflow-as-external-chatbot-integration), just adding a small library to our original endpoint.
 
 ## Fork the tutorial code
 
