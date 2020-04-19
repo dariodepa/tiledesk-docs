@@ -36,6 +36,7 @@
   * [Dialogflow Tutorial 2 - Buttons and images](apis/tutorials/dialogflow-tutorial-2-micro-language-integration.md)
   * [Dialogflow Tutorial 3 - Automatic human handoff with fallback intent](apis/tutorials/dialogflow-tutorial-3-automatic-human-handoff.md)
   * [Dialogflow Tutorial 4 - Explicit Human handoff with user intent](apis/tutorials/dialogflow-tutorial-4-explicit-human-handoff.md)  
+  * [Dialogflow Tutorial 5 - Gracefully handling operating hours during handoff](apis/tutorials/dialogflow-tutorial-5-graceful-human-handoff.md)  
   * [Sending and receiving messages with Tiledesk APIs](apis/tutorials/sending-and-receiving-messages.md)
   * [Generate Dialgoflow Google Credentials file](apis/tutorials/generate-dialgoflow-google-credentials-file.md)
 
