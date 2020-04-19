@@ -5,7 +5,7 @@ description: >-
 
 # Dialogflow  Tutorial 5 - Gracefully handling operating hours in bot-humans handoff
 
-## Introduction 
+## Introduction
 
 What happens if, while you switch to the human operator, your support team is outside of operating hours? The request will be placed in the unserved queue and will became served as soon as your team became available again. Meanwhile you should notice to the user that the request will be taken in some hours, or probably the day after. So, telling "I'm putting you in touch with an operator" is not enough.
 
