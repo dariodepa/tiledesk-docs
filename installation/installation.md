@@ -25,7 +25,7 @@ With minimum infrastructure, you can have the servers up and running, but qualit
 
 The default instance type will be a t2.small as this is the minimum instance type determined to run Tiledesk Server, but this instance is more indicated for testing environments. A ‘c4.large’ instance is ideal for a production environment.
 
-If you like Heroku, at least the Hobby dyno type is recommended for small apps even if Tiledesk also works with the free level.
+If you like Heroku, at least the Hobby dyno type is recommended for small apps even if Tiledesk also works with the Free type.
 
 ## Front-end components
 
