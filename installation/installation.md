@@ -25,12 +25,14 @@ With minimum infrastructure, you can have the servers up and running, but qualit
 
 The default instance type will be a t2.small as this is the minimum instance type determined to run Tiledesk Server, but this instance is more indicated for testing environments. A ‘c4.large’ instance is ideal for a production environment.
 
+If you like Heroku, at least the Hobby dyno type is recommended for small apps even if Tiledesk also works with the Free type.
+
 ## Front-end components
 
-To serve the Tiledesk front-end components (Dashboard, Widget, Web Chat) we suggest to use AWS S3 + CloudFront.
+To serve the Tiledesk front-end components (Dashboard, Widget, Web Chat) we suggest to use AWS S3 + CloudFront. Enable gzip compression is a good choice to reduce network traffic and improve performance. See here: https://aws.amazon.com/blogs/aws/new-gzip-compression-support-for-amazon-cloudfront/
 
 ## Database
 
 We recommend you run MongoDB on : 
-- MongoAtlas 
+- MongoAtlas. M10 is ok for testing and low traffic application. It supports continuous backup. For high-traffic solution M30 ( or upper) is a good choice.   
 - locally in replica set mode, with at least three nodes for availablity. Each node should run in a separate Availability Zone.
