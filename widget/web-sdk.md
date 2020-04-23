@@ -351,7 +351,7 @@ Important payload of event\_data:
 Example:
 
 In the following example Departments are filtered based on the current widget language.
-Department language got from the Department description field.
+Actually a Deparment doen't provide a specific "language" field. In this example Department language is put in the Department description field. A next update will provide specific Department "tags" (or "lables") that will be used to save specific informations into the Department resources.
 
 ```text
 <script type="application/javascript">    
