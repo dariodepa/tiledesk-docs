@@ -356,23 +356,21 @@ In the following example Departments are filtered based on the current widget la
 <script type="application/javascript">    
 window.tileDeskAsyncInit = function() {
     window.tiledesk.on('onBeforeDepartmentsFormRender', function(event_data) {
-        var departments =  event_data.detail.departments;
-        var lang = window.tiledesk.angularcomponent.component.g.lang;
-        if (lang && lang === 'ca'){
-            return departments.filter(function(dep) {
-                if (dep.name.includes(':Spanish')){
-                    dep.name = dep.name.split(":")[0]
-                    return dep;
-                }
-            });
-        } else {
-            return departments.filter(function(dep) {
-                if (dep.name.includes(':Valenciano')){
-                    dep.name = dep.name.split(":")[0]
-                    return dep;
-                }
-            });
-        }
+      var departments =  event_data.detail.departments;
+      var lang = window.tiledesk.angularcomponent.component.g.lang;
+      if (lang && lang === 'en'){
+          return departments.filter(function(dep) {
+              if (dep.description.includes('English')){
+                  return dep;
+              }
+          });
+      } else {
+          return departments.filter(function(dep) {
+              if (dep.description.includes('French')){
+                  return dep;
+              }
+          });
+      }
     });
 }
 </script>
