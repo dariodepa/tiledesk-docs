@@ -356,23 +356,23 @@ Actually a Deparment doen't provide a specific "language" field. In this example
 ```text
 <script type="application/javascript">    
 window.tileDeskAsyncInit = function() {
-    window.tiledesk.on('onBeforeDepartmentsFormRender', function(event_data) {
-      var departments =  event_data.detail.departments;
-      var lang = window.tiledesk.angularcomponent.component.g.lang;
-      if (lang && lang === 'en'){
-          return departments.filter(function(dep) {
-              if (dep.description.includes('English')){
-                  return dep;
-              }
-          });
-      } else {
-          return departments.filter(function(dep) {
-              if (dep.description.includes('French')){
-                  return dep;
-              }
-          });
-      }
-    });
+  window.tiledesk.on('onBeforeDepartmentsFormRender', function(event_data) {
+    var departments =  event_data.detail.departments;
+    var lang = window.tiledesk.angularcomponent.component.g.lang;
+    if (lang && lang === 'en'){
+      return departments.filter(function(dep) {
+        if (dep.description.includes('English')){
+            return dep;
+        }
+      });
+    } else {
+      return departments.filter(function(dep) {
+        if (dep.description.includes('French')){
+            return dep;
+        }
+      });
+    }
+  });
 }
 </script>
 ```
