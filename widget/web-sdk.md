@@ -351,17 +351,17 @@ Important payload of event\_data:
 Example:
 
 In the following example Departments are filtered based on the current widget language.
-Actually a Deparment doen't provide a specific "language" field. In this example Department language is put in the Department description field. A next update will provide specific Department "tags" (or "lables") that will be used to save specific informations into the Department resources.
+Actually a Deparment doesn't provide a specific "language" field. In this example Department language is put in the Department description field. A next update will provide specific Department "tags" (or "lables") that will be used to save specific informations into the Department resources.
 
 ```text
-<script type="application/javascript">    
+<script type="application/javascript">
 window.tileDeskAsyncInit = function() {
   window.tiledesk.on('onBeforeDepartmentsFormRender', function(event_data) {
-    var departments =  event_data.detail.departments;
+    var departments = event_data.detail.departments;
     var lang = window.tiledesk.angularcomponent.component.g.lang;
-    if (lang && lang === 'en'){
+    if (lang && lang === 'en') {
       return departments.filter(function(dep) {
-        if (dep.description.includes('English')){
+        if (dep.description.includes('English')) {
             return dep;
         }
       });
