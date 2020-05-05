@@ -235,7 +235,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/invite" %}
 {% api-method-summary %}
 Invite an agent
 {% endapi-method-summary %}
