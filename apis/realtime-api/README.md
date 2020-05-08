@@ -21,9 +21,9 @@ This API is an SSL-only API. You must be a verified user to make API requests. Y
 | Topic | Description |
 | :--- | :--- |
 | /PROJECT_ID/requests | Get the last open requests of a project  |
-| /PROJECT_ID/requests/<REQUEST_ID> | Get the requests detail  |
-| /PROJECT_ID/requests/<REQUEST_ID>/messages | Get the request messages  |
-| /PROJECT_ID/project_users/<USER_ID> | Get the agents info  |
+| /PROJECT_ID/requests/REQUEST_ID | Get the requests detail  |
+| /PROJECT_ID/requests/REQUEST_ID/messages | Get the request messages  |
+| /PROJECT_ID/project_users/USER_ID | Get the agents info  |
 
 ## Rate Limiting
 We only allow a certain number of new connections per minute. The number of new connections to the Realtime API is restricted by REST API rate limits. We also allow a certain number of concurrently running connections to the Realtime API.
