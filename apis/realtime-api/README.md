@@ -28,8 +28,9 @@ This API is an SSL-only API. You must be a verified user to make API requests. Y
 ## Rate Limiting
 We only allow a certain number of new connections per minute. The number of new connections to the Realtime API is restricted by REST API rate limits. We also allow a certain number of concurrently running connections to the Realtime API.
 
-We reserve the right to adjust the rate limit for given endpoints in order to provide a high quality of service for all clients. If the rate limit is exceeded, Tiledesk will respond with a Too Many Requests response code and a body that details the reason for the rate limiter kicking in.
+We reserve the right to adjust the rate limit for given endpoints in order to provide a high quality of service for all clients. If the rate limit is exceeded, Tiledesk will respond with a body that details the reason for the rate limiter kicking in.
 
+We also limit the total amount of data exchanged through real time APIs. For example the number of Realtime requests exchanged can’t exceed a certain number of items. If this number is exeeded you can always use REST APIs to get additional data or to make more complex queries.
 
 ## Using The API
 * Establish an authenticated WebSocket connection to wss://rtm.tiledesk.com/v2/.
@@ -71,15 +72,24 @@ Once connection is established, you can send messages to subscribe to individual
    }
 }
 ```
+
+To subscribe to a topic you can execute :
+```
+ws.send(subscriptionMessage);
+ ```
+ 
 Example:
 
 ```
+var subscriptionMessage =
 {
    "action":"subscribe",
    "payload":{
       "topic":"/5df26badde7e1c001743b63c/requests"
    }
 }
+
+ws.send(subscriptionMessage);
 ```
 
 ## Process Incoming Events
