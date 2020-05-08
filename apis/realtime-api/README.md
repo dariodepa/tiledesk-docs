@@ -26,11 +26,9 @@ This API is an SSL-only API. You must be a verified user to make API requests. Y
 | /<PROJECT_ID>/project_users/<USER_ID> | Get the agents info  |
 
 ## Rate Limiting
-We only allow a certain number of new connections per minute. The number of new connections to the Realtime API is restricted by REST API rate limits. We also allow a certain number of concurrently running connections to the Realtime API. As a Realtime API consumer, you should expect to be able to have at most 1000 concurrent connections.
+We only allow a certain number of new connections per minute. The number of new connections to the Realtime API is restricted by REST API rate limits. We also allow a certain number of concurrently running connections to the Realtime API.
 
-The events delivered by the Realtime API are not restricted by any rate limit.
-
-We reserve the right to adjust the rate limit for given endpoints in order to provide a high quality of service for all clients. If the rate limit is exceeded, Tiledesk will respond with a HTTP 429 Too Many Requests response code and a body that details the reason for the rate limiter kicking in.
+We reserve the right to adjust the rate limit for given endpoints in order to provide a high quality of service for all clients. If the rate limit is exceeded, Tiledesk will respond with a Too Many Requests response code and a body that details the reason for the rate limiter kicking in.
 
 
 ## Using The API
