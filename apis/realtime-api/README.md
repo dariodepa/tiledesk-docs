@@ -39,25 +39,54 @@ We reserve the right to adjust the rate limit for given endpoints in order to pr
 Connect to the wss://rtm.tiledesk.com/v2/ WebSocket endpoint using your JWT token.
 
 ```
-  var ws = new WebSocket("wss://rtm.tiledesk.com/v2/");                  
-        ws.onopen = function () {
-            console.log('websocket is connected.');         
-        }
-        ws.onclose = function () {
-            console.log('websocket is closed.');           
-        }
-        ws.onerror = function () {
-            console.log('websocket error ...')
-        }
-        ws.onmessage = function(message) {   
-            console.log(message);
-            try {
-                 var data = JSON.parse(message.data);
-            } catch (e) {
-               return console.log('This doesn\'t look like a valid JSON: ', message.data);
-            }
-               
-           //.... ADD YOUR LOGIC HERE    
-        }
+  var ws = new WebSocket("wss://rtm.tiledesk.com/v2/?token=YOUR_JWT_TOKEN"); 
+  
+  ws.onopen = function () {
+      console.log('websocket is connected.');         
+  }
+  
+  ws.onclose = function () {
+      console.log('websocket is closed.');           
+  }
+  
+  ws.onerror = function () {
+      console.log('websocket error ...')
+  }               
+```
+## Subscribe to a topic
+Once connection is established, you can send messages to subscribe to individual topics. Refer to Topics for the topic key.
 
 ```
+{
+   "action":"subscribe",
+   "payload":{
+      "topic":"/<YOUR_PROJECT_ID_HERE>/requests"
+   }
+}
+```
+Example:
+
+```
+{
+   "action":"subscribe",
+   "payload":{
+      "topic":"/5df26badde7e1c001743b63c/requests"
+   }
+}
+```
+
+## Process Incoming Events
+Once you have subscribed to one or several topics, listen to subsequent messages to start collecting data.
+```
+ ws.onmessage = function(message) {   
+    console.log(message);
+    try {
+         var data = JSON.parse(message.data);
+    } catch (e) {
+       return console.log('This doesn\'t look like a valid JSON: ', message.data);
+    }
+
+   //.... ADD YOUR LOGIC HERE    
+}
+```
+
