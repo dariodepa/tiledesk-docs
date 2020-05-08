@@ -122,11 +122,7 @@ The following are sample messages received after subscribing to requests topic:
             },
             "first_text":"hello world",
             "department":"5eb45fbc1f9e1f0012d62209",
-            "agents":[
-               {
-                  "id_user":"5eb45fb21f9e1f0012d62201"
-               }
-            ],
+            ...
             "assigned_at":"2020-05-08T06:30:41.090Z",
             "id_project":"5eb45fbc1f9e1f0012d62207",
             "createdBy":"5eb45fb21f9e1f0012d62201",
