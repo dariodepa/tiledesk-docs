@@ -1,6 +1,6 @@
 ---
 description: >-
-  Let your Dialogflow agents hand off to human agents through an externl chatbot
+  Let your Dialogflow agents handoff to human agents through an externl chatbot
 ---
 
 # Dialogflow  Tutorial 1 - Dialogflow as external chatbot integration
