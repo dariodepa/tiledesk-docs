@@ -33,7 +33,7 @@ We reserve the right to adjust the rate limit for given endpoints in order to pr
 We also limit the total amount of data exchanged through real time APIs. For example the number of Realtime requests exchanged can’t exceed a certain number of items. If this number is exeeded you can always use REST APIs to get additional data or to make more complex queries.
 
 ## Using The API
-* Establish an authenticated WebSocket connection to wss://rtm.tiledesk.com/v2/.
+* Establish an authenticated WebSocket connection to wss://rtm.tiledesk.com/v2/ws.
 * Subscribe to one or several topics.
 * Process incoming events.
 * Unsubscribe to topics.
@@ -44,10 +44,10 @@ We also limit the total amount of data exchanged through real time APIs. For exa
 * Agent
 
 ## Establish Connection
-Connect to the wss://rtm.tiledesk.com/v2/ WebSocket endpoint using your JWT token.
+Connect to the wss://rtm.tiledesk.com/v2/ws WebSocket endpoint using your JWT token.
 
 ```
-  var ws = new WebSocket("wss://rtm.tiledesk.com/v2/?token=YOUR_JWT_TOKEN"); 
+  var ws = new WebSocket("wss://rtm.tiledesk.com/v2/ws?token=YOUR_JWT_TOKEN"); 
   
   ws.onopen = function () {
       console.log('websocket is connected.');         
