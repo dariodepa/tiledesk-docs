@@ -1,6 +1,6 @@
 # Web SDK
 
-#### Web SDK ver 3.0
+#### Web SDK ver 4.0
 
 This guide will show you how to get started as quickly as possible with the Web SDK from TileDesk. The Web SDK will give businesses and developers the flexibility to build and customize a chat experience that meet their specific design/brand requirements.
 
@@ -18,7 +18,7 @@ To chat with your visitors embed the widget on your site. Copy the following scr
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id; 
-            js.src = "https://widget.tiledesk.com/v3/launch.js";
+            js.src = "https://widget.tiledesk.com/v4/launch.js";
             fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'tiledesk-jssdk'));
     </script>
@@ -30,7 +30,7 @@ To get your TILEDESK\_PROJECT\_ID go to the TileDesk Dashboard and click on the 
 
 ### Configuration
 
-Widget version 3.0 supports remote configuration of most parameters directly from the Widget menu of the Dashboard.
+Widget version 4.0 supports remote configuration of most parameters directly from the Widget menu of the Dashboard.
 
 You can customize the widget passing these parameters to window.tiledeskSettings object:
 
@@ -79,7 +79,7 @@ You can customize the widget passing these parameters to window.tiledeskSettings
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id; //js.async=!0;
-        js.src = "https://widget.tiledesk.com/v3/launch.js";
+        js.src = "https://widget.tiledesk.com/v4/launch.js";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'tiledesk-jssdk'));
     </script>
@@ -99,7 +99,7 @@ You can customize the widget passing these parameters to window.tiledeskSettings
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id; 
-      js.src = "https://widget.tiledesk.com/v3/launch.js";
+      js.src = "https://widget.tiledesk.com/v4/launch.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'tiledesk-jssdk'));
 </script>

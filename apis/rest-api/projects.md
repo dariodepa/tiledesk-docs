@@ -16,7 +16,7 @@ The Project model
 | updatedAt | String | The time \(ISO-8601 date string\) when the project was updated. |
 | createdBy | String | The unique identifier of the row creator |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/projects/" %}
 {% api-method-summary %}
 Get a list of projects the user belongs
 {% endapi-method-summary %}
@@ -85,7 +85,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/projects/:project\_id" %}
 {% api-method-summary %}
 Get the project detail
 {% endapi-method-summary %}
@@ -148,7 +148,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id/users/availables" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/projects/:project\_id/users/availables" %}
 {% api-method-summary %}
 Return the available agents
 {% endapi-method-summary %}
@@ -195,7 +195,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/projects/:project\_id/isopen" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/projects/:project\_id/isopen" %}
 {% api-method-summary %}
 Return if the project is open regarding operating hours
 {% endapi-method-summary %}

@@ -18,7 +18,7 @@ The Model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/users" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/users" %}
 {% api-method-summary %}
 Get the current authenticated user
 {% endapi-method-summary %}
@@ -50,7 +50,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/users/" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v2/users/" %}
 {% api-method-summary %}
 Update the current authenticated user
 {% endapi-method-summary %}

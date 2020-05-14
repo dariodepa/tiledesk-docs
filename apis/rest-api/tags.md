@@ -15,7 +15,7 @@ The Tag model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags" %}
+{% api-method method="get" host="https://api.tiledesk.com/v2" path="/:project\_id/tags" %}
 {% api-method-summary %}
 Get all tags
 {% endapi-method-summary %}
@@ -87,7 +87,7 @@ what page of results to fetch. defaults to first page.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
+{% api-method method="get" host="https://api.tiledesk.com/v2" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
 Get a tag by id
 {% endapi-method-summary %}
@@ -142,7 +142,7 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags" %}
+{% api-method method="post" host="https://api.tiledesk.com/v2" path="/:project\_id/tags" %}
 {% api-method-summary %}
 Create a new tag
 {% endapi-method-summary %}
@@ -207,7 +207,7 @@ The tag custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
+{% api-method method="put" host="https://api.tiledesk.com/v2" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
 Update a tag by id
 {% endapi-method-summary %}
@@ -276,7 +276,7 @@ The tag custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/tags/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com/v2" path="/:project\_id/tags/:id" %}
 {% api-method-summary %}
 Delete a tag by id
 {% endapi-method-summary %}

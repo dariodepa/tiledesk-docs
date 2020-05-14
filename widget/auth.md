@@ -2,7 +2,7 @@
 
 ## Enabling authenticated visitors
 
-Require Widget Javascript API v2
+Require Widget Javascript API v4
 
 ### Overview
 

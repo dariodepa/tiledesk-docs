@@ -13,7 +13,7 @@ Endpoints are documented with the HTTP method for the request and a partial reso
 
 Prepend https://api.tiledesk.com to the resource identifier to get the full endpoint URL:
 
-**https://api.tiledesk.com/v1/**
+**https://api.tiledesk.com/v2/**
 
 The examples in the docs are cURL statements. You can run the statements on a command line to try out different API requests. In Windows, you'll need to modify some of the examples in the docs to make them work.
 
@@ -33,7 +33,7 @@ Use the following authentication format with your email address and password:
 #### Example
 
 ```
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5ab0f32757066e0014bfd718/departments
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5ab0f32757066e0014bfd718/departments
 ```
 
 
@@ -42,19 +42,19 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5ab0f3275
 Use the signin method to get a valid JWT token:
 
 ```
-curl -v -X POST -d 'email=<YOUR_EMAIL>&password=<YOUR_PASSWORD>' https://api.tiledesk.com/v1/auth/signin
+curl -v -X POST -d 'email=<YOUR_EMAIL>&password=<YOUR_PASSWORD>' https://api.tiledesk.com/v2/auth/signin
 ```
 
 Example
 
 ```
-curl -v -X POST -d 'email=andrea.leo@f21.it&password=123456' https://api.tiledesk.com/v1/auth/signin
+curl -v -X POST -d 'email=andrea.leo@f21.it&password=123456' https://api.tiledesk.com/v2/auth/signin
 ```
 
 Example: How to use JWT token
 
 ```
-curl -v -X GET -H 'Authorization: JWT <JWT_TOKEN>' https://api.tiledesk.com/v1/5ab0f32757066e0014bfd718/departments
+curl -v -X GET -H 'Authorization: JWT <JWT_TOKEN>' https://api.tiledesk.com/v2/5ab0f32757066e0014bfd718/departments
 ```
 
 
@@ -92,7 +92,7 @@ You can use the API to get or set lead information.
 Allows an account to list all the leads.
 
 ```
-curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads
+curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/leads
 ```
 
 ### Get a lead
@@ -101,7 +101,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 Fetches a lead by his or her Lead ID
 
 ```
-curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
+curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
 ```
 
 
@@ -111,7 +111,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 Allows to add more leads.
 
 ```
-curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"fullanem":"andrea", "lead_id":"123456"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads
+curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"fullanem":"andrea", "lead_id":"123456"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/leads
 ```
 
 
@@ -127,7 +127,7 @@ Allows an account to list all the requests for the project.
 
 
 ```
-curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests
+curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/requests
 ```
 
 
@@ -138,7 +138,7 @@ curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 h
 Fetches a lead by his or her request_id
 
 ```
-curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK
+curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK
 ```
 
 

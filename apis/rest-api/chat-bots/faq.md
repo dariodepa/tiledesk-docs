@@ -16,7 +16,7 @@ The Faq model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/faq" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/faq" %}
 {% api-method-summary %}
 Get all faqs of a bot
 {% endapi-method-summary %}
@@ -63,10 +63,10 @@ the bot id
 Example
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq?id_faq_kb=5be9b2ecc72a050015e14951
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/faq?id_faq_kb=5be9b2ecc72a050015e14951
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/faq/" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/faq/" %}
 {% api-method-summary %}
 Get a faq by id
 {% endapi-method-summary %}
@@ -111,10 +111,10 @@ authorization token. Basic Auth or JWT
 Example
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq/5be9b2ecc72a050015e14951
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/faq/5be9b2ecc72a050015e14951
 ```
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/faq" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/:project\_id/faq" %}
 {% api-method-summary %}
 Create a new faq
 {% endapi-method-summary %}
@@ -177,10 +177,10 @@ The faq topic
 Example:
 
 ```text
-curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"id_faq_kb":"123321", "question":"question", "answer":"answer"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq
+curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"id_faq_kb":"123321", "question":"question", "answer":"answer"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/faq
 ```
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/faq/:id" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v2/:project\_id/faq/:id" %}
 {% api-method-summary %}
 Update a faq
 {% endapi-method-summary %}
@@ -247,10 +247,10 @@ The faq topic
 Example:
 
 ```text
-curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"bot1"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq/5be9b2ecc72a050015e14951
+curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"bot1"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/faq/5be9b2ecc72a050015e14951
 ```
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/faq/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v2/:project\_id/faq/:id" %}
 {% api-method-summary %}
 Delete a faq
 {% endapi-method-summary %}
@@ -295,6 +295,6 @@ authorization token. Basic Auth or JWT
 Example:
 
 ```text
-curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/faq/5be9b2ecc72a050015e14951
+curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/faq/5be9b2ecc72a050015e14951
 ```
 

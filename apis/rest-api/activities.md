@@ -2,7 +2,7 @@
 
 You can use the API to get the activity data.
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/activities" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/activities" %}
 {% api-method-summary %}
 Get all activities
 {% endapi-method-summary %}

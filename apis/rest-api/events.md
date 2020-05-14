@@ -15,7 +15,7 @@ The Event Model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/events" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/events" %}
 {% api-method-summary %}
 Get all events
 {% endapi-method-summary %}
@@ -69,7 +69,7 @@ what page of results to fetch. defaults to first page.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/events/:id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/events/:id" %}
 {% api-method-summary %}
 Get a event by id
 {% endapi-method-summary %}
@@ -117,7 +117,7 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/events" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/:project\_id/events" %}
 {% api-method-summary %}
 Create a new event
 {% endapi-method-summary %}

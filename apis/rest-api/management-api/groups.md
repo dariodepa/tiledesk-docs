@@ -14,7 +14,7 @@ The Group model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/groups" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/groups" %}
 {% api-method-summary %}
 Get all groups
 {% endapi-method-summary %}
@@ -82,10 +82,10 @@ authorization token. Basic Auth or JWT
 Example
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/groups
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/groups/:id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/groups/:id" %}
 {% api-method-summary %}
 Get the group by id
 {% endapi-method-summary %}
@@ -142,10 +142,10 @@ authorization token. Basic Auth or JWT
 Example:
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups/5c34b52a9f22a7001681e888
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/groups/5c34b52a9f22a7001681e888
 ```
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/groups" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/:project\_id/groups" %}
 {% api-method-summary %}
 Create a new group
 {% endapi-method-summary %}
@@ -212,10 +212,10 @@ The group members ids.
 Example:
 
 ```text
-curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new group1", "members":["5ab0f3fa57066e0014bfd71e"]}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups
+curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new group1", "members":["5ab0f3fa57066e0014bfd71e"]}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/groups
 ```
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/groups/:id" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v2/:project\_id/groups/:id" %}
 {% api-method-summary %}
 Update a group
 {% endapi-method-summary %}
@@ -286,10 +286,10 @@ The group members ids.
 Example:
 
 ```text
-curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new group1", "members":["5ab0f3fa57066e0014bfd71e"]}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups/groups/5c34b52a9f22a7001681e888
+curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new group1", "members":["5ab0f3fa57066e0014bfd71e"]}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/groups/groups/5c34b52a9f22a7001681e888
 ```
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/groups/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v2/:project\_id/groups/:id" %}
 {% api-method-summary %}
 Delete a group
 {% endapi-method-summary %}
@@ -346,6 +346,6 @@ authorization token. Basic Auth or JWT
 Example:
 
 ```text
-curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/groups/5c34b52a9f22a7001681e888
+curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/groups/5c34b52a9f22a7001681e888
 ```
 

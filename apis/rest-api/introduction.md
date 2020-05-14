@@ -14,7 +14,7 @@ This is the documentation for the Tiledesk REST API. Read the contents of this p
 
 Endpoints are documented with the HTTP method for the request and a partial resource identifier. Example:
 
-**GET /v1/{project\_id}**
+**GET /v2/{project\_id}**
 
 Your Project ID \(this appears as project\_id in your code\) is a unique code assigned to your project when you create it in Tiledesk. There are a few ways you can find your Project ID.
 
@@ -26,7 +26,7 @@ Your Project ID is also available on the top of the Project Setting page of your
 
 To use the API prepend [https://api.tiledesk.com](https://api.tiledesk.com) to the resource identifier to get the full endpoint URL:
 
-[https://api.tiledesk.com/v1/{project\_id}](https://api.tiledesk.com/v1/{project_id})
+[https://api.tiledesk.com/v2/{project\_id}](https://api.tiledesk.com/v2/{project_id})
 
 The examples in the docs are cURL statements. You can run the statements on a command line to try out different API requests. In Windows, you'll need to modify some of the examples in the docs to make them work.
 
@@ -58,7 +58,7 @@ Use the following authentication format with your email address and password:
 #### Example
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5ab0f32757066e0014bfd718/departments
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5ab0f32757066e0014bfd718/departments
 ```
 
 ### JWT authentication
@@ -66,19 +66,19 @@ curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5ab0f3275
 Use the sign-in method to get a valid JWT token:
 
 ```text
-curl -v -X POST -H 'Content-Type:application/json' -d '{"email":"<YOUR_EMAIL>","password":"<YOUR_PASSWORD>"}' https://api.tiledesk.com/v1/auth/signin
+curl -v -X POST -H 'Content-Type:application/json' -d '{"email":"<YOUR_EMAIL>","password":"<YOUR_PASSWORD>"}' https://api.tiledesk.com/v2/auth/signin
 ```
 
 Example
 
 ```text
-curl -v -X POST -H 'Content-Type:application/json' -d '{"email":"andrea.leo@f21.it","password":"123456"}' https://api.tiledesk.com/v1/auth/signin
+curl -v -X POST -H 'Content-Type:application/json' -d '{"email":"andrea.leo@f21.it","password":"123456"}' https://api.tiledesk.com/v2/auth/signin
 ```
 
 Example: How to use JWT token
 
 ```text
-curl -v -X GET -H 'Authorization: JWT <JWT_TOKEN>' https://api.tiledesk.com/v1/5ab0f32757066e0014bfd718/departments
+curl -v -X GET -H 'Authorization: JWT <JWT_TOKEN>' https://api.tiledesk.com/v2/5ab0f32757066e0014bfd718/departments
 ```
 
 #### Rate Limiting

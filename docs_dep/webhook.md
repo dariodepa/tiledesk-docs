@@ -39,13 +39,13 @@ To use RestHook you must create a Subscription. Each Subscription consists of th
 ### Create a subscription
 
 ```
-curl -v -X POST -H 'Content-Type:application/json' -u <email>:<password> -d '{"event":"<event>", "target":"<target>"}' https://api.tiledesk.com/v1/<project_id>/subscriptions
+curl -v -X POST -H 'Content-Type:application/json' -u <email>:<password> -d '{"event":"<event>", "target":"<target>"}' https://api.tiledesk.com/v2/<project_id>/subscriptions
 ```
 
 Example:
 
 ```
-curl -v -X POST -H 'Content-Type:application/json' -u andrea.leo@f21.it:123456 -d '{"event":"request.create", "target":"https://webhook.site/c312005b-5042-49e9-a769-0f3ba4245b51"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/subscriptions
+curl -v -X POST -H 'Content-Type:application/json' -u andrea.leo@f21.it:123456 -d '{"event":"request.create", "target":"https://webhook.site/c312005b-5042-49e9-a769-0f3ba4245b51"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/subscriptions
 ```
 
 Response example:

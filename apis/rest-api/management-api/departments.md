@@ -18,7 +18,7 @@ The Department model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/departments" %}
 {% api-method-summary %}
 Get all active departments.
 {% endapi-method-summary %}
@@ -76,10 +76,10 @@ authorization token. Basic Auth or JWT
 Example
 
 ```text
-curl -v -X GET https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
+curl -v -X GET https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/departments
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments/allstatus" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/departments/allstatus" %}
 {% api-method-summary %}
 Get all departments \(active or hidden\).
 {% endapi-method-summary %}
@@ -137,10 +137,10 @@ authorization token. Basic Auth or JWT
 Example
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/allstatus
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/departments/allstatus
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/departments" %}
 {% api-method-summary %}
 Get a department by id
 {% endapi-method-summary %}
@@ -200,10 +200,10 @@ authorization token. Basic Auth or JWT
 Example
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
 ```
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/departments" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/:project\_id/departments" %}
 {% api-method-summary %}
 Create a new department
 {% endapi-method-summary %}
@@ -285,10 +285,10 @@ Specify if the visitor can talk only with a bot or even with an agent. Default v
 Example:
 
 ```text
-curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new department1", "routing":"pooled"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments
+curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new department1", "routing":"pooled"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/departments
 ```
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/departments/:id" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v2/:project\_id/departments/:id" %}
 {% api-method-summary %}
 Update a department
 {% endapi-method-summary %}
@@ -374,10 +374,10 @@ Specify if the visitor can talk only with a bot or even with an agent. Default v
 Example:
 
 ```text
-curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new department1", "routing":"pooled"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
+curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"name":"new department1", "routing":"pooled"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
 ```
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/departments/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v2/:project\_id/departments/:id" %}
 {% api-method-summary %}
 Delete a department
 {% endapi-method-summary %}
@@ -437,6 +437,6 @@ authorization token. Basic Auth or JWT
 Example:
 
 ```text
-curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
+curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/departments/5b55e806c93dde00143163df
 ```
 

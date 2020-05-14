@@ -1,6 +1,6 @@
 # Subscriptions
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/subscriptions" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/:project\_id/subscriptions" %}
 {% api-method-summary %}
 Create a new subscription
 {% endapi-method-summary %}
@@ -66,10 +66,10 @@ the target url
 Example
 
 ```text
-curl -v -X POST -H 'Content-Type:application/json' -u andrea.leo@f21.it:123456 -d '{"event":"request.create", "target":"https://webhook.site/c312005b-5042-49e9-a769-0f3ba4245b51"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/subscriptions
+curl -v -X POST -H 'Content-Type:application/json' -u andrea.leo@f21.it:123456 -d '{"event":"request.create", "target":"https://webhook.site/c312005b-5042-49e9-a769-0f3ba4245b51"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/subscriptions
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/subscriptions" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/subscriptions" %}
 {% api-method-summary %}
 Get all subscriptions
 {% endapi-method-summary %}
@@ -120,7 +120,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/subscriptions/:id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/subscriptions/:id" %}
 {% api-method-summary %}
 Get a subscription by id
 {% endapi-method-summary %}
@@ -172,7 +172,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/subscriptions/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v2/:project\_id/subscriptions/:id" %}
 {% api-method-summary %}
 Delete a subscription by id
 {% endapi-method-summary %}
@@ -224,7 +224,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/subscriptions/history" %}
+{% api-method method="get" host="https://api.tiledesk.com/v2" path="/:project\_id/subscriptions/history" %}
 {% api-method-summary %}
 Get the subscriptions history
 {% endapi-method-summary %}

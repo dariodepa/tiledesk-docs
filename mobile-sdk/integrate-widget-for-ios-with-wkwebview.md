@@ -43,7 +43,7 @@ class WebViewViewController: UIViewController, WKUIDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = "https://widget.tiledesk.com/v3/index.html?tiledesk_projectid=<CHANGE_IT>&tiledesk_isopen=true&tiledesk_fullscreenMode=true&tiledesk_hideHeaderCloseButton=true"
+        let url = "https://widget.tiledesk.com/v4/index.html?tiledesk_projectid=<CHANGE_IT>&tiledesk_isopen=true&tiledesk_fullscreenMode=true&tiledesk_hideHeaderCloseButton=true"
         let myURL = URL(string:url)
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)

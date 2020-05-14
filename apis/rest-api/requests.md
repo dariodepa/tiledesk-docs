@@ -32,7 +32,7 @@ The Request model
 
 You can use the API to get the request information.
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/requests" %}
 {% api-method-summary %}
 Get all requests
 {% endapi-method-summary %}
@@ -163,10 +163,10 @@ filter by participants \(agent or bot\)
 Example
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/requests
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/requests/:id" %}
 {% api-method-summary %}
 Get a request by id
 {% endapi-method-summary %}
@@ -256,10 +256,10 @@ authorization token. Basic Auth or JWT
 Example:
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK
 ```
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/close" %}
+{% api-method method="put" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/close" %}
 {% api-method-summary %}
 Close a request by id.
 {% endapi-method-summary %}
@@ -341,7 +341,7 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/reopen" %}
+{% api-method method="put" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/reopen" %}
 {% api-method-summary %}
 Reopen a request by id.
 {% endapi-method-summary %}
@@ -423,7 +423,7 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/departments" %}
+{% api-method method="put" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/departments" %}
 {% api-method-summary %}
 Route a request to a department
 {% endapi-method-summary %}
@@ -516,7 +516,7 @@ esclude a bot from the assignment
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/" %}
+{% api-method method="patch" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/" %}
 {% api-method-summary %}
 Update a request by id
 {% endapi-method-summary %}
@@ -632,7 +632,7 @@ the request source page
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/participants" %}
+{% api-method method="post" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/participants" %}
 {% api-method-summary %}
 Add a participant to a request
 {% endapi-method-summary %}
@@ -721,7 +721,7 @@ the participant \(agent or bot\) identifier
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/participants" %}
+{% api-method method="put" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/participants" %}
 {% api-method-summary %}
 Set the request participants
 {% endapi-method-summary %}
@@ -810,7 +810,7 @@ the participants \(agent or bot\) identifiers array
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/participants/:participantid" %}
+{% api-method method="delete" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/participants/:participantid" %}
 {% api-method-summary %}
 Delete a participant from the request
 {% endapi-method-summary %}
@@ -893,7 +893,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/attributes" %}
+{% api-method method="patch" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/attributes" %}
 {% api-method-summary %}
 Update the request attributes
 {% endapi-method-summary %}
@@ -982,7 +982,7 @@ the request attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/notes" %}
+{% api-method method="post" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/notes" %}
 {% api-method-summary %}
 Add a note to a request
 {% endapi-method-summary %}
@@ -1061,7 +1061,7 @@ the note content
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/notes/:noteid" %}
+{% api-method method="delete" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/notes/:noteid" %}
 {% api-method-summary %}
 Delete a note
 {% endapi-method-summary %}
@@ -1124,7 +1124,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/history" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/requests/:id/history" %}
 {% api-method-summary %}
 Get a request history by id
 {% endapi-method-summary %}
@@ -1166,7 +1166,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="patch" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/rating" %}
+{% api-method method="patch" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/rating" %}
 {% api-method-summary %}
 Rate a request by id
 {% endapi-method-summary %}

@@ -82,7 +82,7 @@ Configure the webhook endpoint with:
 $ firebase functions:config:set webhook.url=<PUBLIC_TILEDESK_URL_EXPOSED_BY_NGROK>/chat21/requests
 ```
 
-Example: firebase functions:config:set webhook.url=[https://YOUR\_TILEDESK\_DOMAIN/chat21/requests](https://YOUR_TILEDESK_DOMAIN/chat21/requests)
+Example: firebase functions:config:set webhook.url=[https://https://api.tiledesk.com/v2/chat21/requests](https://YOUR_TILEDESK_DOMAIN/chat21/requests)
 
 
 

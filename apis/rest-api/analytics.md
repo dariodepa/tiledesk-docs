@@ -2,7 +2,7 @@
 
 You can use the API to get the analytics data.
 
-{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/analytics/requests/waiting" %}
+{% api-method method="get" host="https://api.tiledesk.com/v2" path="/:project\_id/analytics/requests/waiting" %}
 {% api-method-summary %}
 Get the average waiting time
 {% endapi-method-summary %}

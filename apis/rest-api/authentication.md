@@ -1,6 +1,6 @@
 # Authentication
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/auth/signin" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/auth/signin" %}
 {% api-method-summary %}
 Authentication with email and password
 {% endapi-method-summary %}
@@ -48,7 +48,7 @@ the user password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/auth/signup" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/auth/signup" %}
 {% api-method-summary %}
 Signup with email and password
 {% endapi-method-summary %}
@@ -109,7 +109,7 @@ the user lastname
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/auth/signinAnonymously" %}
+{% api-method method="post" host="https://api.tiledesk.com/v2" path="/auth/signinAnonymously" %}
 {% api-method-summary %}
 Anonymous authentication for a user.
 {% endapi-method-summary %}
@@ -175,7 +175,7 @@ the user custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/auth/signinWithCustomToken" %}
+{% api-method method="post" host="https://api.tiledesk.com/v2" path="/auth/signinWithCustomToken" %}
 {% api-method-summary %}
 Custom authentication for a user.
 {% endapi-method-summary %}

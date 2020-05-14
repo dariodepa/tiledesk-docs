@@ -29,7 +29,7 @@ public class TiledeskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_support);
 
         WebView myWebView = (WebView) findViewById(R.id.tiledesk);
-        myWebView.loadUrl("https://widget.tiledesk.com/v3/index.html?tiledesk_projectid=<CHANGE_IT>&tiledesk_isopen=true&tiledesk_fullscreenMode=true&tiledesk_hideHeaderCloseButton=true"");
+        myWebView.loadUrl("https://widget.tiledesk.com/v4/index.html?tiledesk_projectid=<CHANGE_IT>&tiledesk_isopen=true&tiledesk_fullscreenMode=true&tiledesk_hideHeaderCloseButton=true"");
 
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);

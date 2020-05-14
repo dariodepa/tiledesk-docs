@@ -17,7 +17,7 @@ Our Lead API is a central place to gather all information and take actions on yo
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/leads" %}
 {% api-method-summary %}
 Get all leads
 {% endapi-method-summary %}
@@ -108,10 +108,10 @@ what page of results to fetch. defaults to first page.
 Example
 
 ```text
-curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads
+curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/leads
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/leads/:id" %}
 {% api-method-summary %}
 Get a lead by id
 {% endapi-method-summary %}
@@ -170,10 +170,10 @@ use "application/json" value
 Example
 
 ```text
-curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
+curl -v -X GET -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
 ```
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/leads" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/:project\_id/leads" %}
 {% api-method-summary %}
 Create a new lead
 {% endapi-method-summary %}
@@ -246,10 +246,10 @@ The lead custom attributes
 Example:
 
 ```text
-curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"fullanem":"andrea", "lead_id":"123456"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads
+curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"fullanem":"andrea", "lead_id":"123456"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/leads
 ```
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v2/:project\_id/leads/:id" %}
 {% api-method-summary %}
 Update a lead by id
 {% endapi-method-summary %}
@@ -322,10 +322,10 @@ The lead custom attributes
 Example:
 
 ```text
-curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"fullanem":"andrea", "lead_id":"123456"}' https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
+curl -v -X PUT -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"fullanem":"andrea", "lead_id":"123456"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
 ```
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/leads/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v2/:project\_id/leads/:id" %}
 {% api-method-summary %}
 Delete a lead by id
 {% endapi-method-summary %}
@@ -380,6 +380,6 @@ authorization token. Basic Auth or JWT
 Example:
 
 ```text
-curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
+curl -v -X DELETE -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/leads/5c81593adf767b0017d1aa66
 ```
 

@@ -26,7 +26,7 @@ This tutorial is will not be helpful for integration that pulls data on demand \
 
 ### Prerequisites
 
-You’ll need a Tiledesk Account. Sign up to the [Tiledesk Dashboard ](https://support.tiledesk.com/dashboard)to create a new account.
+You’ll need a Tiledesk Account. Sign up to the [Tiledesk Dashboard ](https://console.tiledesk.com/dashboard)to create a new account.
 
 ## RESTHooks
 

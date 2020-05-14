@@ -20,7 +20,7 @@ The Message model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/messages" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/requests/:id/messages" %}
 {% api-method-summary %}
 Get the messages of a request by id
 {% endapi-method-summary %}
@@ -93,10 +93,10 @@ authorization token. Basic Auth or JWT
 Example:
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK/messages
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK/messages
 ```
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/requests/:id/messages/:message\_id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/requests/:id/messages/:message\_id" %}
 {% api-method-summary %}
 Get the message by request id and message id
 {% endapi-method-summary %}
@@ -157,10 +157,10 @@ authorization token. Basic Auth or JWT
 Example:
 
 ```text
-curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v1/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK/messages/5c81593adf767b0017d1aa68
+curl -v -X GET -u andrea.leo@f21.it:123456 https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/requests/support-group-L_OG76RYhR0XFiMf2PK/messages/5c81593adf767b0017d1aa68
 ```
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/requests/:id/messages" %}
+{% api-method method="post" host="https://api.tiledesk.com/v2" path="/:project\_id/requests/:id/messages" %}
 {% api-method-summary %}
 Send a message.
 {% endapi-method-summary %}
@@ -256,6 +256,6 @@ it's the image properties: src is the absolute source path of the image, width i
 Example:
 
 ```text
-curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"text":"hello from api"}' https://YOUR_TILEDESK_DOMAIN/5b55e806c93dde00143163dd/requests/support-group-1234/messages
+curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"text":"hello from api"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/requests/support-group-1234/messages
 ```
 

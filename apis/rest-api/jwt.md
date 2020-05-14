@@ -1,6 +1,6 @@
 # Jwt
 
-{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/v1/jwt/history" %}
+{% api-method method="get" host="https://api.tiledesk.com/v2" path="/v2/jwt/history" %}
 {% api-method-summary %}
 List the jwt tokens of a user
 {% endapi-method-summary %}
@@ -46,7 +46,7 @@ what page of results to fetch. defaults to first page.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/v1/jwt/history/:jti" %}
+{% api-method method="delete" host="https://api.tiledesk.com/v2" path="/v2/jwt/history/:jti" %}
 {% api-method-summary %}
 Revoke a jwt token by JTI \(JWT identifier\)
 {% endapi-method-summary %}
@@ -84,7 +84,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/v1/jwt/history/id/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com/v2" path="/v2/jwt/history/id/:id" %}
 {% api-method-summary %}
 Revoke a jwt token by id
 {% endapi-method-summary %}

@@ -17,7 +17,7 @@ The Model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/project\_users" %}
 {% api-method-summary %}
 Get the team
 {% endapi-method-summary %}
@@ -115,7 +115,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}
 Get a teammate by id
 {% endapi-method-summary %}
@@ -175,7 +175,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/users/:user\_id" %}
+{% api-method method="get" host="https://api.tiledesk.com" path="/v2/:project\_id/project\_users/users/:user\_id" %}
 {% api-method-summary %}
 Get a teammate by user id
 {% endapi-method-summary %}
@@ -235,7 +235,7 @@ authorization token. Basic Auth or JWT
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/invite" %}
+{% api-method method="post" host="https://api.tiledesk.com" path="/v2/:project\_id/project\_users/invite" %}
 {% api-method-summary %}
 Invite an agent
 {% endapi-method-summary %}
@@ -301,7 +301,7 @@ the initial agent status. Available \(true\) or unavailable \(false\).
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
+{% api-method method="put" host="https://api.tiledesk.com" path="/v2/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}
 Update a teammate by id
 {% endapi-method-summary %}
@@ -367,7 +367,7 @@ The teammate custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="https://api.tiledesk.com" path="/v1/:project\_id/project\_users/:project\_user\_id" %}
+{% api-method method="delete" host="https://api.tiledesk.com" path="/v2/:project\_id/project\_users/:project\_user\_id" %}
 {% api-method-summary %}
 Leave a project
 {% endapi-method-summary %}

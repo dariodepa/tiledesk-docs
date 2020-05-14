@@ -15,7 +15,7 @@ The Canned respose model
 | createdBy | String | The unique identifier of the row creator |
 | id\_project | String | The unique identifier of the project |
 
-{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned" %}
+{% api-method method="get" host="https://api.tiledesk.com/v2" path="/:project\_id/canned" %}
 {% api-method-summary %}
 Get all canned responses
 {% endapi-method-summary %}
@@ -80,7 +80,7 @@ what page of results to fetch. defaults to first page.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned/:id" %}
+{% api-method method="get" host="https://api.tiledesk.com/v2" path="/:project\_id/canned/:id" %}
 {% api-method-summary %}
 Get a canned respose by id
 {% endapi-method-summary %}
@@ -136,7 +136,7 @@ use "application/json" value
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned" %}
+{% api-method method="post" host="https://api.tiledesk.com/v2" path="/:project\_id/canned" %}
 {% api-method-summary %}
 Create a new canned response
 {% endapi-method-summary %}
@@ -202,7 +202,7 @@ The canned response custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned/:id" %}
+{% api-method method="put" host="https://api.tiledesk.com/v2" path="/:project\_id/canned/:id" %}
 {% api-method-summary %}
 Update a canned response by id
 {% endapi-method-summary %}
@@ -272,7 +272,7 @@ The canned response custom attributes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="YOUR\_TILEDESK\_DOMAIN" path="/:project\_id/canned/:id" %}
+{% api-method method="delete" host="https://api.tiledesk.com/v2" path="/:project\_id/canned/:id" %}
 {% api-method-summary %}
 Delete a canned response by id
 {% endapi-method-summary %}
