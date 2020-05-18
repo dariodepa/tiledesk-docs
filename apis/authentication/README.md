@@ -7,6 +7,25 @@ The Custom JWT authentication provider allows users to authenticate with an auth
 
 Tiledesk uses the JWT to identify your application’s users and authenticate their requests but does not impose any restrictions on the external authentication system’s requirements or authentication methods.
 
+
+## Generating a Project shared secret
+
+To configure your widget for visitor authentication, you need a shared secret. A shared secret is a security setting, intended to be generated, copied, and pasted into a communication with your engineering team, or directly into your codebase, in a single sitting. It should not be entered into a browser.
+
+Only Chat administrators can configure visitor authentication settings.
+
+To generate the shared secret required for authenticated visitors
+
+* Open the Dashboard and go to Project Name &gt; Project Settings.
+* Scroll down to the Visitor Authentication section and click the Generate button.
+
+![](https://raw.githubusercontent.com/Tiledesk/tiledesk-docs/master/docs/tiledesk-project-settings2.png)
+
+Note:The shared secret is intended to remain secure. As a result, it will only appear in full one time. If you don’t have access to the shared secret and need the full secret to create your token, you can reset the secret by clicking the 'Generate' button. Regenerating a new shared secret will revoke the previous token. If you have concerns the shared secret has been compromised, you should regenerate a new one. If you need to rotate the keys, you should schedule it when Chat is offline because regenerating the secret cause visitors to be disconnected from the widget.
+
+
+## Create a Tiledesk JWT token
+
 You must set the following required fields of the user object :
 
 * **\_id** is the custom unique user identifier of the external authentication system.
