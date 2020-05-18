@@ -27,22 +27,22 @@ Note:The shared secret is intended to remain secure. As a result, it will only a
 To create a JWT token you must set the following required fields of the user object :
 
 * **\_id** is the custom unique user identifier of the external authentication system.
-* **subject**. JWTs describe their subject in the sub claim. sub field must be equal to value `userexternal`
-* **audience**. JWTs describe their audience in the aud claim. Must be `https://tiledesk.com/projects/<YOUR_PROJECT_ID>`.
+* **subject**. JWTs describe their subject in the sub claim. For custom authentication sub field must be equal to value `userexternal`
+* **audience**. JWTs describe their audience in the aud claim. For custom authentication must be `https://tiledesk.com/projects/<YOUR_PROJECT_ID>`.
 
 Optional fields:
 
 * **firstname**. It's the user firstname
 * **lastname**. It's the user lastname
 * **email**. It's the user email
-* **other** jwt claims.
+* **other** other custom jwt claims.
 
-The external authentication system must create the JWT signing the user object with the Project Shared Secret code.
+The external authentication system must **create the JWT signing the user object with the Project Shared Secret** code.
 
 User object example:
 
 ```text
-{_id: "123", firstname:"andrea", lastname:"leo", email: "email2@email.com",  customAttr: "c1", sub:  "userexternal",  aud:  "https://tiledesk.com/projects/5c81593adf767b0017d1aa68'}
+{_id: "123456", firstname:"Andrea", lastname:"Leo", email: "andrea.leo@email.com",  customAttr: "c1", sub:  "userexternal",  aud:  "https://tiledesk.com/projects/5c81593adf767b0017d1aa68'}
 ```
 
 
@@ -71,7 +71,7 @@ var payload = {
   lastname: '#{customerLastname}',
   email: '#{customerEmail}',  
   subject: 'userexternal',
-  audience: 'https://tiledesk.com/projects/#{OUR_PROJECT_ID}',  
+  audience: 'https://tiledesk.com/projects/#{YOUR_PROJECT_ID}',  
 };
 var token = jwt.sign(payload, '#{yourProjectSharedSecret}');
 ```
