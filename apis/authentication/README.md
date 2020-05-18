@@ -7,6 +7,8 @@ The Custom JWT authentication provider allows users to authenticate with an auth
 
 Tiledesk uses the JWT to identify your application’s users and authenticate their requests but does not impose any restrictions on the external authentication system’s requirements or authentication methods.
 
+To create a Custom JWT Token you must generate a Project Shared Secret as described below.
+
 
 ## Generating a Project Shared Secret
 
