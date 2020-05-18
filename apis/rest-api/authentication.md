@@ -215,4 +215,4 @@ use "application/json" value
 {% endapi-method %}
 
 
-You can find here [How to Generate a Custom Authentication token](../authentication/README.md)
+You can find here [How to Generate a Custom Authentication Token](../authentication/README.md)
