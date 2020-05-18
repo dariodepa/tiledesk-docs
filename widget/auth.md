@@ -34,17 +34,10 @@ Once you have generated the shared secret, use it to create a JWT token that you
 
 To create a JWT token and add the code to the Chat snippet
 
-1\) Construct a server-side payload of data for the JWT token. This needs to have the following information:
+1\) Construct a server-side payload of data for the JWT token. Please follow this guide to [create a JWT token](../apis/authentication/README.md). 
 
-* **name**: Customer's name
-* **email**: Customer's email
-* **external\_id**: alphanumeric string, unique to identifying the customer. Once set for the customer, this value cannot be changed. We recommend that you use your system's unique user ID for this field. For example, user-123456.
-* **iat**: Integer value of the current timestamp, in seconds. Some functions in specific languages i.e. JavaScript's Date.now\(\) return milliseconds, so please make sure you convert to seconds. Iat for Chat authentication permits up to two minutes clock skew.
-* **exp**: Integer value of the current timestamp, in seconds. This value indicates when this JWT token will expire. The value is permitted to be up to a maximum of 10 minutes from the iat value.
 
-2\) Use the code samples below to generate the server side JWT token .
-
-3\) Use the **window.tiledesk.signInWithCustomToken** Javascript API to provide a function which supplies a fresh JWT every time it is invoked. Below is a code example:
+2\) Use the **window.tiledesk.signInWithCustomToken** Javascript API to provide a function which supplies a fresh JWT every time it is invoked. Below is a code example:
 
 ```text
 window.tiledesk.signInWithCustomToken("<JWT_TOKEN_HERE_GENERATED_SERVER_SIDE>");
@@ -58,55 +51,11 @@ window.tiledesk.signInWithCustomToken("JWT 12345678...");
 
 See an [example here](https://github.com/chat21/chat21-web-widget/blob/master/src/test.html).
 
+
 ### Generate JWT Token Server Side
 
 Your token needs to be dynamically generated from the server-side on page load. Find the template below that fits your language needs. Customize the sample as needed, making sure to replace the \#{details} with your own information.
 
-If none of these samples match your needs, JWT has a more extensive list of [JWT libraries](https://jwt.io/#libraries-io) to explore.
-
-#### NodeJS
-
-Install [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken):
-
-```text
-npm install jsonwebtoken --save-dev
-```
-
-Then, generate a token using the shared secret:
-
-```text
-var jwt = require('jsonwebtoken'); 
-var payload = {
-  name: '#{customerName}',
-  email: '#{customerEmail}',
-  iat: #{timestamp},
-  exp: #{timestamp+expiration time},
-  external_id: '#{externalId}'
-};
-var token = jwt.sign(payload, '#{yourSecret}');
-```
-
-#### PHP
-
-Download [PHP-JWT](https://github.com/firebase/php-jwt):
-
-```text
-composer require firebase/php-jwt
-```
-
-Generate a token using the shared secret:
-
-```text
-use \Firebase\JWT\JWT;
-$payload = {
-  'name' => '#{customerName}' ,
-  'email' => '#{customerEmail}',
-  'iat' => #{timestamp},
-  'exp'=> #{timestamp+expiration time},
-  'external_id' => '#{externalId}'
-};
-$token = JWT::encode($payload, '#{yourSecret}');
-```
 
 ## About the agent experience with authenticated visitors
 

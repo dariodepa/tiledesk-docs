@@ -31,6 +31,7 @@
 * [Webhooks](apis/webhooks/README.md)
   * [Subscriptions](apis/webhooks/subscriptions.md)
 * [Realtime API](apis/realtime-api/README.md)
+* [Authentication](apis/authentication/README.md)
 * [Tutorials](apis/tutorials/README.md)
   * [Hello World tutorial for external chatbots integration](apis/tutorials/connect-your-own-chatbot.md)
   * [Dialogflow Tutorial 1 - Dialogflow as external chatbot](apis/tutorials/dialogflow-as-external-chatbot-integration.md)
