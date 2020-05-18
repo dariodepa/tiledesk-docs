@@ -10,11 +10,9 @@ Tiledesk uses the JWT to identify your application’s users and authenticate th
 
 ## Generating a Project shared secret
 
-To configure your widget for visitor authentication, you need a shared secret. A shared secret is a security setting, intended to be generated, copied, and pasted into a communication with your engineering team, or directly into your codebase, in a single sitting. It should not be entered into a browser.
+A shared secret is a security setting, intended to be generated, copied, and pasted into a communication with your engineering team, or directly into your codebase, in a single sitting. It should not be entered into a browser.
 
-Only Chat administrators can configure visitor authentication settings.
-
-To generate the shared secret required for authenticated visitors
+To generate the shared secret required for custom authentication
 
 * Open the Dashboard and go to Project Name &gt; Project Settings.
 * Scroll down to the Visitor Authentication section and click the Generate button.
