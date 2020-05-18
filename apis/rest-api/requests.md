@@ -265,7 +265,6 @@ Close a request by id.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -347,7 +346,6 @@ Reopen a request by id.
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -430,7 +428,6 @@ Route a request to a department
 
 {% api-method-description %}
 Routes a request to a department.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -522,7 +519,6 @@ Update a request by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -639,7 +635,6 @@ Add a participant to a request
 
 {% api-method-description %}
 Add a participant \(agent or bot\) to a request.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -728,7 +723,6 @@ Set the request participants
 
 {% api-method-description %}
 Set the request participants \(agent or bot\).  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -817,7 +811,6 @@ Delete a participant from the request
 
 {% api-method-description %}
 Delete a participant \(agent or bot\) from the request.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -900,7 +893,6 @@ Update the request attributes
 
 {% api-method-description %}
 Update the request custom attributes.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -989,7 +981,6 @@ Add a note to a request
 
 {% api-method-description %}
 Add a participant \(agent or bot\) to a request.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1068,7 +1059,6 @@ Delete a note
 
 {% api-method-description %}
 Add a participant \(agent or bot\) to a request.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1130,7 +1120,6 @@ Get a request history by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1172,7 +1161,6 @@ Rate a request by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**Only works for Tiledesk v2 environment from ver 2.0.7 \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}

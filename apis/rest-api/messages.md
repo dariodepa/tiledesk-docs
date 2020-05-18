@@ -167,7 +167,6 @@ Send a message.
 
 {% api-method-description %}
 Allows to send a message.  
-**Only works for Tiledesk v2 environment \(on-premises only\).**
 {% endapi-method-description %}
 
 {% api-method-spec %}

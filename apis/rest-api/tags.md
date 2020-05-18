@@ -21,7 +21,7 @@ Get all tags
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows an account to list all the tags. Only works for Tiledesk v2 environment \(on-premises only\).
+Allows an account to list all the tags.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -93,7 +93,6 @@ Get a tag by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -148,7 +147,6 @@ Create a new tag
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -213,7 +211,6 @@ Update a tag by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -282,7 +279,6 @@ Delete a tag by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}

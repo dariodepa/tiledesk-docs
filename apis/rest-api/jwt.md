@@ -6,7 +6,6 @@ List the jwt tokens of a user
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -52,7 +51,6 @@ Revoke a jwt token by JTI \(JWT identifier\)
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -90,7 +88,6 @@ Revoke a jwt token by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}

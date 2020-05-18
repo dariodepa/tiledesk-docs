@@ -21,7 +21,7 @@ Get all canned responses
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows an account to list all the canned responses. Only works for Tiledesk v2 environment \(on-premises only\).
+Allows an account to list all the canned responses.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -86,7 +86,6 @@ Get a canned respose by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -142,7 +141,6 @@ Create a new canned response
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -208,7 +206,6 @@ Update a canned response by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -278,7 +275,6 @@ Delete a canned response by id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Only works for Tiledesk v2 environment \(on-premises only\).
 {% endapi-method-description %}
 
 {% api-method-spec %}
