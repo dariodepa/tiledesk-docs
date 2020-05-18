@@ -8,14 +8,14 @@ The Custom JWT authentication provider allows users to authenticate with an auth
 Tiledesk uses the JWT to identify your application’s users and authenticate their requests but does not impose any restrictions on the external authentication system’s requirements or authentication methods.
 
 
-## Generating a Project shared secret
+## Generating a Project Shared Secret
 
-A shared secret is a security setting, intended to be generated, copied, and pasted into a communication with your engineering team, or directly into your codebase, in a single sitting. It should not be entered into a browser.
+A Project Shared Secret is a security setting, intended to be generated, copied, and pasted into a communication with your engineering team, or directly into your codebase, in a single sitting. It should not be entered into a browser.
 
-To generate the shared secret required for custom authentication
+To generate the shared secret required for custom authentication you need:
 
-* Open the Dashboard and go to Project Name &gt; Project Settings.
-* Scroll down to the Visitor Authentication section and click the Generate button.
+* Open the **Dashboard** and go to **Project Name &gt; Project Settings**.
+* Go  to the **Visitor Authentication** tab and click the **Generate** button.
 
 ![](https://raw.githubusercontent.com/Tiledesk/tiledesk-docs/master/docs/tiledesk-project-settings2.png)
 
@@ -24,19 +24,20 @@ Note:The shared secret is intended to remain secure. As a result, it will only a
 
 ## Create a Tiledesk JWT token
 
-You must set the following required fields of the user object :
+To create a JWT token you must set the following required fields of the user object :
 
 * **\_id** is the custom unique user identifier of the external authentication system.
-* **subject**. JWTs describe their subject in the sub claim. sub must be equal to value `userexternal`
+* **subject**. JWTs describe their subject in the sub claim. sub field must be equal to value `userexternal`
 * **audience**. JWTs describe their audience in the aud claim. Must be `https://tiledesk.com/projects/<YOUR_PROJECT_ID>`.
 
 Optional fields:
 
 * **firstname**. It's the user firstname
 * **lastname**. It's the user lastname
+* **email**. It's the user email
 * **other** jwt claims.
 
-The external authentication system must create the JWT signing the user object with the project authentication secret code. See here to obtain a Project JWT Secret: [https://developer.tiledesk.com/widget/auth\#generating-a-chat-shared-secret](https://developer.tiledesk.com/widget/auth#generating-a-chat-shared-secret)
+The external authentication system must create the JWT signing the user object with the Project Shared Secret code.
 
 User object example:
 
@@ -72,7 +73,7 @@ var payload = {
   subject: 'userexternal',
   audience: 'https://tiledesk.com/projects/#{OUR_PROJECT_ID}',  
 };
-var token = jwt.sign(payload, '#{yourSecret}');
+var token = jwt.sign(payload, '#{yourProjectSharedSecret}');
 ```
 
 #### PHP
@@ -95,6 +96,6 @@ $payload = {
   'audience'=> #{timestamp+expiration time},
   'external_id' => 'https://tiledesk.com/projects/#{YOUR_PROJECT_ID}'
 };
-$token = JWT::encode($payload, '#{yourSecret}');
+$token = JWT::encode($payload, '#{yourProjectSharedSecret}');
 ```
 
