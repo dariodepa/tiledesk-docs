@@ -213,3 +213,6 @@ use "application/json" value
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
+You can find more info about [Tiledesk custom authentication](../authentication/README.md)
