@@ -36,7 +36,7 @@ Example:
 window.tiledesk.signInWithCustomToken("JWT 12345678...");
 ```
 
-See an [example here](https://www.w3schools.com/code/tryit.asp?filename=GEWSE8JKG2QI).
+See an [example here](https://www.w3schools.com/code/tryit.asp?filename=GEXW8J64A840).
 
 
 
