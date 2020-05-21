@@ -258,3 +258,9 @@ Example:
 curl -v -X POST -H 'Content-Type: application/json' -u andrea.leo@f21.it:123456  -d '{"text":"hello from api"}' https://api.tiledesk.com/v2/5b55e806c93dde00143163dd/requests/support-group-1234/messages
 ```
 
+# Advanced features
+
+Tiledesk uses Chat21 as messaging engine. When you send a message to Tiledesk using the REST API, Tiledesk will forward the call to the Chat21 REST API. You can see how the Chat21 REST Api works here:
+https://github.com/chat21/chat21-cloud-functions/blob/master/docs/api.md#send-a-message
+
+You can enable special message features following this paragraph: https://github.com/chat21/chat21-cloud-functions/blob/master/docs/api.md#message-attributes
