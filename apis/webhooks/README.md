@@ -94,17 +94,17 @@ The following Events are available and you can be notified when an action relati
 | faq.create | Subscribes to faq creations |
 | faq.update | Subscribes to faq being updated |
 | faq.delete | Subscribes to faq being deleted |
-| department.create | Subscribes to department creations (available only on version v2) |
-| department.update | Subscribes to department being updated (available only on version v2) |
-| department.delete | Subscribes to department being deleted (available only on version v2) |
-| project_user.invite | Subscribes to teammate project invitation (available only on version v2) |
-| project_user.update | Subscribes to teammate being updated (available only on version v2) |
-| project_user.delete | Subscribes to teammate project leave (available only on version v2) |
-| group.create | Subscribes to group creations (available only on version v2) |
-| group.update | Subscribes to group being updated (available only on version v2) |
-| group.delete | Subscribes to group being deleted (available only on version v2) |
-| event.emit | Subscribes to event emitting (available only on version v2) |
-| event.emit.EVENT_NAME | Subscribes to a specific event emitting (available only on version v2). Example: event.emit.typing.start to subscribe to typing indicator events.  |
+| department.create | Subscribes to department creations |
+| department.update | Subscribes to department being updated |
+| department.delete | Subscribes to department being deleted |
+| project_user.invite | Subscribes to teammate project invitation |
+| project_user.update | Subscribes to teammate being updated |
+| project_user.delete | Subscribes to teammate project leave |
+| group.create | Subscribes to group creations |
+| group.update | Subscribes to group being updated |
+| group.delete | Subscribes to group being deleted |
+| event.emit | Subscribes to event emitting |
+| event.emit.EVENT_NAME | Subscribes to a specific event emitting. Example: event.emit.typing.start to subscribe to typing indicator events.  |
 
 ### Webhook Notification object
 
