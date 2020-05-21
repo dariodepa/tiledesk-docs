@@ -16,7 +16,6 @@ The Request model
 | sourcePage | String | The request source page. |
 | language | String | The request language. |
 | userAgent | String | The user agent. |
-| messages\_count | Number | The number of messages of the request. |
 | tags | Array | A list of tags objects associated with the request. |
 | notes | Array | A list of notes objects associated with the request. |
 | rating | Number | The request rating. From 0 to 5. |
@@ -144,7 +143,6 @@ filter by participants \(agent or bot\)
                   "createdAt":"2020-03-13T15:38:43.880Z"
                }
             ],
-            "messages_count":7,
             "participants":[
                "5aaa99024c3b110014b478f0"
             ],
@@ -240,7 +238,6 @@ authorization token. Basic Auth or JWT
          "createdAt":"2020-03-13T15:38:43.880Z"
       }
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -327,7 +324,6 @@ use "application/json" value
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -408,7 +404,6 @@ use "application/json" value
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -500,7 +495,6 @@ esclude a bot from the assignment
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -615,7 +609,6 @@ the request source page
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -703,7 +696,6 @@ the participant \(agent or bot\) identifier
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -791,7 +783,6 @@ the participants \(agent or bot\) identifiers array
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -873,7 +864,6 @@ authorization token. Basic Auth or JWT
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -961,7 +951,6 @@ the request attributes
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -1039,7 +1028,6 @@ the note content
          "createdAt":"2020-03-13T15:38:43.880Z"
       }
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -1101,7 +1089,6 @@ authorization token. Basic Auth or JWT
   ..
    "notes":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],
@@ -1235,7 +1222,6 @@ the rate message
    ],
    "tags":[
    ],
-   "messages_count":7,
    "participants":[
       "5aaa99024c3b110014b478f0"
    ],

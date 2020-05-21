@@ -122,7 +122,6 @@ The following are sample messages received after subscribing to requests topic:
             "participants":[
                "5eb45fb21f9e1f0012d62201"
             ],
-            "messages_count":4,
             "request_id":"support-group-1a952f2f-c09a-46be-bc75-11387a95d55f",
             "requester":"5eb45fbc1f9e1f0012d62208",
             "lead":{
