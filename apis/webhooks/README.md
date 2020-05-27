@@ -94,6 +94,9 @@ The following Events are available and you can be notified when an action relati
 | faq.create | Subscribes to faq creations |
 | faq.update | Subscribes to faq being updated |
 | faq.delete | Subscribes to faq being deleted |
+| faqBot.create | Subscribes to bot creations |
+| faqBot.update | Subscribes to bot being updated |
+| faqBot.delete | Subscribes to bot being deleted |
 | department.create | Subscribes to department creations |
 | department.update | Subscribes to department being updated |
 | department.delete | Subscribes to department being deleted |
