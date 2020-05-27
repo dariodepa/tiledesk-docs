@@ -19,12 +19,14 @@ Once you have generated the shared secret, use it to create a JWT token that you
 
 ### Creating a JWT token
 
-To create a JWT token and add the code to the Chat snippet
+To create a JWT token:
 
 1\) Construct a server-side payload of data for the JWT token. Your token needs to be dynamically generated from the server-side on page load. Please follow this guide to [Create a JWT Token](../apis/authentication/README.md). 
 
 
-2\) Use the **window.tiledesk.signInWithCustomToken** Javascript API to provide a function which supplies a fresh JWT every time it is invoked. Below is a code example:
+2\) Set the Tiledesk widget property **autoStart** to **false**.
+
+3\) Use the **window.tiledesk.signInWithCustomToken** Javascript API to provide a function which supplies a fresh JWT every time it is invoked. Below is a code example:
 
 ```text
 window.tiledesk.signInWithCustomToken("<JWT JWT_TOKEN_HERE_GENERATED_SERVER_SIDE>");

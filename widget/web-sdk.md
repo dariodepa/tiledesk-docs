@@ -184,6 +184,11 @@ window.tiledesk.sendSupportMessage(
 
 ## Events
 
+
+### tileDeskAsyncInit
+
+The function tileDeskAsyncInit is called when the basic apis of the widget are loaded. Inside the tileDeskAsyncInit function the object window.tiledesk is defined and can be used.   
+
 ### window.tiledesk.on\(event\_name, handler\)
 
 Register an event handler to an event type.
