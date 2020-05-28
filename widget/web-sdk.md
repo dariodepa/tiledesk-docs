@@ -58,6 +58,8 @@ You can customize the widget passing these parameters to window.tiledeskSettings
 * **allowTranscriptDownload**: allows the user to download the chat transcript. The download button appears when the chat is closed by the operator. Permittet values: true, false. Default value: false
 * **marginX**: Set the side margin, left or right depending on the align property. Default value : 20px
 * **marginY**: Set the distance from the page bottom margin. Default value : 20px
+* **autoStart**: Set if the widget performs an automatic anonymous authentication at the startup. Default value : true
+* **startHidden**: Set if the widget starts in hidden mode. Default value : false
 * **persistence**: You can specify how the Authentication state persists when using the Tiledesk JS SDK. This includes the ability to specify whether a signed in user should be indefinitely persisted until explicit sign out or cleared when the window is closed. Permittet values: local, session. Default value : local. Local value indicates that the state will be persisted even when the browser window is closed. An explicit sign out is needed to clear that state. Session value indicates that the state will only persist in the current session or tab, and will be cleared when the tab or window in which the user authenticated is closed.
 * **showWaitTime**: Show the expected response time from your agents in the home widget window. Value type : boolean. The default value is true.
 * **showAvailableAgents**: Show the available agents with avatar in the home widget window. Value type : boolean. The default value is true.

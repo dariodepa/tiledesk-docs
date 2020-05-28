@@ -23,7 +23,6 @@ To create a JWT token:
 
 1\) Construct a server-side payload of data for the JWT token. Your token needs to be dynamically generated from the server-side on page load. Please follow this guide to [Create a JWT Token](../apis/authentication/README.md). 
 
-
 2\) Set the Tiledesk widget property **autoStart** to **false**.
 
 3\) Use the **window.tiledesk.signInWithCustomToken** Javascript API to provide a function which supplies a fresh JWT every time it is invoked. Below is a code example:
